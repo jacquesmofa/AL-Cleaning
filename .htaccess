@@ -1,0 +1,109 @@
+# ──────────────────────────────────────────
+# AL Cleaning Pro — Apache .htaccess
+# Domain: Alcleaningpro.ca
+# ──────────────────────────────────────────
+
+RewriteEngine On
+
+# ── Force HTTPS (security first) ──
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# ── Redirect www to non-www (canonical domain) ──
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+
+# ── Trailing slash removal (except directories) ──
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# ── SPA Routing — serve index.html for all non-file routes ──
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
+
+# ──────────────────────────────────────────
+# Compression — Gzip for faster loads
+# ──────────────────────────────────────────
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/font-woff
+  AddOutputFilterByType DEFLATE application/font-woff2
+  AddOutputFilterByType DEFLATE font/woff
+  AddOutputFilterByType DEFLATE font/woff2
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ──────────────────────────────────────────
+# Browser Caching — smart cache policies
+# ──────────────────────────────────────────
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Images — cache 1 year (fingerprinted by build)
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/ico "access plus 1 year"
+
+  # Fonts — cache 1 year
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/font-woff "access plus 1 year"
+  ExpiresByType application/font-woff2 "access plus 1 year"
+
+  # CSS & JS — cache 1 month (fingerprinted by Vite build)
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+
+  # HTML — never cache (needs to stay fresh for SPA)
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# ──────────────────────────────────────────
+# Security Headers
+# ──────────────────────────────────────────
+<IfModule mod_headers.c>
+  # Prevent MIME-type sniffing
+  Header always set X-Content-Type-Options "nosniff"
+
+  # Prevent clickjacking
+  Header always set X-Frame-Options "SAMEORIGIN"
+
+  # Enable XSS filter in older browsers
+  Header always set X-XSS-Protection "1; mode=block"
+
+  # Control referrer information
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Cache-Control for HTML (prevent back-button cache issues in SPA)
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+  </FilesMatch>
+</IfModule>
+
+# ──────────────────────────────────────────
+# Custom Error Pages — fallback to SPA
+# ──────────────────────────────────────────
+ErrorDocument 404 /index.html
+
+# ── Deny access to sensitive files ──
+<FilesMatch "\.(env|gitignore|md|lock)$">
+  Require all denied
+</FilesMatch>
+
+# ── Disable directory listing ──
+Options -Indexes
