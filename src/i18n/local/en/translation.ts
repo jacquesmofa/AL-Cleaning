@@ -10,6 +10,7 @@ const translation = {
   navAreas: 'Service Areas',
   navQuote: 'Instant Quote',
   navContact: 'Contact Us',
+  navAllServices: 'All Services',
   btnCallNow: 'Call 416-817-4825',
   btnGetQuote: 'Get a Free Quote',
 
@@ -303,6 +304,7 @@ const translation = {
   footerOurServices: 'Our Services',
   footerContactUs: 'Contact Us',
   footerBrandDesc: 'Family-owned cleaning services in Brampton and the GTA. Satisfaction guaranteed on every visit.',
+  footerFollowUs: 'Follow Us',
   footerLegal: '© 2026 AL Cleaning Pro. All rights reserved.',
   footerInsured: 'Fully Insured & Bonded Family Business',
 

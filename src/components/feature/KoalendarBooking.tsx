@@ -60,7 +60,7 @@ export default function KoalendarBooking({
           </div>
         </div>
       )}
-      <div id={selectorId} className="w-full min-h-[600px]" />
+      <div id={selectorId} className="w-full min-h-[720px]" />
     </div>
   );
 }

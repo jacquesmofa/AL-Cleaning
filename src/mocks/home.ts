@@ -609,6 +609,14 @@ export const contactInfo = {
   whatsappUrl: 'https://wa.link/yu1cnt',
 };
 
+export const socialLinks = [
+  { name: 'Facebook', icon: 'ri-facebook-fill', url: 'https://www.facebook.com/Alcleaningpro' },
+  { name: 'Instagram', icon: 'ri-instagram-line', url: 'https://www.instagram.com/Alcleaningpro' },
+  { name: 'TikTok', icon: 'ri-tiktok-fill', url: 'https://www.tiktok.com/@Alcleaningpro' },
+  { name: 'X (Twitter)', icon: 'ri-twitter-x-fill', url: 'https://www.x.com/Alcleaningpro' },
+  { name: 'LinkedIn', icon: 'ri-linkedin-fill', url: 'https://www.linkedin.com/company/alcleaningpro' },
+];
+
 export const pricingConfig = [
   { serviceId: 'residential', base: 120 },
   { serviceId: 'deep-clean', base: 200 },

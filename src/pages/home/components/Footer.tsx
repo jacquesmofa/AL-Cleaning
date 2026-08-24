@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { contactInfo, services } from '@/mocks/home';
+import { contactInfo, services, socialLinks } from '@/mocks/home';
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -62,6 +62,22 @@ export default function Footer() {
             <p className="text-foreground-400 text-sm mt-3 leading-relaxed">
               {t('footerBrandDesc')}
             </p>
+            <h4 className="font-heading text-sm font-semibold mt-6 mb-4 text-background-50">{t('footerFollowUs')}</h4>
+            <div className="flex items-center gap-3 flex-wrap">
+              {socialLinks.map((s) => (
+                <a
+                  key={s.name}
+                  href={s.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={s.name}
+                  title={s.name}
+                  className="w-10 h-10 flex items-center justify-center rounded-full border border-foreground-700 text-foreground-400 hover:bg-accent-500 hover:text-foreground-950 hover:border-accent-500 transition-all"
+                >
+                  <i className={`${s.icon} text-lg`}></i>
+                </a>
+              ))}
+            </div>
           </div>
 
           {/* Quick Links */}

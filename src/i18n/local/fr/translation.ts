@@ -10,6 +10,7 @@ const translation = {
   navAreas: 'Zones de Service',
   navQuote: 'Devis Instantané',
   navContact: 'Contactez-Nous',
+  navAllServices: 'Tous les Services',
   btnCallNow: 'Appeler le 416-817-4825',
   btnGetQuote: 'Obtenir un Devis Gratuit',
 
@@ -303,6 +304,7 @@ const translation = {
   footerOurServices: 'Nos Services',
   footerContactUs: 'Contactez-Nous',
   footerBrandDesc: 'Services de nettoyage familiaux à Brampton et dans le GTA. Satisfaction garantie à chaque visite.',
+  footerFollowUs: 'Suivez-Nous',
   footerLegal: '© 2026 AL Cleaning Pro. Tous droits réservés.',
   footerInsured: 'Entreprise Familiale Entièrement Assurée et Cautionnée',
 
