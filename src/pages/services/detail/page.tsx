@@ -42,7 +42,6 @@ export default function ServiceDetail() {
   const heroSub = isFr ? service.heroSubFr : service.heroSubEn;
   const overview = isFr ? service.overviewFr : service.overviewEn;
   const includes = isFr ? service.includesFr : service.includesEn;
-  const pricingNote = isFr ? service.pricingNoteFr : service.pricingNoteEn;
   const process = isFr ? service.processFr : service.processEn;
   const faq = isFr ? service.faqFr : service.faqEn;
 
@@ -72,7 +71,7 @@ export default function ServiceDetail() {
           </p>
           <div className="flex items-center gap-3">
             <span className="text-accent-400 font-semibold text-lg">
-              {t('serviceDetailStartingFrom')} ${service.startingPrice} {t('serviceDetailCAD')}
+              {t('serviceDetailFreeQuote')}
             </span>
             <Link
               to={`/quote?service=${service.id}`}
@@ -103,7 +102,7 @@ export default function ServiceDetail() {
                 <div>
                   <h4 className="font-heading font-semibold text-foreground-950">{t(service.titleKey)}</h4>
                   <p className="text-sm text-foreground-500">
-                    {t('serviceDetailStartingFrom')} ${service.startingPrice}
+                    {t('serviceDetailFreeQuote')}
                   </p>
                 </div>
               </div>
@@ -144,7 +143,7 @@ export default function ServiceDetail() {
             <h2 className="font-heading text-2xl font-bold text-foreground-950 mb-4">
               {t('serviceDetailPricing')}
             </h2>
-            <p className="text-foreground-600 mb-8">{pricingNote}</p>
+            <p className="text-foreground-600 mb-8">{t('serviceDetailQuoteNote')}</p>
             <Link
               to={`/quote?service=${service.id}`}
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-primary-500 text-background-50 text-base font-semibold rounded-full hover:bg-primary-600 transition-all whitespace-nowrap"

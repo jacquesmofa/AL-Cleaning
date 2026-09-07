@@ -94,14 +94,9 @@ export default function ServicesHub() {
 
                 {/* Content */}
                 <div className="p-5">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="font-heading text-lg font-semibold text-foreground-950">
-                      {t(service.titleKey)}
-                    </h3>
-                    <span className="text-xs font-semibold text-primary-600 bg-primary-50 px-2.5 py-1 rounded-full whitespace-nowrap">
-                      {t('servicesHubStartingAt')} ${service.startingPrice}
-                    </span>
-                  </div>
+                  <h3 className="font-heading text-lg font-semibold text-foreground-950 mb-2">
+                    {t(service.titleKey)}
+                  </h3>
                   <p className="text-foreground-600 text-sm leading-relaxed mb-4">
                     {t(service.descKey)}
                   </p>

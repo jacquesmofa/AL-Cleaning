@@ -1,7 +1,7 @@
 # AL Cleaning Pro - Official Website & Booking Engine
 
 ## 1. Project Description
-A modern, high-converting multi-page bilingual (EN/FR) React SPA and online booking application for AL Cleaning Pro, a premier family-owned cleaning service in Brampton and the Greater Toronto Area (GTA). The site drives phone calls (416-817-4825) and online booking quotes with an automated dynamic price estimator and integrated payment checkout.
+A modern, high-converting multi-page bilingual (EN/FR) React SPA for AL Cleaning Pro, a premier family-owned cleaning service in Brampton and the Greater Toronto Area (GTA). The site uses a **quote-first** flow: visitors browse the full service catalog, submit job details, and choose their preferred contact channel (WhatsApp, SMS, or Email) to receive a personalized quote — no upfront pricing or instant booking.
 
 **Core Slogan:** "Spotless home cleaning in Brampton & the GTA. Family-owned cleaning services you can trust."
 **Domain:** https://Alcleaningpro.ca
@@ -15,7 +15,7 @@ A modern, high-converting multi-page bilingual (EN/FR) React SPA and online book
 - `/reviews` - Reviews & Testimonials (with leave-a-review modal)
 - `/areas` - Service Areas Hub
 - `/areas/:cityId` - City Detail Pages (brampton, mississauga, toronto, vaughan, caledon, milton, georgetown)
-- `/quote` - Interactive Quote & Booking Page
+- `/quote` - Quote Request Page (multi-channel: WhatsApp / SMS / Email)
 - `/contact` - Contact Us Page
 - `*` - 404 Not Found
 
@@ -30,8 +30,8 @@ A modern, high-converting multi-page bilingual (EN/FR) React SPA and online book
 - [x] About page with story, core values, and owner commitment
 - [x] Reviews page with filtering by service type + leave-a-review modal
 - [x] Areas Hub + 7 individual city detail pages with neighborhoods and maps
-- [x] Interactive quote form with dynamic price estimator
-- [x] Checkout modal with Interac e-Transfer instructions
+- [x] Multi-channel quote request form (WhatsApp / SMS / Email dispatch with pre-filled job details)
+- [x] Full service catalog with no upfront pricing (quote-first approach)
 - [x] Contact form with server-side submission
 - [x] Footer with quick links, services list, contact info
 - [x] Google Maps embeds for all location pages
@@ -39,11 +39,10 @@ A modern, high-converting multi-page bilingual (EN/FR) React SPA and online book
 - [x] SEO meta tags
 
 ## 4. Data Model Design
-No database required initially. Forms submit to Readdy Form API. Stripe handles payments.
+No database required. The quote form builds a pre-filled message and opens the client's chosen channel (WhatsApp / SMS / Email) — no server, no form backend, works on any static host.
 
 ## 5. Backend / Third-party Integration Plan
-- **Stripe**: Payment processing (Credit Card, Apple Pay, Google Pay) - requires Supabase + Stripe connection
-- **No Supabase needed** for initial version (forms submit via Readdy Form API, Interac e-Transfer for immediate payments)
+- **None required** for the quote-first flow (deep links to wa.me / sms: / mailto:).
 
 ## 6. Development Phase Plan
 
@@ -52,15 +51,15 @@ No database required initially. Forms submit to Readdy Form API. Stripe handles 
 - Status: ✅ Complete
 
 ### Phase 2: Bilingual Support & Quote Engine
-- Goal: EN/FR language switcher, dynamic quote form with price estimator, checkout modal
+- Goal: EN/FR language switcher, multi-channel quote request form (WhatsApp / SMS / Email)
 - Status: ✅ Complete
 
 ### Phase 3: Multi-Page Architecture
 - Goal: Transform single-page into full multi-page SPA with dedicated routes for all sections
 - Status: ✅ Complete
 
-### Phase 4: Stripe Payment Integration
-- Goal: Enable online card payment for bookings
+### Phase 4: Payment Integration (Optional, Post-Quote)
+- Goal: Enable online deposit/payment after a quote is agreed (only if desired later)
 - Status: Not started (requires Supabase + Stripe)
 
 ### Phase 5: SEO & Schema.org Enhancement
