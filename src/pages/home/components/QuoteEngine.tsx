@@ -8,6 +8,7 @@ import {
   frequencyOptions,
   contactInfo,
 } from '@/mocks/home';
+import { trackEvent } from '@/utils/analytics';
 
 export default function QuoteEngine() {
   const { t } = useTranslation();
@@ -75,9 +76,19 @@ export default function QuoteEngine() {
     return Object.keys(errors).length === 0;
   };
 
-  const handleChannelClick = (e: MouseEvent<HTMLAnchorElement>) => {
-    if (!validate()) e.preventDefault();
-  };
+  const handleChannelClick =
+    (channel: 'whatsapp' | 'sms' | 'email') => (e: MouseEvent<HTMLAnchorElement>) => {
+      if (!validate()) {
+        e.preventDefault();
+        return;
+      }
+      trackEvent('quote_request', {
+        channel,
+        service: serviceLabel || 'unspecified',
+        bedrooms: bedroomLabel || 'unspecified',
+        bathrooms: bathroomLabel || 'unspecified',
+      });
+    };
 
   const handleServiceSelect = (value: string) => {
     setService(service === value ? '' : value);
@@ -349,7 +360,7 @@ export default function QuoteEngine() {
               href={whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={handleChannelClick}
+              onClick={handleChannelClick('whatsapp')}
               className="flex items-center gap-4 w-full px-5 py-4 rounded-xl bg-primary-500 text-background-50 hover:bg-primary-600 transition-all group"
             >
               <span className="w-11 h-11 flex items-center justify-center rounded-full bg-background-50/20 flex-shrink-0">
@@ -365,7 +376,7 @@ export default function QuoteEngine() {
             {/* SMS */}
             <a
               href={smsHref}
-              onClick={handleChannelClick}
+              onClick={handleChannelClick('sms')}
               className="flex items-center gap-4 w-full px-5 py-4 rounded-xl bg-secondary-500 text-background-50 hover:bg-secondary-600 transition-all group"
             >
               <span className="w-11 h-11 flex items-center justify-center rounded-full bg-background-50/20 flex-shrink-0">
@@ -381,7 +392,7 @@ export default function QuoteEngine() {
             {/* Email */}
             <a
               href={emailHref}
-              onClick={handleChannelClick}
+              onClick={handleChannelClick('email')}
               className="flex items-center gap-4 w-full px-5 py-4 rounded-xl bg-accent-500 text-foreground-950 hover:bg-accent-400 transition-all group"
             >
               <span className="w-11 h-11 flex items-center justify-center rounded-full bg-background-50/25 flex-shrink-0">
@@ -400,6 +411,7 @@ export default function QuoteEngine() {
             <p className="text-xs text-foreground-500 mb-2">{t('contactQuickTitle')}</p>
             <a
               href={`tel:${contactInfo.phoneRaw}`}
+              onClick={() => trackEvent('phone_call_click', { location: 'quote_engine' })}
               className="inline-flex items-center gap-2 text-primary-600 font-semibold text-sm hover:text-primary-700 transition-colors whitespace-nowrap"
             >
               <i className="ri-phone-fill"></i>
