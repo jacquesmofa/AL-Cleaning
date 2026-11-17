@@ -1,0 +1,30 @@
+{
+  "en": {
+    "ourWorkLabel": "Our Recent Work",
+    "ourWorkTitle": "See the AL Cleaning Pro Difference",
+    "ourWorkSubtext": "Browse through some of our recent cleaning projects across the GTA. Real results, real transformations — from cluttered to immaculate.",
+    "ourWorkViewMore": "View Full Gallery",
+    "ourWorkBefore": "Before",
+    "ourWorkAfter": "After",
+    "ourWorkCategoryResidential": "Residential Clean",
+    "ourWorkCategoryDeep": "Deep Clean",
+    "ourWorkCategoryMove": "Move Out Clean",
+    "ourWorkCategoryOffice": "Office Clean",
+    "ourWorkCategoryAirbnb": "Airbnb Turnover",
+    "ourWorkCategoryConstruction": "Post-Construction"
+  },
+  "fr": {
+    "ourWorkLabel": "Nos Réalisations Récentes",
+    "ourWorkTitle": "Découvrez la Différence AL Cleaning Pro",
+    "ourWorkSubtext": "Parcourez quelques-uns de nos projets de nettoyage récents à travers le GTA. De vrais résultats, de vraies transformations — du désordre à l'impeccable.",
+    "ourWorkViewMore": "Voir la Galerie Complète",
+    "ourWorkBefore": "Avant",
+    "ourWorkAfter": "Après",
+    "ourWorkCategoryResidential": "Nettoyage Résidentiel",
+    "ourWorkCategoryDeep": "Nettoyage en Profondeur",
+    "ourWorkCategoryMove": "Nettoyage Déménagement",
+    "ourWorkCategoryOffice": "Nettoyage de Bureau",
+    "ourWorkCategoryAirbnb": "Rotation Airbnb",
+    "ourWorkCategoryConstruction": "Après-Construction"
+  }
+}

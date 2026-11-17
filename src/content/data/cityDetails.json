@@ -1,0 +1,176 @@
+{
+  "brampton": {
+    "titleEn": "Top-Rated Home Cleaning Services in Brampton, ON",
+    "titleFr": "Services de Nettoyage de Confiance à Brampton, ON",
+    "descKey": "areaCityDescBrampton",
+    "neighborhoodsEn": [
+      "Downtown Brampton",
+      "Bramalea",
+      "Heart Lake",
+      "Mount Pleasant",
+      "Springdale",
+      "Fletcher's Creek",
+      "Castlemore",
+      "Gore Meadows"
+    ],
+    "neighborhoodsFr": [
+      "Centre-ville de Brampton",
+      "Bramalea",
+      "Heart Lake",
+      "Mount Pleasant",
+      "Springdale",
+      "Fletcher's Creek",
+      "Castlemore",
+      "Gore Meadows"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11548.752105773754!2d-79.7624177!3d43.7315479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b1592e22fbb5b%3A0x7cbcb9f9bc4b27b5!2sBrampton%2C%20ON!5e0!3m2!1sen!2sca!4v1690000000000!5m2!1sen!2sca"
+  },
+  "mississauga": {
+    "titleEn": "Professional Cleaning Services in Mississauga, ON",
+    "titleFr": "Services de Nettoyage Professionnels à Mississauga, ON",
+    "descKey": "areaCityDescMississauga",
+    "neighborhoodsEn": [
+      "Square One",
+      "Port Credit",
+      "Streetsville",
+      "Erin Mills",
+      "Meadowvale",
+      "Clarkson",
+      "Cooksville",
+      "Malton"
+    ],
+    "neighborhoodsFr": [
+      "Square One",
+      "Port Credit",
+      "Streetsville",
+      "Erin Mills",
+      "Meadowvale",
+      "Clarkson",
+      "Cooksville",
+      "Malton"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11552.314673245994!2d-79.6442498!3d43.5890452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b469fe76b05c7%3A0xc9f5cac8b8b5c157!2sMississauga%2C%20ON!5e0!3m2!1sen!2sca!4v1690000000000!5m2!1sen!2sca"
+  },
+  "toronto": {
+    "titleEn": "Reliable Cleaning Services in Toronto & the GTA",
+    "titleFr": "Services de Nettoyage Fiables à Toronto et GTA",
+    "descKey": "areaCityDescToronto",
+    "neighborhoodsEn": [
+      "Downtown Core",
+      "Etobicoke",
+      "North York",
+      "Scarborough",
+      "East York",
+      "York",
+      "Midtown",
+      "Forest Hill"
+    ],
+    "neighborhoodsFr": [
+      "Centre-ville",
+      "Etobicoke",
+      "North York",
+      "Scarborough",
+      "East York",
+      "York",
+      "Midtown",
+      "Forest Hill"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11545.993831408508!2d-79.3839347!3d43.653226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON!5e0!3m2!1sen!2sca!4v1690000000000!5m2!1sen!2sca"
+  },
+  "vaughan": {
+    "titleEn": "Premium Home Cleaning in Vaughan, ON",
+    "titleFr": "Nettoyage Domiciliaire Premium à Vaughan, ON",
+    "descKey": "areaCityDescVaughan",
+    "neighborhoodsEn": [
+      "Woodbridge",
+      "Maple",
+      "Kleinburg",
+      "Concord",
+      "Thornhill",
+      "Vellore",
+      "Sonoma Heights"
+    ],
+    "neighborhoodsFr": [
+      "Woodbridge",
+      "Maple",
+      "Kleinburg",
+      "Concord",
+      "Thornhill",
+      "Vellore",
+      "Sonoma Heights"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11530.894797195765!2d-79.5408399!3d43.8363084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2f0543d1a44f%3A0x5045660a3da2f553!2sVaughan%2C%20ON!5e0!3m2!1sen!2sca!4v1690000000000!5m2!1sen!2sca"
+  },
+  "caledon": {
+    "titleEn": "Estate & Residential Cleaning in Caledon, ON",
+    "titleFr": "Nettoyage Résidentiel et de Propriétés à Caledon, ON",
+    "descKey": "areaCityDescCaledon",
+    "neighborhoodsEn": [
+      "Bolton",
+      "Palgrave",
+      "Caledon East",
+      "Caledon Village",
+      "Inglewood",
+      "Mono Mills",
+      "Alton"
+    ],
+    "neighborhoodsFr": [
+      "Bolton",
+      "Palgrave",
+      "Caledon East",
+      "Caledon Village",
+      "Inglewood",
+      "Mono Mills",
+      "Alton"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11520.80744155983!2d-79.8772492!3d43.8561409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b1536e66e85dd%3A0xb9c4e740e2ce16c3!2sCaledon%2C%20ON!5e0!3m2!1sen!2sca!4v1690000000000!5m2!1sen!2sca"
+  },
+  "milton": {
+    "titleEn": "Fast & Reliable Cleaning in Milton, ON",
+    "titleFr": "Nettoyage Rapide et Fiable à Milton, ON",
+    "descKey": "areaCityDescMilton",
+    "neighborhoodsEn": [
+      "Milton Heights",
+      "Campbellville",
+      "Old Milton",
+      "Dempsey",
+      "Timberlea",
+      "Willmott",
+      "Coates"
+    ],
+    "neighborhoodsFr": [
+      "Milton Heights",
+      "Campbellville",
+      "Old Milton",
+      "Dempsey",
+      "Timberlea",
+      "Willmott",
+      "Coates"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11569.394050228814!2d-79.8923511!3d43.5183004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b6bb20dd04a33%3A0x5045660a3da2f273!2sMilton%2C%20ON!5e0!3m2!1sen!2sca!4v1690000000000!5m2!1sen!2sca"
+  },
+  "georgetown": {
+    "titleEn": "Trusted Cleaning Services in Georgetown & Halton Hills",
+    "titleFr": "Services de Nettoyage de Confiance à Georgetown et Halton Hills",
+    "descKey": "areaCityDescGeorgetown",
+    "neighborhoodsEn": [
+      "Georgetown South",
+      "Georgetown North",
+      "Glen Williams",
+      "Acton",
+      "Norval",
+      "Silver Creek",
+      "Limehouse"
+    ],
+    "neighborhoodsFr": [
+      "Georgetown Sud",
+      "Georgetown Nord",
+      "Glen Williams",
+      "Acton",
+      "Norval",
+      "Silver Creek",
+      "Limehouse"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11538.013488699711!2d-79.9304464!3d43.6502228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b74a8b238b34f%3A0x5045660a3da2f233!2sGeorgetown%2C%20ON!5e0!3m2!1sen!2sca!4v1690000000000!5m2!1sen!2sca"
+  }
+}

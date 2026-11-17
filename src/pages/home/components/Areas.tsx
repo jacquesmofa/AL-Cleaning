@@ -1,5 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { serviceAreas } from '@/mocks/home';
+import copy from '../../../content/pages/home-areas.json';
+// Text, images and links: src/content/pages/home-areas.json (editable in the website editors).
 
 export default function Areas() {
   const { t } = useTranslation();
@@ -43,8 +45,8 @@ export default function Areas() {
         {/* Google Map Embed */}
         <div className="w-full rounded-xl overflow-hidden border border-background-200 h-64 md:h-80">
           <iframe
-            title="AL Cleaning Pro Service Areas in the GTA"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11548.752105773754!2d-79.7624177!3d43.7315479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b1592e22fbb5b%3A0x7cbcb9f9bc4b27b5!2sBrampton%2C%20ON!5e0!3m2!1sen!2sca!4v1690000000000!5m2!1sen!2sca"
+            title={copy.googleMapEmbed.title}
+            src={copy.googleMapEmbed.embedUrl}
             width="100%"
             height="100%"
             style={{ border: 0 }}

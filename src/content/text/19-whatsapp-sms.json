@@ -1,0 +1,16 @@
+{
+  "en": {
+    "whatsappChat": "Chat on WhatsApp",
+    "topbarWhatsApp": "WhatsApp",
+    "smsBtn": "Text Us",
+    "smsBody": "Hi AL Cleaning Pro! I'd like to request a free quote for a cleaning service.",
+    "contactQuickTitle": "Fastest Ways to Reach Us"
+  },
+  "fr": {
+    "whatsappChat": "Discuter sur WhatsApp",
+    "topbarWhatsApp": "WhatsApp",
+    "smsBtn": "Envoyer un SMS",
+    "smsBody": "Bonjour AL Cleaning Pro ! J'aimerais demander un devis gratuit pour un service de nettoyage.",
+    "contactQuickTitle": "Les Moyens les Plus Rapides de Nous Joindre"
+  }
+}

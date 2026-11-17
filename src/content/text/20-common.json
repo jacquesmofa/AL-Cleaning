@@ -1,0 +1,20 @@
+{
+  "en": {
+    "langEnglish": "English",
+    "langFrench": "Français",
+    "switchLang": "Switch to French",
+    "loading": "Loading...",
+    "pageNotFound": "Page Not Found",
+    "pageNotFoundDesc": "The page you are looking for does not exist.",
+    "backToHome": "Back to Home"
+  },
+  "fr": {
+    "langEnglish": "English",
+    "langFrench": "Français",
+    "switchLang": "Passer en Anglais",
+    "loading": "Chargement...",
+    "pageNotFound": "Page Introuvable",
+    "pageNotFoundDesc": "La page que vous cherchez n'existe pas.",
+    "backToHome": "Retour à l'Accueil"
+  }
+}

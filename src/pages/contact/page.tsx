@@ -2,6 +2,8 @@ import { useState, useRef, type FormEvent } from 'react';
 import { useTranslation } from 'react-i18next';
 import Layout from '@/components/feature/Layout';
 import { contactInfo } from '@/mocks/home';
+import copy from '../../content/pages/contact.json';
+// Text, images and links: src/content/pages/contact.json (editable in the website editors).
 
 const CONTACT_FORM_URL = 'https://readdy.ai/api/form/d9j6tmmc26n1c7c5q2h0';
 
@@ -120,7 +122,7 @@ export default function Contact() {
                           required
                           value={name}
                           onChange={(e) => setName(e.target.value)}
-                          placeholder="John Smith"
+                          placeholder={copy.form.placeholder}
                           className="w-full px-4 py-2.5 rounded-lg border border-background-200 bg-background-50 text-sm text-foreground-900 placeholder:text-foreground-400 focus:outline-none focus:border-primary-300 focus:ring-2 focus:ring-primary-100 transition-all"
                         />
                       </div>
@@ -135,7 +137,7 @@ export default function Contact() {
                           required
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
-                          placeholder="john@example.com"
+                          placeholder={copy.form.placeholder2}
                           className="w-full px-4 py-2.5 rounded-lg border border-background-200 bg-background-50 text-sm text-foreground-900 placeholder:text-foreground-400 focus:outline-none focus:border-primary-300 focus:ring-2 focus:ring-primary-100 transition-all"
                         />
                       </div>
@@ -150,7 +152,7 @@ export default function Contact() {
                         name="phone"
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
-                        placeholder="(416) 555-0123"
+                        placeholder={copy.form.placeholder3}
                         className="w-full px-4 py-2.5 rounded-lg border border-background-200 bg-background-50 text-sm text-foreground-900 placeholder:text-foreground-400 focus:outline-none focus:border-primary-300 focus:ring-2 focus:ring-primary-100 transition-all"
                       />
                     </div>
@@ -164,7 +166,7 @@ export default function Contact() {
                         name="subject"
                         value={subject}
                         onChange={(e) => setSubject(e.target.value)}
-                        placeholder="e.g. Quote request"
+                        placeholder={copy.form.placeholder4}
                         className="w-full px-4 py-2.5 rounded-lg border border-background-200 bg-background-50 text-sm text-foreground-900 placeholder:text-foreground-400 focus:outline-none focus:border-primary-300 focus:ring-2 focus:ring-primary-100 transition-all"
                       />
                     </div>
@@ -180,7 +182,7 @@ export default function Contact() {
                         onChange={(e) => setMessage(e.target.value)}
                         rows={5}
                         maxLength={500}
-                        placeholder="Tell us how we can help..."
+                        placeholder={copy.form.placeholder5}
                         className="w-full px-4 py-2.5 rounded-lg border border-background-200 bg-background-50 text-sm text-foreground-900 placeholder:text-foreground-400 focus:outline-none focus:border-primary-300 focus:ring-2 focus:ring-primary-100 transition-all resize-none"
                       ></textarea>
                     </div>
@@ -281,8 +283,8 @@ export default function Contact() {
                 </h3>
                 <div className="w-full h-48 rounded-lg overflow-hidden">
                   <iframe
-                    title="AL Cleaning Pro Location"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11548.752105773754!2d-79.7624177!3d43.7315479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b1592e22fbb5b%3A0x7cbcb9f9bc4b27b5!2sBrampton%2C%20ON!5e0!3m2!1sen!2sca!4v1690000000000!5m2!1sen!2sca"
+                    title={copy.map.title}
+                    src={copy.map.embedUrl}
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}

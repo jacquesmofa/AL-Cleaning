@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "serviceId": "residential",
+      "base": 120
+    },
+    {
+      "serviceId": "deep-clean",
+      "base": 200
+    },
+    {
+      "serviceId": "move",
+      "base": 220
+    },
+    {
+      "serviceId": "office",
+      "base": 180
+    },
+    {
+      "serviceId": "airbnb",
+      "base": 130
+    },
+    {
+      "serviceId": "post-construction",
+      "base": 250
+    }
+  ]
+}

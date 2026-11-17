@@ -1,0 +1,30 @@
+{
+  "en": {
+    "serviceDetailBack": "Back to All Services",
+    "serviceDetailIncludes": "What's Included",
+    "serviceDetailPricing": "Pricing",
+    "serviceDetailProcess": "Our Process",
+    "serviceDetailFaq": "Frequently Asked Questions",
+    "serviceDetailBookNow": "Request a Quote",
+    "serviceDetailStartingFrom": "Starting from",
+    "serviceDetailCAD": "CAD",
+    "serviceDetailLearnMore": "Learn More",
+    "serviceDetailOverview": "Overview",
+    "serviceDetailFreeQuote": "Free, no-obligation quote",
+    "serviceDetailQuoteNote": "Every home and business is different, so we quote each job individually. Share a few details about your space and we will send you a fair, personalized price — usually within 24 hours. No obligation, no pressure."
+  },
+  "fr": {
+    "serviceDetailBack": "Retour aux Services",
+    "serviceDetailIncludes": "Ce Qui Est Inclus",
+    "serviceDetailPricing": "Tarification",
+    "serviceDetailProcess": "Notre Processus",
+    "serviceDetailFaq": "Questions Fréquentes",
+    "serviceDetailBookNow": "Demander un Devis",
+    "serviceDetailStartingFrom": "À partir de",
+    "serviceDetailCAD": "CAD",
+    "serviceDetailLearnMore": "En Savoir Plus",
+    "serviceDetailOverview": "Aperçu",
+    "serviceDetailFreeQuote": "Devis gratuit, sans obligation",
+    "serviceDetailQuoteNote": "Chaque maison et entreprise est différente, donc nous établissons chaque devis individuellement. Partagez quelques détails sur votre espace et nous vous enverrons un prix juste et personnalisé — généralement sous 24 heures. Sans obligation, sans pression."
+  }
+}

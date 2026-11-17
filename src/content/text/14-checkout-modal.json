@@ -1,0 +1,38 @@
+{
+  "en": {
+    "checkoutTitle": "Book & Pay Online",
+    "checkoutSubtext": "Secure your booking instantly. Choose your preferred payment method below.",
+    "checkoutDeposit": "Pay Deposit ($50 CAD)",
+    "checkoutFullAmount": "Pay Full Amount",
+    "checkoutStripeTab": "Credit Card / Apple Pay",
+    "checkoutInteracTab": "Interac e-Transfer",
+    "checkoutStripeDesc": "Pay securely with Visa, Mastercard, AMEX, Apple Pay, or Google Pay.",
+    "checkoutInteracDesc": "Send your payment via Interac e-Transfer using the details below.",
+    "checkoutInteracEmail": "Send e-Transfer to",
+    "checkoutInteracMemo": "Memo / Reference",
+    "checkoutInteracNote": "Please include your booking reference ID in the e-Transfer memo. Your appointment will be confirmed once we receive the payment.",
+    "checkoutPayNow": "Pay Now",
+    "checkoutProcessing": "Processing...",
+    "checkoutAmount": "Amount",
+    "checkoutBookingRef": "Booking Reference",
+    "checkoutCancel": "Cancel"
+  },
+  "fr": {
+    "checkoutTitle": "Réserver et Payer en Ligne",
+    "checkoutSubtext": "Sécurisez votre réservation instantanément. Choisissez votre mode de paiement ci-dessous.",
+    "checkoutDeposit": "Payer l'Acompte (50 $ CAD)",
+    "checkoutFullAmount": "Payer le Montant Total",
+    "checkoutStripeTab": "Carte de Crédit / Apple Pay",
+    "checkoutInteracTab": "Virement Interac",
+    "checkoutStripeDesc": "Payez en toute sécurité avec Visa, Mastercard, AMEX, Apple Pay ou Google Pay.",
+    "checkoutInteracDesc": "Envoyez votre paiement par virement Interac en utilisant les informations ci-dessous.",
+    "checkoutInteracEmail": "Envoyer le virement à",
+    "checkoutInteracMemo": "Note / Référence",
+    "checkoutInteracNote": "Veuillez inclure votre référence de réservation dans la note du virement Interac. Votre rendez-vous sera confirmé dès réception du paiement.",
+    "checkoutPayNow": "Payer Maintenant",
+    "checkoutProcessing": "Traitement en cours...",
+    "checkoutAmount": "Montant",
+    "checkoutBookingRef": "Référence de Réservation",
+    "checkoutCancel": "Annuler"
+  }
+}

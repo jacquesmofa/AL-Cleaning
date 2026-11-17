@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "value": "one-time",
+      "labelKey": "quoteOneTime",
+      "discount": 0
+    },
+    {
+      "value": "weekly",
+      "labelKey": "quoteWeekly",
+      "discount": 15
+    },
+    {
+      "value": "bi-weekly",
+      "labelKey": "quoteBiWeekly",
+      "discount": 10
+    },
+    {
+      "value": "monthly",
+      "labelKey": "quoteMonthly",
+      "discount": 5
+    }
+  ]
+}

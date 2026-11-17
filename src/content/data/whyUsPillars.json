@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "icon": "ri-user-heart-line",
+      "titleKey": "whyFamilyTitle",
+      "descKey": "whyFamilyDesc"
+    },
+    {
+      "icon": "ri-shield-check-line",
+      "titleKey": "whyReliableTitle",
+      "descKey": "whyReliableDesc"
+    },
+    {
+      "icon": "ri-money-dollar-circle-line",
+      "titleKey": "whyPricingTitle",
+      "descKey": "whyPricingDesc"
+    },
+    {
+      "icon": "ri-thumb-up-line",
+      "titleKey": "whySatisfactionTitle",
+      "descKey": "whySatisfactionDesc"
+    },
+    {
+      "icon": "ri-calendar-check-line",
+      "titleKey": "whyFlexibleTitle",
+      "descKey": "whyFlexibleDesc"
+    },
+    {
+      "icon": "ri-leaf-line",
+      "titleKey": "whyProTitle",
+      "descKey": "whyProDesc"
+    }
+  ]
+}

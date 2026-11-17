@@ -1,0 +1,9 @@
+{
+  "hero": {
+    "image": "https://readdy.ai/api/search-image?query=Warm%20family-owned%20cleaning%20business%20team%20standing%20together%20in%20a%20bright%20modern%20home%20interior%2C%20smiling%20friendly%20professional%20cleaners%20in%20uniform%2C%20natural%20light%2C%20genuine%20authentic%20atmosphere%2C%20editorial%20portrait%20photography%2C%20soft%20warm%20tones%2C%20clean%20aesthetic%2C%20community%20trust%20feeling&width=1600&height=800&seq=about-hero-v2&orientation=landscape",
+    "imageAlt": "AL Cleaning Pro family team"
+  },
+  "cta": {
+    "phoneLink": "tel:+14168174825"
+  }
+}

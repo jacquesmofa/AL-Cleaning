@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { contactInfo, services, socialLinks } from '@/mocks/home';
+import copy from '../../../content/pages/home-footer.json';
+// Text, images and links: src/content/pages/home-footer.json (editable in the website editors).
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -56,9 +58,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-            <Link to="/" className="font-heading text-xl font-bold">
-              AL<span className="text-primary-400">Cleaning</span>Pro
-            </Link>
+            <Link to="/" className="font-heading text-xl font-bold">{copy.brand.text}<span className="text-primary-400">{copy.brand.label}</span>{copy.brand.text2}</Link>
             <p className="text-foreground-400 text-sm mt-3 leading-relaxed">
               {t('footerBrandDesc')}
             </p>
@@ -136,9 +136,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href={contactInfo.website} className="flex items-center gap-2 text-foreground-400 text-sm hover:text-accent-400 transition-colors" target="_blank" rel="noopener noreferrer">
-                  <i className="ri-global-line text-primary-400"></i>
-                  Alcleaningpro.ca
-                </a>
+                  <i className="ri-global-line text-primary-400"></i>{copy.contact.link}</a>
               </li>
               <li className="flex items-start gap-2 text-foreground-400 text-sm">
                 <i className="ri-map-pin-line text-primary-400 mt-0.5"></i>

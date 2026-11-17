@@ -1,15 +1,13 @@
 import { useTranslation } from 'react-i18next';
 import KoalendarBooking from '@/components/feature/KoalendarBooking';
 import { contactInfo } from '@/mocks/home';
+import copy from '../../../content/pages/quote-bookingsection.json';
+// Text, images and links: src/content/pages/quote-bookingsection.json (editable in the website editors).
 
 export default function BookingSection() {
   const { t } = useTranslation();
 
-  const steps = [
-    { titleKey: 'bookingStep1Title', descKey: 'bookingStep1Desc' },
-    { titleKey: 'bookingStep2Title', descKey: 'bookingStep2Desc' },
-    { titleKey: 'bookingStep3Title', descKey: 'bookingStep3Desc' },
-  ];
+  const steps = copy.steps;
 
   return (
     <section id="book" className="py-16 md:py-20 bg-background-50">

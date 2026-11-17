@@ -8,6 +8,8 @@ import WhyUs from './components/WhyUs';
 import OurWork from './components/OurWork';
 import Footer from './components/Footer';
 import WhatsAppFloat from '@/components/feature/WhatsAppFloat';
+import copy from '../../content/pages/home.json';
+// Text, images and links: src/content/pages/home.json (editable in the website editors).
 
 export default function Home() {
   const { t, i18n } = useTranslation();
@@ -91,7 +93,7 @@ export default function Home() {
                 {[...Array(5)].map((_, i) => (
                   <i key={i} className="ri-star-fill"></i>
                 ))}
-                <span className="text-foreground-600 text-sm ml-2">5.0 — 500+ {t('reviewsLabel')}</span>
+                <span className="text-foreground-600 text-sm ml-2">{copy.reviewsPreview.label}{t('reviewsLabel')}</span>
               </div>
             </div>
 
@@ -205,8 +207,8 @@ export default function Home() {
                 </div>
                 <div className="lg:w-7/12">
                   <img
-                    src="https://res.cloudinary.com/jhqbtz7k/image/upload/v1785113819/AL_Cleaning_Flyer_we1lor.jpg"
-                    alt="AL Cleaning Pro Flyer"
+                    src={copy.flyerPromotionalSection.image}
+                    alt={copy.flyerPromotionalSection.imageAlt}
                     className="w-full h-64 lg:h-[420px] object-cover object-top"
                   />
                 </div>

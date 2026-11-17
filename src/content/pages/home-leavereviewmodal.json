@@ -1,0 +1,19 @@
+{
+  "name": {
+    "placeholder": "Enter your name"
+  },
+  "location": {
+    "placeholder": "e.g. Brampton, ON"
+  },
+  "reviewText": {
+    "placeholder": "Tell us about your experience...",
+    "text": "Maximum 500 characters"
+  },
+  "stars": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

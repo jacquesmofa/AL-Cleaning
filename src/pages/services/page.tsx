@@ -1,25 +1,15 @@
+import servicePictures from '../../content/data/servicePictures.json';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { services } from '@/mocks/home';
 import Layout from '@/components/feature/Layout';
+import copy from '../../content/pages/services.json';
+// Text, images and links: src/content/pages/services.json (editable in the website editors).
 
 type FilterTab = 'all' | 'residential' | 'commercial' | 'specialty';
 
-const serviceImages: Record<string, string> = {
-  residential:
-    'https://readdy.ai/api/search-image?query=Professional%20cleaner%20vacuuming%20and%20dusting%20in%20a%20bright%20sunlit%20modern%20living%20room%20with%20beige%20sofa%20and%20wooden%20floors%2C%20warm%20natural%20daylight%2C%20clean%20minimal%20aesthetic%2C%20soft%20neutral%20color%20palette%2C%20editorial%20interior%20photography&width=800&height=600&seq=services-hub-residential-v2&orientation=landscape',
-  'deep-clean':
-    'https://readdy.ai/api/search-image?query=Professional%20cleaner%20scrubbing%20bathroom%20tiles%20and%20grout%20in%20a%20luxurious%20spa-like%20white%20marble%20bathroom%2C%20sparkling%20clean%20surfaces%2C%20soft%20ambient%20lighting%2C%20professional%20cleaning%20tools%2C%20bright%20fresh%20aesthetic%2C%20clean%20minimal%20style&width=800&height=600&seq=services-hub-deep-v2&orientation=landscape',
-  move:
-    'https://readdy.ai/api/search-image?query=Professional%20cleaners%20polishing%20an%20empty%20bright%20modern%20apartment%20with%20large%20windows%20and%20hardwood%20floors%2C%20moving%20boxes%20in%20background%2C%20sparkling%20clean%20surfaces%2C%20warm%20sunlight%2C%20fresh%20start%20vibe%2C%20editorial%20real%20estate%20photography&width=800&height=600&seq=services-hub-move-v2&orientation=landscape',
-  office:
-    'https://readdy.ai/api/search-image?query=Professional%20cleaner%20sanitizing%20modern%20office%20desk%20and%20workstation%20with%20laptop%20and%20monitors%2C%20bright%20open%20workspace%20with%20large%20windows%2C%20clean%20minimal%20corporate%20aesthetic%2C%20warm%20natural%20light%2C%20professional%20commercial%20photography&width=800&height=600&seq=services-hub-office-v2&orientation=landscape',
-  airbnb:
-    'https://readdy.ai/api/search-image?query=Professional%20cleaner%20making%20a%20bed%20with%20fresh%20white%20linens%20and%20folded%20towels%20in%20a%20bright%20cozy%20bedroom%2C%20welcoming%20guest-ready%20space%2C%20warm%20decor%20with%20potted%20plants%2C%20soft%20natural%20lighting%2C%20clean%20hospitality%20aesthetic&width=800&height=600&seq=services-hub-airbnb-v2&orientation=landscape',
-  'post-construction':
-    'https://readdy.ai/api/search-image?query=Professional%20cleaners%20removing%20dust%20and%20debris%20from%20a%20freshly%20renovated%20modern%20kitchen%20with%20new%20white%20cabinets%2C%20industrial%20vacuum%20and%20cleaning%20equipment%2C%20bright%20work%20lighting%2C%20transformation%20from%20construction%20to%20clean&width=800&height=600&seq=services-hub-postcon-v2&orientation=landscape',
-};
+const serviceImages: Record<string, string> = servicePictures.servicesPageCardPictures;
 
 export default function ServicesHub() {
   const { t } = useTranslation();
@@ -126,7 +116,7 @@ export default function ServicesHub() {
           {/* Empty state */}
           {filtered.length === 0 && (
             <div className="text-center py-16">
-              <p className="text-foreground-500 text-base">No services match this filter.</p>
+              <p className="text-foreground-500 text-base">{copy.emptyState.text}</p>
             </div>
           )}
         </div>

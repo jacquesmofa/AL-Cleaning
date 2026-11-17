@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { navLinks, contactInfo, services } from '@/mocks/home';
+import copy from '../../../content/pages/home-navbar.json';
+// Text, images and links: src/content/pages/home-navbar.json (editable in the website editors).
 
 export default function Navbar() {
   const { t, i18n } = useTranslation();
@@ -66,9 +68,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 whitespace-nowrap">
-            <span className="font-heading text-xl md:text-2xl font-bold text-foreground-950">
-              AL<span className="text-primary-500">Cleaning</span>Pro
-            </span>
+            <span className="font-heading text-xl md:text-2xl font-bold text-foreground-950">{copy.logo.label}<span className="text-primary-500">{copy.logo.label2}</span>{copy.logo.label3}</span>
           </Link>
 
           {/* Desktop Nav */}
@@ -189,7 +189,7 @@ export default function Navbar() {
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-background-100 transition-colors"
-            aria-label="Toggle menu"
+            aria-label={copy.mobileMenuToggle.ariaLabel}
           >
             <i className={`text-xl ${mobileOpen ? 'ri-close-line' : 'ri-menu-line'}`}></i>
           </button>

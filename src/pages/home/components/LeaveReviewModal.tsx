@@ -1,5 +1,7 @@
 import { useState, useRef, type FormEvent } from 'react';
 import { useTranslation } from 'react-i18next';
+import copy from '../../../content/pages/home-leavereviewmodal.json';
+// Text, images and links: src/content/pages/home-leavereviewmodal.json (editable in the website editors).
 
 const REVIEW_FORM_URL = 'https://readdy.ai/api/form/d9j6co8hpes2mi34s700';
 
@@ -106,7 +108,7 @@ export default function LeaveReviewModal({ onClose }: LeaveReviewModalProps) {
               <div className="mb-5">
                 <label className="block text-sm font-medium text-foreground-700 mb-2">{t('reviewModalRating')} *</label>
                 <div className="flex items-center gap-1">
-                  {[1, 2, 3, 4, 5].map((star) => (
+                  {copy.stars.map((star) => (
                     <button
                       key={star}
                       type="button"
@@ -136,7 +138,7 @@ export default function LeaveReviewModal({ onClose }: LeaveReviewModalProps) {
                   name="name"
                   type="text"
                   required
-                  placeholder="Enter your name"
+                  placeholder={copy.name.placeholder}
                   className="w-full px-4 py-2.5 rounded-lg border border-background-200 bg-background-50 text-sm text-foreground-900 placeholder:text-foreground-400 focus:outline-none focus:border-primary-300 focus:ring-2 focus:ring-primary-100 transition-all"
                 />
               </div>
@@ -150,7 +152,7 @@ export default function LeaveReviewModal({ onClose }: LeaveReviewModalProps) {
                   id="review-location"
                   name="location"
                   type="text"
-                  placeholder="e.g. Brampton, ON"
+                  placeholder={copy.location.placeholder}
                   className="w-full px-4 py-2.5 rounded-lg border border-background-200 bg-background-50 text-sm text-foreground-900 placeholder:text-foreground-400 focus:outline-none focus:border-primary-300 focus:ring-2 focus:ring-primary-100 transition-all"
                 />
               </div>
@@ -166,10 +168,10 @@ export default function LeaveReviewModal({ onClose }: LeaveReviewModalProps) {
                   required
                   rows={4}
                   maxLength={500}
-                  placeholder="Tell us about your experience..."
+                  placeholder={copy.reviewText.placeholder}
                   className="w-full px-4 py-2.5 rounded-lg border border-background-200 bg-background-50 text-sm text-foreground-900 placeholder:text-foreground-400 focus:outline-none focus:border-primary-300 focus:ring-2 focus:ring-primary-100 transition-all resize-none"
                 ></textarea>
-                <p className="text-xs text-foreground-400 mt-1">Maximum 500 characters</p>
+                <p className="text-xs text-foreground-400 mt-1">{copy.reviewText.text}</p>
               </div>
 
               {/* Honeypot */}

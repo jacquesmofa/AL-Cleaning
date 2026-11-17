@@ -1,0 +1,22 @@
+{
+  "en": {
+    "homeServicesPreviewTitle": "Our Cleaning Services",
+    "homeServicesPreviewLink": "View All Services",
+    "homeReviewsPreviewTitle": "What Our Customers Say",
+    "homeReviewsPreviewLink": "Read All Reviews",
+    "homeAreasPreviewTitle": "Serving the GTA",
+    "homeAreasPreviewLink": "See All Areas",
+    "homeCtaTitle": "Ready for a spotless space?",
+    "homeCtaSubtext": "Get your free, no-obligation quote in under 60 seconds. Same-week bookings available."
+  },
+  "fr": {
+    "homeServicesPreviewTitle": "Nos Services de Nettoyage",
+    "homeServicesPreviewLink": "Voir Tous les Services",
+    "homeReviewsPreviewTitle": "Ce Que Disent Nos Clients",
+    "homeReviewsPreviewLink": "Lire Tous les Avis",
+    "homeAreasPreviewTitle": "Desservant le GTA",
+    "homeAreasPreviewLink": "Voir Toutes les Zones",
+    "homeCtaTitle": "Prêt pour un espace impeccable ?",
+    "homeCtaSubtext": "Obtenez votre devis gratuit sans obligation en moins de 60 secondes. Réservations disponibles la même semaine."
+  }
+}

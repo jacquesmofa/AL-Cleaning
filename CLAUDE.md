@@ -45,5 +45,10 @@ Family-owned home cleaning in Brampton and the GTA (residential, deep, move-in/o
 - The unverified "5.0 / 500 reviews" rating was removed from the structured data in `index.html`. The same claim is still visible on the pages: see `PLACEHOLDERS.md` (ask the client).
 
 ## Editors (17 Nov 2026)
-- Pages CMS (`.pages.yml`) and Sveltia (`public/admin/`, https://alcleaningpro.ca/admin/) edit `src/content/seo.json` only. BOTH GENERATED: `npm run cms:config` + `scripts/cms-registry.mjs`; `npm run cms:check`. Sveltia sign-in: "Sign In Using Access Token" only.
-- Not yet editable: page text (`src/i18n/local/*/translation.ts`, `src/mocks/home.ts`). Next step: move it to `src/content/` (LDII is the model), after the client answers the questions in PLACEHOLDERS.md.
+- Pages CMS (`.pages.yml`) and Sveltia (`public/admin/`, https://alcleaningpro.ca/admin/). BOTH GENERATED: `npm run cms:config` + `scripts/cms-registry.mjs`; `npm run cms:check`. Sveltia sign-in: "Sign In Using Access Token" (or use Pages CMS).
+- Everything is editable (17 Nov 2026):
+  - `src/content/text/NN-<section>.json`: all wording, one file per site section, each with `en` and `fr` (loaded by `src/i18n/local/index.ts`; the old `translation.ts` files are gone).
+  - `src/content/data/*.json`: services, reviews, cities, prices, contact, social links, menu, service pictures (lists are under `items`; `src/mocks/home.ts` only loads them).
+  - `src/content/pages/*.json`: pictures, maps and form texts that were inside components.
+- Before/after: all 21 addresses identical in English; 8 pages checked identical in French.
+- Rule from now on: no new hard-coded text, pictures or links in components. Tools: `scripts/studio-tools/`.

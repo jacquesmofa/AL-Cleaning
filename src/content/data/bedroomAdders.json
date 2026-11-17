@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "value": "studio",
+      "labelKey": "Studio",
+      "adder": 0
+    },
+    {
+      "value": "1",
+      "labelKey": "1",
+      "adder": 20
+    },
+    {
+      "value": "2",
+      "labelKey": "2",
+      "adder": 40
+    },
+    {
+      "value": "3",
+      "labelKey": "3",
+      "adder": 60
+    },
+    {
+      "value": "4",
+      "labelKey": "4",
+      "adder": 80
+    },
+    {
+      "value": "5+",
+      "labelKey": "5+",
+      "adder": 110
+    }
+  ]
+}

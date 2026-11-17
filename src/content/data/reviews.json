@@ -1,0 +1,74 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "OA (Orenda Automation Tech)",
+      "location": "Markham, ON",
+      "rating": 5,
+      "serviceType": "move",
+      "textEn": "We hired AL CLEANING PRO for a move-out cleaning, and they did an outstanding job. The team was punctual, professional, and paid close attention to every detail. The entire house was spotless, including the kitchen appliances, bathrooms, floors, and baseboards. Their work exceeded our expectations, and the property looked ready for the next occupants. Communication was excellent from start to finish, and the pricing was fair for the quality of service provided. We highly recommend AL CLEANING PRO to anyone looking for reliable and high-quality cleaning services. We will definitely use them again in the future.",
+      "textFr": "Nous avons engagé AL CLEANING PRO pour un nettoyage de déménagement, et ils ont fait un travail exceptionnel. L'équipe était ponctuelle, professionnelle et a porté une attention particulière à chaque détail. Toute la maison était impeccable, y compris les électroménagers de la cuisine, les salles de bain, les planchers et les plinthes. Leur travail a dépassé nos attentes, et la propriété était prête pour les prochains occupants. La communication a été excellente du début à la fin, et le prix était juste pour la qualité du service fourni. Nous recommandons vivement AL CLEANING PRO à toute personne recherchant des services de nettoyage fiables et de haute qualité.",
+      "initials": "OA"
+    },
+    {
+      "id": 2,
+      "name": "Sarah M.",
+      "location": "Brampton, ON",
+      "rating": 5,
+      "serviceType": "move",
+      "textEn": "AL Cleaning Pro made our move-in so easy. The house was spotless from top to bottom — floors, cabinets, bathrooms, everything. Highly recommend!",
+      "textFr": "AL Cleaning Pro a rendu notre emménagement si facile. La maison était impeccable de haut en bas — planchers, armoires, salles de bain, tout. Je recommande vivement !",
+      "initials": "SM"
+    },
+    {
+      "id": 3,
+      "name": "James & Priya K.",
+      "location": "Mississauga, ON",
+      "rating": 5,
+      "serviceType": "residential",
+      "textEn": "Friendly, reliable and thorough. They show up on time and never cut corners. We use them bi-weekly and our place always looks amazing.",
+      "textFr": "Amicaux, fiables et minutieux. Ils arrivent à l'heure et ne négligent aucun détail. Nous les utilisons toutes les deux semaines et notre maison est toujours impeccable.",
+      "initials": "JP"
+    },
+    {
+      "id": 4,
+      "name": "Linda T.",
+      "location": "Vaughan, ON",
+      "rating": 5,
+      "serviceType": "deep-clean",
+      "textEn": "I booked a deep clean before hosting family for the holidays. The team was professional, fast, and the price was fair. Will book again.",
+      "textFr": "J'ai réservé un nettoyage en profondeur avant de recevoir la famille pour les fêtes. L'équipe était professionnelle, rapide et le prix était juste. Je réserverai à nouveau.",
+      "initials": "LT"
+    },
+    {
+      "id": 5,
+      "name": "Marcus D.",
+      "location": "Toronto, ON",
+      "rating": 5,
+      "serviceType": "airbnb",
+      "textEn": "Our Airbnb turnover cleans are always perfect. Guests comment on how fresh the space feels. Great communication every time.",
+      "textFr": "Nos nettoyages Airbnb entre invités sont toujours parfaits. Les clients remarquent à quel point l'espace est frais. Excellente communication à chaque fois.",
+      "initials": "MD"
+    },
+    {
+      "id": 6,
+      "name": "Amanda R.",
+      "location": "Caledon, ON",
+      "rating": 5,
+      "serviceType": "post-construction",
+      "textEn": "After our kitchen renovation there was dust everywhere. AL Cleaning Pro handled the post-construction clean beautifully. Worth every penny.",
+      "textFr": "Après la rénovation de notre cuisine, il y avait de la poussière partout. AL Cleaning Pro a magnifiquement géré le nettoyage post-construction. Chaque sou en vaut la peine.",
+      "initials": "AR"
+    },
+    {
+      "id": 7,
+      "name": "David H.",
+      "location": "Milton, ON",
+      "rating": 5,
+      "serviceType": "residential",
+      "textEn": "Family-owned, trustworthy, and they actually care about doing a good job. My go-to cleaners in the GTA.",
+      "textFr": "Entreprise familiale, digne de confiance, et ils se soucient vraiment de bien faire leur travail. Mes nettoyeurs de prédilection dans le GTA.",
+      "initials": "DH"
+    }
+  ]
+}

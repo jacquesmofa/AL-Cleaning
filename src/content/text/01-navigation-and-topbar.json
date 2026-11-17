@@ -1,0 +1,32 @@
+{
+  "en": {
+    "topbarNotice": "Proudly serving Brampton & the GTA | 24/7 Service",
+    "topbarCall": "Call Us: 416-817-4825",
+    "topbarGuaranteed": "Fully Insured & Satisfaction Guaranteed",
+    "navHome": "Home",
+    "navServices": "Services",
+    "navAbout": "Why Us",
+    "navReviews": "Reviews",
+    "navAreas": "Service Areas",
+    "navQuote": "Get a Quote",
+    "navContact": "Contact Us",
+    "navAllServices": "All Services",
+    "btnCallNow": "Call 416-817-4825",
+    "btnGetQuote": "Get a Free Quote"
+  },
+  "fr": {
+    "topbarNotice": "Fièrement au service de Brampton et du GTA | Service 24/7",
+    "topbarCall": "Appelez-nous : 416-817-4825",
+    "topbarGuaranteed": "Entièrement assuré et satisfaction garantie",
+    "navHome": "Accueil",
+    "navServices": "Services",
+    "navAbout": "Pourquoi Nous",
+    "navReviews": "Avis Clients",
+    "navAreas": "Zones de Service",
+    "navQuote": "Obtenir un Devis",
+    "navContact": "Contactez-Nous",
+    "navAllServices": "Tous les Services",
+    "btnCallNow": "Appeler le 416-817-4825",
+    "btnGetQuote": "Obtenir un Devis Gratuit"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "en": {
+    "whyUsLabel": "Why Choose Us",
+    "whyUsTitle": "The clean you deserve, done right.",
+    "whyUsSubtext": "We are not just another cleaning company — we are a family-owned local business that treats every home like our own. Here is what sets us apart.",
+    "whyFamilyTitle": "Family Owned",
+    "whyFamilyDesc": "Local family business built on trust and personal care. We treat every home like our own because our reputation in the community is everything to us.",
+    "whyReliableTitle": "Reliable & Trustworthy",
+    "whyReliableDesc": "Vetted, insured, and consistent staff. Every cleaner is thoroughly background-checked and trained to deliver consistent quality on every visit.",
+    "whyPricingTitle": "Affordable Pricing",
+    "whyPricingDesc": "Fair, transparent rates — zero hidden fees. You will always know exactly what you are paying before we start.",
+    "whySatisfactionTitle": "Satisfaction Guaranteed",
+    "whySatisfactionDesc": "Not happy? We re-clean within 24h for free. That is our promise to every customer — no questions asked.",
+    "whyFlexibleTitle": "Flexible Scheduling",
+    "whyFlexibleDesc": "Evenings, weekends, same-week bookings. We work around your busy life, not the other way around.",
+    "whyProTitle": "Professional Equipment",
+    "whyProDesc": "Eco-friendly products & pro-grade HEPA tools. Safe for your family, pets, and the environment."
+  },
+  "fr": {
+    "whyUsLabel": "Pourquoi Nous Choisir",
+    "whyUsTitle": "Le nettoyage que vous méritez, bien fait.",
+    "whyUsSubtext": "Nous ne sommes pas une simple entreprise de nettoyage — nous sommes une entreprise familiale locale qui traite chaque maison comme la nôtre. Voici ce qui nous distingue.",
+    "whyFamilyTitle": "Entreprise Familiale",
+    "whyFamilyDesc": "Commerce local fondé sur la confiance et l'attention personnelle. Nous traitons chaque maison comme la nôtre, car notre réputation dans la communauté est primordiale.",
+    "whyReliableTitle": "Fiable et Digne de Confiance",
+    "whyReliableDesc": "Personnel vérifié, assuré et ponctuel. Chaque agent d'entretien est rigoureusement sélectionné et formé pour offrir une qualité constante.",
+    "whyPricingTitle": "Prix Abordables",
+    "whyPricingDesc": "Tarifs justes et transparents — aucun frais caché. Vous saurez toujours exactement ce que vous payez avant que nous commencions.",
+    "whySatisfactionTitle": "Satisfaction Garantie",
+    "whySatisfactionDesc": "Pas satisfait ? Nous repassons sous 24h gratuitement. C'est notre promesse à chaque client — sans poser de questions.",
+    "whyFlexibleTitle": "Horaire Flexible",
+    "whyFlexibleDesc": "Soirs, fins de semaine et réservations urgentes. Nous nous adaptons à votre vie bien remplie, pas l'inverse.",
+    "whyProTitle": "Équipement Professionnel",
+    "whyProDesc": "Produits écologiques et outils professionnels HEPA. Sans danger pour votre famille, vos animaux et l'environnement."
+  }
+}

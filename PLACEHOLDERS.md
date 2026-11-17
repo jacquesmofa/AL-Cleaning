@@ -19,4 +19,4 @@ Everything here is unconfirmed or temporary. Ask the client; do not invent.
 - 29 AI placeholder pictures (`readdy.ai/api/search-image`) remain across the site.
 
 ## Editors
-- Google and sharing texts are in `src/content/seo.json`. Page text is still inside the code (`src/i18n/local/*/translation.ts`, `src/mocks/home.ts`): the two editors are the next step.
+- Google and sharing texts are in `src/content/seo.json`. Everything (wording EN/FR, services, reviews, prices, pictures) is editable in both editors since 17 Nov 2026.

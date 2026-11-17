@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "label": "navHome",
+      "href": "/"
+    },
+    {
+      "label": "navServices",
+      "href": "/services"
+    },
+    {
+      "label": "navAbout",
+      "href": "/about"
+    },
+    {
+      "label": "navReviews",
+      "href": "/reviews"
+    },
+    {
+      "label": "navAreas",
+      "href": "/areas"
+    },
+    {
+      "label": "navQuote",
+      "href": "/quote"
+    },
+    {
+      "label": "navContact",
+      "href": "/contact"
+    }
+  ]
+}

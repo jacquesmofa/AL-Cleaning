@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Layout from '@/components/feature/Layout';
+import copy from '../../content/pages/about.json';
+// Text, images and links: src/content/pages/about.json (editable in the website editors).
 
 export default function About() {
   const { t } = useTranslation();
@@ -11,8 +13,8 @@ export default function About() {
       <section className="relative h-[380px] md:h-[460px] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://readdy.ai/api/search-image?query=Warm%20family-owned%20cleaning%20business%20team%20standing%20together%20in%20a%20bright%20modern%20home%20interior%2C%20smiling%20friendly%20professional%20cleaners%20in%20uniform%2C%20natural%20light%2C%20genuine%20authentic%20atmosphere%2C%20editorial%20portrait%20photography%2C%20soft%20warm%20tones%2C%20clean%20aesthetic%2C%20community%20trust%20feeling&width=1600&height=800&seq=about-hero-v2&orientation=landscape"
-            alt="AL Cleaning Pro family team"
+            src={copy.hero.image}
+            alt={copy.hero.imageAlt}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-foreground-950/55 via-foreground-950/30 to-foreground-950/65"></div>
@@ -123,7 +125,7 @@ export default function About() {
               <i className="ri-arrow-right-line"></i>
             </Link>
             <a
-              href="tel:+14168174825"
+              href={copy.cta.phoneLink}
               className="inline-flex items-center gap-2 px-8 py-3.5 border border-background-200 text-background-50 text-base font-semibold rounded-full hover:bg-foreground-800 transition-all whitespace-nowrap"
             >
               <i className="ri-phone-fill"></i>

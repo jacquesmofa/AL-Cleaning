@@ -1,0 +1,10 @@
+{
+  "logo": {
+    "label": "AL",
+    "label2": "Cleaning",
+    "label3": "Pro"
+  },
+  "mobileMenuToggle": {
+    "ariaLabel": "Toggle menu"
+  }
+}

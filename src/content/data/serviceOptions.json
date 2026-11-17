@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "value": "residential",
+      "labelKey": "serviceResidential"
+    },
+    {
+      "value": "deep-clean",
+      "labelKey": "serviceDeep"
+    },
+    {
+      "value": "move",
+      "labelKey": "serviceMove"
+    },
+    {
+      "value": "office",
+      "labelKey": "serviceOffice"
+    },
+    {
+      "value": "airbnb",
+      "labelKey": "serviceAirbnb"
+    },
+    {
+      "value": "post-construction",
+      "labelKey": "servicePostConstruction"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "amountReference": {
+    "label": " CAD"
+  },
+  "interacETransfer": {
+    "label": "armeljoelkokea@yahoo.com"
+  },
+  "stripe": {
+    "label": "AMEX"
+  },
+  "cardFormPlaceholder": {
+    "placeholder": "4242 4242 4242 4242",
+    "placeholder2": "MM/YY",
+    "placeholder3": "123"
+  }
+}

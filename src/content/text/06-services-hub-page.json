@@ -1,0 +1,26 @@
+{
+  "en": {
+    "servicesHubTitle": "Complete Cleaning Services Catalog",
+    "servicesHubSubtext": "Explore our full range of professional cleaning services. Each service is tailored to your specific needs with transparent pricing and our satisfaction guarantee.",
+    "servicesHubFilterAll": "All Services",
+    "servicesHubFilterResidential": "Residential",
+    "servicesHubFilterCommercial": "Commercial",
+    "servicesHubFilterSpecialty": "Specialty",
+    "servicesHubStartingAt": "Starting at",
+    "servicesHubViewDetails": "View Details",
+    "servicesHubCtaBanner": "Not sure which service you need? Get a free consultation and we will help you choose the right package.",
+    "servicesHubCtaBtn": "Get Free Consultation"
+  },
+  "fr": {
+    "servicesHubTitle": "Catalogue Complet de Services de Nettoyage",
+    "servicesHubSubtext": "Explorez notre gamme complète de services de nettoyage professionnels. Chaque service est adapté à vos besoins spécifiques avec des prix transparents et notre garantie de satisfaction.",
+    "servicesHubFilterAll": "Tous les Services",
+    "servicesHubFilterResidential": "Résidentiel",
+    "servicesHubFilterCommercial": "Commercial",
+    "servicesHubFilterSpecialty": "Spécialisé",
+    "servicesHubStartingAt": "À partir de",
+    "servicesHubViewDetails": "Voir Détails",
+    "servicesHubCtaBanner": "Pas sûr du service dont vous avez besoin ? Obtenez une consultation gratuite et nous vous aiderons à choisir.",
+    "servicesHubCtaBtn": "Consultation Gratuite"
+  }
+}

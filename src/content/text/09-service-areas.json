@@ -1,0 +1,40 @@
+{
+  "en": {
+    "areasLabel": "Coverage",
+    "areasTitle": "Service Areas — Proudly Serving the GTA",
+    "areasSubtext": "Based in Brampton, we clean homes and offices across the Greater Toronto Area. Our mobile teams reach every corner of the region.",
+    "areaBrampton": "Brampton",
+    "areaBramptonDesc": "Primary Headquarters",
+    "areaMississauga": "Mississauga",
+    "areaMississaugaDesc": "Full Coverage",
+    "areaToronto": "Toronto",
+    "areaTorontoDesc": "Downtown & GTA",
+    "areaVaughan": "Vaughan",
+    "areaVaughanDesc": "Full Coverage",
+    "areaCaledon": "Caledon",
+    "areaCaledonDesc": "Full Coverage",
+    "areaMilton": "Milton",
+    "areaMiltonDesc": "Full Coverage",
+    "areaGeorgetown": "Georgetown",
+    "areaGeorgetownDesc": "Full Coverage"
+  },
+  "fr": {
+    "areasLabel": "Couverture",
+    "areasTitle": "Zones de Service — Fièrement au Service du GTA",
+    "areasSubtext": "Basés à Brampton, nous nettoyons les maisons et bureaux dans tout le Grand Toronto. Nos équipes mobiles couvrent toute la région.",
+    "areaBrampton": "Brampton",
+    "areaBramptonDesc": "Siège Principal",
+    "areaMississauga": "Mississauga",
+    "areaMississaugaDesc": "Couverture Complète",
+    "areaToronto": "Toronto",
+    "areaTorontoDesc": "Centre-ville et Région",
+    "areaVaughan": "Vaughan",
+    "areaVaughanDesc": "Couverture Complète",
+    "areaCaledon": "Caledon",
+    "areaCaledonDesc": "Couverture Complète",
+    "areaMilton": "Milton",
+    "areaMiltonDesc": "Couverture Complète",
+    "areaGeorgetown": "Georgetown",
+    "areaGeorgetownDesc": "Couverture Complète"
+  }
+}

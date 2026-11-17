@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import pageText from '../../../content/pages/home-checkoutmodal.json';
+// Text, images and links: src/content/pages/home-checkoutmodal.json (editable in the website editors).
 
 interface CheckoutModalProps {
   onClose: () => void;
@@ -41,7 +43,7 @@ export default function CheckoutModal({ onClose, total, referenceId }: CheckoutM
         <div className="bg-background-100 rounded-xl p-4 mb-6">
           <div className="flex justify-between items-center mb-2">
             <span className="text-sm text-foreground-600">{t('checkoutAmount')}</span>
-            <span className="text-lg font-bold text-foreground-950">${amount.toLocaleString()} CAD</span>
+            <span className="text-lg font-bold text-foreground-950">${amount.toLocaleString()}{pageText.amountReference.label}</span>
           </div>
           <div className="flex justify-between items-center">
             <span className="text-sm text-foreground-600">{t('checkoutBookingRef')}</span>
@@ -115,7 +117,7 @@ export default function CheckoutModal({ onClose, total, referenceId }: CheckoutM
               <div>
                 <label className="block text-xs font-medium text-foreground-500 mb-1">{t('checkoutInteracEmail')}</label>
                 <div className="flex items-center gap-2 bg-background-50 rounded-lg px-4 py-2.5 border border-background-200">
-                  <span className="text-sm font-mono font-semibold text-foreground-950">armeljoelkokea@yahoo.com</span>
+                  <span className="text-sm font-mono font-semibold text-foreground-950">{pageText.interacETransfer.label}</span>
                   <button
                     type="button"
                     onClick={() => navigator.clipboard?.writeText('armeljoelkokea@yahoo.com')}
@@ -155,7 +157,7 @@ export default function CheckoutModal({ onClose, total, referenceId }: CheckoutM
               <div className="flex items-center justify-center gap-3 mb-5">
                 <i className="ri-visa-line text-2xl text-foreground-400"></i>
                 <i className="ri-mastercard-line text-2xl text-foreground-400"></i>
-                <span className="text-xs font-semibold text-foreground-400">AMEX</span>
+                <span className="text-xs font-semibold text-foreground-400">{pageText.stripe.label}</span>
                 <i className="ri-apple-line text-2xl text-foreground-400"></i>
                 <i className="ri-google-line text-2xl text-foreground-400"></i>
               </div>
@@ -168,7 +170,7 @@ export default function CheckoutModal({ onClose, total, referenceId }: CheckoutM
                   </label>
                   <input
                     type="text"
-                    placeholder="4242 4242 4242 4242"
+                    placeholder={pageText.cardFormPlaceholder.placeholder}
                     disabled
                     className="w-full px-4 py-2.5 rounded-lg border border-background-200 bg-background-50 text-sm text-foreground-400 placeholder:text-foreground-300 cursor-not-allowed"
                   />
@@ -180,7 +182,7 @@ export default function CheckoutModal({ onClose, total, referenceId }: CheckoutM
                     </label>
                     <input
                       type="text"
-                      placeholder="MM/YY"
+                      placeholder={pageText.cardFormPlaceholder.placeholder2}
                       disabled
                       className="w-full px-4 py-2.5 rounded-lg border border-background-200 bg-background-50 text-sm text-foreground-400 placeholder:text-foreground-300 cursor-not-allowed"
                     />
@@ -191,7 +193,7 @@ export default function CheckoutModal({ onClose, total, referenceId }: CheckoutM
                     </label>
                     <input
                       type="text"
-                      placeholder="123"
+                      placeholder={pageText.cardFormPlaceholder.placeholder3}
                       disabled
                       className="w-full px-4 py-2.5 rounded-lg border border-background-200 bg-background-50 text-sm text-foreground-400 placeholder:text-foreground-300 cursor-not-allowed"
                     />

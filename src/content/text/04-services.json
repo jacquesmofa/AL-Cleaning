@@ -1,0 +1,38 @@
+{
+  "en": {
+    "servicesLabel": "Our Services",
+    "servicesTitle": "Cleaning Services We Offer",
+    "servicesSubtext": "From routine tidy-ups to full deep cleans — we have got it covered. Every service is backed by our satisfaction guarantee.",
+    "serviceResidential": "Residential Cleaning",
+    "serviceResidentialDesc": "Regular home cleaning tailored to your schedule — weekly, bi-weekly, or monthly.",
+    "serviceDeep": "Deep Cleaning",
+    "serviceDeepDesc": "Top-to-bottom detailed clean for baseboards, appliances, grout, and neglected areas.",
+    "serviceMove": "Move In / Move Out",
+    "serviceMoveDesc": "Leave your old place spotless or start fresh in your new home without stress.",
+    "serviceOffice": "Office Cleaning",
+    "serviceOfficeDesc": "Keep your workspace fresh, germ-free, and productive with scheduled cleans.",
+    "serviceAirbnb": "Airbnb & Vacation Rental",
+    "serviceAirbnbDesc": "Fast turnaround cleans between guests, including fresh linens & amenity restocking.",
+    "servicePostConstruction": "Post-Construction",
+    "servicePostConstructionDesc": "Remove fine dust, heavy debris, and residue after renovations or new builds.",
+    "serviceBtn": "Request a Quote"
+  },
+  "fr": {
+    "servicesLabel": "Nos Services",
+    "servicesTitle": "Services de Nettoyage Que Nous Offrons",
+    "servicesSubtext": "Des entretiens réguliers aux nettoyages approfondis complets — tout est couvert. Chaque service est accompagné de notre garantie de satisfaction.",
+    "serviceResidential": "Nettoyage Résidentiel",
+    "serviceResidentialDesc": "Nettoyage résidentiel régulier adapté à votre horaire — hebdomadaire, bihebdomadaire ou mensuel.",
+    "serviceDeep": "Nettoyage en Profondeur",
+    "serviceDeepDesc": "Nettoyage détaillé de haut en bas pour plinthes, électroménagers, joints et zones négligées.",
+    "serviceMove": "Déménagement (Entrée / Sortie)",
+    "serviceMoveDesc": "Laissez votre ancien logement impeccable ou emménagez dans un espace étincelant sans stress.",
+    "serviceOffice": "Nettoyage de Bureaux",
+    "serviceOfficeDesc": "Gardez votre espace de travail propre, sain et productif avec nos nettoyages programmés.",
+    "serviceAirbnb": "Location Court Terme & Airbnb",
+    "serviceAirbnbDesc": "Nettoyage rapide entre deux invités, incluant changement de draps et réapprovisionnement.",
+    "servicePostConstruction": "Après Construction & Rénovation",
+    "servicePostConstructionDesc": "Élimination des poussières fines, débris et résidus après travaux de rénovation ou construction.",
+    "serviceBtn": "Demander un Devis"
+  }
+}

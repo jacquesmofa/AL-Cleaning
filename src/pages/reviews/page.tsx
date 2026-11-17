@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { reviews } from '@/mocks/home';
 import Layout from '@/components/feature/Layout';
 import LeaveReviewModal from '@/pages/home/components/LeaveReviewModal';
+import copy from '../../content/pages/reviews.json';
+// Text, images and links: src/content/pages/reviews.json (editable in the website editors).
 
 type FilterType = 'all' | 'residential' | 'deep-clean' | 'move' | 'office' | 'airbnb' | 'post-construction';
 
@@ -53,10 +55,10 @@ export default function ReviewsPage() {
                   <i key={i} className="ri-star-fill text-accent-500 text-lg"></i>
                 ))}
               </div>
-              <span className="text-sm text-foreground-500">{t('reviewsAverageRating')}: <strong className="text-foreground-950">5.0</strong></span>
+              <span className="text-sm text-foreground-500">{t('reviewsAverageRating')}: <strong className="text-foreground-950">{copy.statsBar.bold}</strong></span>
             </div>
             <div className="text-center">
-              <span className="text-3xl font-bold text-foreground-950">500+</span>
+              <span className="text-3xl font-bold text-foreground-950">{copy.statsBar.label}</span>
               <p className="text-sm text-foreground-500">{t('reviewsTotalReviews')}</p>
             </div>
           </div>
@@ -132,7 +134,7 @@ export default function ReviewsPage() {
 
           {filtered.length === 0 && (
             <div className="text-center py-16">
-              <p className="text-foreground-500">No reviews match this filter.</p>
+              <p className="text-foreground-500">{copy.author.text}</p>
             </div>
           )}
         </div>

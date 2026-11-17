@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "cityKey": "areaBrampton",
+      "descKey": "areaBramptonDesc",
+      "icon": "ri-map-pin-2-fill",
+      "cityId": "brampton"
+    },
+    {
+      "cityKey": "areaMississauga",
+      "descKey": "areaMississaugaDesc",
+      "icon": "ri-map-pin-line",
+      "cityId": "mississauga"
+    },
+    {
+      "cityKey": "areaToronto",
+      "descKey": "areaTorontoDesc",
+      "icon": "ri-map-pin-line",
+      "cityId": "toronto"
+    },
+    {
+      "cityKey": "areaVaughan",
+      "descKey": "areaVaughanDesc",
+      "icon": "ri-map-pin-line",
+      "cityId": "vaughan"
+    },
+    {
+      "cityKey": "areaCaledon",
+      "descKey": "areaCaledonDesc",
+      "icon": "ri-map-pin-line",
+      "cityId": "caledon"
+    },
+    {
+      "cityKey": "areaMilton",
+      "descKey": "areaMiltonDesc",
+      "icon": "ri-map-pin-line",
+      "cityId": "milton"
+    },
+    {
+      "cityKey": "areaGeorgetown",
+      "descKey": "areaGeorgetownDesc",
+      "icon": "ri-map-pin-line",
+      "cityId": "georgetown"
+    }
+  ]
+}

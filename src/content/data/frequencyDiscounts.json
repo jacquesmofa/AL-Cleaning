@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "label": "One-Time",
+      "discount": 0
+    },
+    {
+      "label": "Weekly (15% Off)",
+      "discount": 15
+    },
+    {
+      "label": "Bi-Weekly (10% Off)",
+      "discount": 10
+    },
+    {
+      "label": "Monthly (5% Off)",
+      "discount": 5
+    }
+  ]
+}

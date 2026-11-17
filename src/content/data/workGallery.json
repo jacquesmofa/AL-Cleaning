@@ -1,0 +1,76 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "imageUrl": "https://res.cloudinary.com/jhqbtz7k/image/upload/v1785113819/AL_Cleaning_Flyer_we1lor.jpg",
+      "categoryKey": "ourWorkCategoryResidential",
+      "titleEn": "Full Home Deep Clean — Brampton",
+      "titleFr": "Nettoyage Complet en Profondeur — Brampton",
+      "descEn": "Complete residential deep clean including kitchen appliances, bathroom grout restoration, and floor-to-ceiling dust removal.",
+      "descFr": "Nettoyage résidentiel complet incluant électroménagers de cuisine, restauration des joints de salle de bain et dépoussiérage de haut en bas."
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://readdy.ai/api/search-image?query=Sparkling%20clean%20modern%20kitchen%20with%20granite%20countertops%20gleaming%20under%20natural%20light%2C%20stainless%20steel%20appliances%2C%20white%20cabinets%2C%20pristine%20hardwood%20floor%2C%20professional%20cleaning%20result%2C%20bright%20and%20airy%20interior%2C%20editorial%20photography%2C%20warm%20neutral%20tones%2C%20immaculate%20condition&width=800&height=600&seq=al-cleaning-gallery-01&orientation=landscape",
+      "categoryKey": "ourWorkCategoryDeep",
+      "titleEn": "Kitchen Deep Clean — Mississauga",
+      "titleFr": "Nettoyage de Cuisine en Profondeur — Mississauga",
+      "descEn": "Inside-out appliance cleaning, cabinet organization, backsplash scrubbing, and floor treatment.",
+      "descFr": "Nettoyage complet des électroménagers, organisation des armoires, récurage du dosseret et traitement du sol."
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://readdy.ai/api/search-image?query=Elegant%20luxury%20bathroom%20with%20marble%20tiles%20and%20glass%20shower%2C%20spotless%20surfaces%2C%20gleaming%20fixtures%2C%20reflective%20mirror%2C%20fresh%20white%20towels%2C%20professional%20cleaning%20finish%2C%20no%20water%20spots%2C%20hotel%20quality%20bathroom%2C%20bright%20daylight%2C%20editorial%20photography&width=800&height=600&seq=al-cleaning-gallery-02&orientation=landscape",
+      "categoryKey": "ourWorkCategoryResidential",
+      "titleEn": "Bathroom Restoration — Vaughan",
+      "titleFr": "Restauration de Salle de Bain — Vaughan",
+      "descEn": "Grout deep-scrubbing, glass shower descaling, fixture polishing, and full sanitization.",
+      "descFr": "Récurage profond des joints, détartrage de la douche en verre, polissage des accessoires et désinfection complète."
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://readdy.ai/api/search-image?query=Clean%20minimalist%20living%20room%20with%20light%20beige%20sofa%2C%20wooden%20coffee%20table%2C%20freshly%20vacuumed%20carpet%2C%20dust-free%20surfaces%2C%20natural%20sunlight%20streaming%20through%20windows%2C%20organized%20shelves%2C%20peaceful%20atmosphere%2C%20professional%20cleaning%20result%2C%20editorial%20interior%20photography&width=800&height=600&seq=al-cleaning-gallery-03&orientation=landscape",
+      "categoryKey": "ourWorkCategoryMove",
+      "titleEn": "Move-Out Clean — Toronto",
+      "titleFr": "Nettoyage de Déménagement — Toronto",
+      "descEn": "Complete move-out preparation including wall spot-cleaning, baseboard detailing, and floor restoration.",
+      "descFr": "Préparation complète de déménagement incluant nettoyage des murs, détails des plinthes et restauration du sol."
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://readdy.ai/api/search-image?query=Modern%20office%20workspace%20with%20clean%20desks%2C%20organized%20workstations%2C%20ergonomic%20chairs%2C%20tidy%20meeting%20room%20with%20glass%20walls%2C%20fresh%20indoor%20plants%2C%20bright%20commercial%20interior%2C%20professional%20cleaning%20finish%2C%20no%20clutter%2C%20corporate%20environment&width=800&height=600&seq=al-cleaning-gallery-04&orientation=landscape",
+      "categoryKey": "ourWorkCategoryOffice",
+      "titleEn": "Office Cleaning — Mississauga",
+      "titleFr": "Nettoyage de Bureau — Mississauga",
+      "descEn": "Full office sanitization including workstations, meeting rooms, breakroom, and restrooms.",
+      "descFr": "Désinfection complète du bureau incluant postes de travail, salles de réunion, salle de pause et sanitaires."
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://readdy.ai/api/search-image?query=Beautiful%20cozy%20bedroom%20with%20fresh%20white%20linens%2C%20neatly%20made%20bed%20with%20crisp%20sheets%2C%20fluffed%20pillows%2C%20clean%20nightstand%2C%20vacuumed%20floor%2C%20warm%20ambient%20lighting%2C%20airbnb%20ready%20condition%2C%20hotel%20standard%2C%20editorial%20interior%20photography&width=800&height=600&seq=al-cleaning-gallery-05&orientation=landscape",
+      "categoryKey": "ourWorkCategoryAirbnb",
+      "titleEn": "Airbnb Turnover — Toronto",
+      "titleFr": "Rotation Airbnb — Toronto",
+      "descEn": "Quick same-day turnaround with fresh linens, amenity restocking, and guest-ready inspection.",
+      "descFr": "Changement rapide le jour même avec linge frais, réapprovisionnement et inspection prête à recevoir."
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://readdy.ai/api/search-image?query=Recently%20renovated%20open%20concept%20living%20area%20with%20polished%20hardwood%20floors%2C%20clean%20white%20walls%2C%20modern%20lighting%20fixtures%2C%20dust-free%20surfaces%2C%20no%20construction%20debris%2C%20fresh%20paint%2C%20bright%20natural%20light%2C%20move-in%20ready%20condition%2C%20editorial%20real%20estate%20photography&width=800&height=600&seq=al-cleaning-gallery-06&orientation=landscape",
+      "categoryKey": "ourWorkCategoryConstruction",
+      "titleEn": "Post-Construction Clean — Caledon",
+      "titleFr": "Nettoyage Après-Construction — Caledon",
+      "descEn": "Post-renovation fine dust removal, surface polishing, vent cleaning, and move-in preparation.",
+      "descFr": "Élimination des poussières fines post-rénovation, polissage des surfaces, nettoyage des bouches d'aération et préparation à l'emménagement."
+    },
+    {
+      "id": 8,
+      "imageUrl": "https://readdy.ai/api/search-image?query=Pristine%20open%20plan%20kitchen%20and%20dining%20area%20with%20island%20counter%2C%20gleaming%20marble%20surfaces%2C%20polished%20hardwood%20floors%2C%20spotless%20dining%20table%2C%20natural%20daylight%2C%20luxurious%20residential%20interior%2C%20professional%20deep%20cleaning%20result%2C%20no%20smudges%2C%20editorial%20photography&width=800&height=600&seq=al-cleaning-gallery-07&orientation=landscape",
+      "categoryKey": "ourWorkCategoryDeep",
+      "titleEn": "Deep Clean — Milton",
+      "titleFr": "Nettoyage en Profondeur — Milton",
+      "descEn": "Comprehensive deep clean of a 4-bedroom family home, including all appliances, windows, and baseboards.",
+      "descFr": "Nettoyage approfondi complet d'une maison familiale de 4 chambres, incluant tous les électroménagers, fenêtres et plinthes."
+    }
+  ]
+}

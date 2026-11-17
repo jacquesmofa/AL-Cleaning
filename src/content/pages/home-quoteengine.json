@@ -1,0 +1,24 @@
+{
+  "step1ContactInfo": {
+    "label": "1",
+    "placeholder": "John Smith",
+    "placeholder2": "(416) 555-0123",
+    "placeholder3": "john@example.com",
+    "placeholder4": "123 Main St, Brampton, ON"
+  },
+  "step2JobDetails": {
+    "label": "2"
+  },
+  "squareFeet": {
+    "placeholder": "e.g. 1500"
+  },
+  "step3ChooseYourChannel": {
+    "label": "3"
+  },
+  "keys": [
+    "quoteGuarantee1",
+    "quoteGuarantee2",
+    "quoteGuarantee3",
+    "quoteGuarantee4"
+  ]
+}

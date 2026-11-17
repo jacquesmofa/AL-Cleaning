@@ -9,6 +9,8 @@ import {
   contactInfo,
 } from '@/mocks/home';
 import { trackEvent } from '@/utils/analytics';
+import copy from '../../../content/pages/home-quoteengine.json';
+// Text, images and links: src/content/pages/home-quoteengine.json (editable in the website editors).
 
 export default function QuoteEngine() {
   const { t } = useTranslation();
@@ -113,7 +115,7 @@ export default function QuoteEngine() {
 
         {/* Guarantee Banner */}
         <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-10">
-          {['quoteGuarantee1', 'quoteGuarantee2', 'quoteGuarantee3', 'quoteGuarantee4'].map((key) => (
+          {copy.keys.map((key) => (
             <div key={key} className="flex items-center gap-2 text-sm text-foreground-700">
               <i className="ri-checkbox-circle-fill text-accent-500"></i>
               <span>{t(key)}</span>
@@ -124,7 +126,7 @@ export default function QuoteEngine() {
         {/* Step 1: Contact Info */}
         <div className="bg-background-50 rounded-2xl border border-background-200 p-6 md:p-8 mb-6">
           <h3 className="font-heading text-lg font-semibold text-foreground-950 mb-5 flex items-center gap-2">
-            <span className="w-7 h-7 flex items-center justify-center rounded-full bg-primary-100 text-primary-700 text-xs font-bold">1</span>
+            <span className="w-7 h-7 flex items-center justify-center rounded-full bg-primary-100 text-primary-700 text-xs font-bold">{copy.step1ContactInfo.label}</span>
             {t('quoteStep1')}
           </h3>
 
@@ -139,7 +141,7 @@ export default function QuoteEngine() {
                 name="name"
                 value={fullName}
                 onChange={(e) => { setFullName(e.target.value); setValidationErrors((prev) => ({ ...prev, fullName: '' })); }}
-                placeholder="John Smith"
+                placeholder={copy.step1ContactInfo.placeholder}
                 className="w-full px-4 py-2.5 rounded-lg border border-background-200 bg-background-50 text-sm text-foreground-900 placeholder:text-foreground-400 focus:outline-none focus:border-primary-300 focus:ring-2 focus:ring-primary-100 transition-all"
               />
               {validationErrors.fullName && <p className="text-red-500 text-xs mt-1">{validationErrors.fullName}</p>}
@@ -156,7 +158,7 @@ export default function QuoteEngine() {
                   name="phone"
                   value={phone}
                   onChange={(e) => { setPhone(e.target.value); setValidationErrors((prev) => ({ ...prev, phone: '' })); }}
-                  placeholder="(416) 555-0123"
+                  placeholder={copy.step1ContactInfo.placeholder2}
                   className="w-full px-4 py-2.5 rounded-lg border border-background-200 bg-background-50 text-sm text-foreground-900 placeholder:text-foreground-400 focus:outline-none focus:border-primary-300 focus:ring-2 focus:ring-primary-100 transition-all"
                 />
                 {validationErrors.phone && <p className="text-red-500 text-xs mt-1">{validationErrors.phone}</p>}
@@ -171,7 +173,7 @@ export default function QuoteEngine() {
                   name="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="john@example.com"
+                  placeholder={copy.step1ContactInfo.placeholder3}
                   className="w-full px-4 py-2.5 rounded-lg border border-background-200 bg-background-50 text-sm text-foreground-900 placeholder:text-foreground-400 focus:outline-none focus:border-primary-300 focus:ring-2 focus:ring-primary-100 transition-all"
                 />
               </div>
@@ -187,7 +189,7 @@ export default function QuoteEngine() {
                 name="address"
                 value={address}
                 onChange={(e) => setAddress(e.target.value)}
-                placeholder="123 Main St, Brampton, ON"
+                placeholder={copy.step1ContactInfo.placeholder4}
                 className="w-full px-4 py-2.5 rounded-lg border border-background-200 bg-background-50 text-sm text-foreground-900 placeholder:text-foreground-400 focus:outline-none focus:border-primary-300 focus:ring-2 focus:ring-primary-100 transition-all"
               />
             </div>
@@ -197,7 +199,7 @@ export default function QuoteEngine() {
         {/* Step 2: Job Details */}
         <div className="bg-background-50 rounded-2xl border border-background-200 p-6 md:p-8 mb-6">
           <h3 className="font-heading text-lg font-semibold text-foreground-950 mb-5 flex items-center gap-2">
-            <span className="w-7 h-7 flex items-center justify-center rounded-full bg-primary-100 text-primary-700 text-xs font-bold">2</span>
+            <span className="w-7 h-7 flex items-center justify-center rounded-full bg-primary-100 text-primary-700 text-xs font-bold">{copy.step2JobDetails.label}</span>
             {t('quoteStep2')}
           </h3>
 
@@ -283,7 +285,7 @@ export default function QuoteEngine() {
                 name="sqft"
                 value={sqft}
                 onChange={(e) => setSqft(e.target.value)}
-                placeholder="e.g. 1500"
+                placeholder={copy.squareFeet.placeholder}
                 className="w-full sm:w-48 px-4 py-2.5 rounded-lg border border-background-200 bg-background-50 text-sm text-foreground-900 placeholder:text-foreground-400 focus:outline-none focus:border-primary-300 focus:ring-2 focus:ring-primary-100 transition-all"
               />
             </div>
@@ -349,7 +351,7 @@ export default function QuoteEngine() {
         {/* Step 3: Choose Your Channel */}
         <div className="bg-background-50 rounded-2xl border border-background-200 p-6 md:p-8">
           <h3 className="font-heading text-lg font-semibold text-foreground-950 mb-2 flex items-center gap-2">
-            <span className="w-7 h-7 flex items-center justify-center rounded-full bg-primary-100 text-primary-700 text-xs font-bold">3</span>
+            <span className="w-7 h-7 flex items-center justify-center rounded-full bg-primary-100 text-primary-700 text-xs font-bold">{copy.step3ChooseYourChannel.label}</span>
             {t('quoteChannelTitle')}
           </h3>
           <p className="text-foreground-600 text-sm mb-6">{t('quoteChannelHint')}</p>

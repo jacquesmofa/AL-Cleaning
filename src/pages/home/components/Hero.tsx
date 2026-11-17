@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { contactInfo } from '@/mocks/home';
+import copy from '../../../content/pages/home-hero.json';
+// Text, images and links: src/content/pages/home-hero.json (editable in the website editors).
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -10,8 +12,8 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="https://readdy.ai/api/search-image?query=Professional%20cleaning%20team%20in%20uniform%20working%20in%20a%20bright%20modern%20kitchen%20with%20white%20cabinets%20and%20marble%20countertops%2C%20warm%20natural%20light%20streaming%20through%20large%20windows%2C%20sparkling%20clean%20surfaces%2C%20professional%20cleaning%20equipment%2C%20friendly%20smile%2C%20editorial%20photography%20style%20with%20soft%20warm%20tones%20and%20crisp%20details&width=1800&height=1000&seq=hero-cleaning-bg&orientation=landscape"
-          alt="AL Cleaning Pro professional cleaning team in action"
+          src={copy.backgroundImage.image}
+          alt={copy.backgroundImage.imageAlt}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-foreground-950/50 via-foreground-950/30 to-foreground-950/60"></div>

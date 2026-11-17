@@ -1,0 +1,36 @@
+{
+  "en": {
+    "bookingLabel": "Online Booking",
+    "bookingTitle": "Pick a Time & Book Instantly",
+    "bookingSubtext": "Use the live calendar below to choose your service, pick an available slot, and lock in your cleaning — confirmation lands straight in your inbox.",
+    "bookingHowTitle": "How Booking Works",
+    "bookingStep1Title": "Choose Your Slot",
+    "bookingStep1Desc": "Pick the service and time that suits you best on the live calendar.",
+    "bookingStep2Title": "Add Your Details",
+    "bookingStep2Desc": "Enter your name, contact info, and address so we arrive prepared.",
+    "bookingStep3Title": "Instant Confirmation",
+    "bookingStep3Desc": "Your appointment is confirmed by email and synced to our schedule instantly.",
+    "bookingNoteTitle": "Never Double-Booked",
+    "bookingNoteDesc": "Our calendar updates in real time — once you book a slot, it is blocked for everyone else.",
+    "bookingEmailLabel": "Confirmation & Notices",
+    "bookingEmailValue": "Sent to your email instantly after booking.",
+    "bookingLoading": "Loading booking calendar…"
+  },
+  "fr": {
+    "bookingLabel": "Réservation en Ligne",
+    "bookingTitle": "Choisissez un Horaire et Réservez",
+    "bookingSubtext": "Utilisez le calendrier ci-dessous pour choisir votre service, sélectionner un créneau disponible et réserver votre nettoyage — la confirmation arrive directement dans votre boîte courriel.",
+    "bookingHowTitle": "Comment Réserver",
+    "bookingStep1Title": "Choisissez Votre Créneau",
+    "bookingStep1Desc": "Sélectionnez le service et l'heure qui vous conviennent sur le calendrier.",
+    "bookingStep2Title": "Ajoutez Vos Coordonnées",
+    "bookingStep2Desc": "Indiquez votre nom, vos coordonnées et votre adresse pour que nous arrivions préparés.",
+    "bookingStep3Title": "Confirmation Instantanée",
+    "bookingStep3Desc": "Votre rendez-vous est confirmé par courriel et synchronisé à notre calendrier.",
+    "bookingNoteTitle": "Jamais de Double Réservation",
+    "bookingNoteDesc": "Notre calendrier se met à jour en temps réel — une fois votre créneau réservé, il est bloqué pour les autres.",
+    "bookingEmailLabel": "Confirmation et Avis",
+    "bookingEmailValue": "Envoyés à votre courriel instantanément après la réservation.",
+    "bookingLoading": "Chargement du calendrier de réservation…"
+  }
+}

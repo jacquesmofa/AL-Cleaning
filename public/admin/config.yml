@@ -12,8 +12,4013 @@ backend:
 media_folder: "public/media/uploads"
 public_folder: "/media/uploads"
 collections:
+  - name: "text"
+    label: "1. Wording (English and French)"
+    files:
+      - name: "text-01-navigation-and-topbar"
+        label: "1. Navigation & topbar"
+        file: "src/content/text/01-navigation-and-topbar.json"
+        format: "json"
+        fields:
+          - name: "en"
+            label: "English"
+            required: false
+            widget: "object"
+            fields:
+              - name: "topbarNotice"
+                label: "Topbar notice"
+                required: false
+                widget: "string"
+              - name: "topbarCall"
+                label: "Topbar call"
+                required: false
+                widget: "string"
+              - name: "topbarGuaranteed"
+                label: "Topbar guaranteed"
+                required: false
+                widget: "string"
+              - name: "navHome"
+                label: "Nav home"
+                required: false
+                widget: "string"
+              - name: "navServices"
+                label: "Nav services"
+                required: false
+                widget: "string"
+              - name: "navAbout"
+                label: "Nav about"
+                required: false
+                widget: "string"
+              - name: "navReviews"
+                label: "Nav reviews"
+                required: false
+                widget: "string"
+              - name: "navAreas"
+                label: "Nav areas"
+                required: false
+                widget: "string"
+              - name: "navQuote"
+                label: "Nav quote"
+                required: false
+                widget: "string"
+              - name: "navContact"
+                label: "Nav contact"
+                required: false
+                widget: "string"
+              - name: "navAllServices"
+                label: "Nav all services"
+                required: false
+                widget: "string"
+              - name: "btnCallNow"
+                label: "Btn call now"
+                required: false
+                widget: "string"
+              - name: "btnGetQuote"
+                label: "Btn get quote"
+                required: false
+                widget: "string"
+          - name: "fr"
+            label: "French"
+            required: false
+            widget: "object"
+            fields:
+              - name: "topbarNotice"
+                label: "Topbar notice"
+                required: false
+                widget: "string"
+              - name: "topbarCall"
+                label: "Topbar call"
+                required: false
+                widget: "string"
+              - name: "topbarGuaranteed"
+                label: "Topbar guaranteed"
+                required: false
+                widget: "string"
+              - name: "navHome"
+                label: "Nav home"
+                required: false
+                widget: "string"
+              - name: "navServices"
+                label: "Nav services"
+                required: false
+                widget: "string"
+              - name: "navAbout"
+                label: "Nav about"
+                required: false
+                widget: "string"
+              - name: "navReviews"
+                label: "Nav reviews"
+                required: false
+                widget: "string"
+              - name: "navAreas"
+                label: "Nav areas"
+                required: false
+                widget: "string"
+              - name: "navQuote"
+                label: "Nav quote"
+                required: false
+                widget: "string"
+              - name: "navContact"
+                label: "Nav contact"
+                required: false
+                widget: "string"
+              - name: "navAllServices"
+                label: "Nav all services"
+                required: false
+                widget: "string"
+              - name: "btnCallNow"
+                label: "Btn call now"
+                required: false
+                widget: "string"
+              - name: "btnGetQuote"
+                label: "Btn get quote"
+                required: false
+                widget: "string"
+      - name: "text-02-hero"
+        label: "2. Hero"
+        file: "src/content/text/02-hero.json"
+        format: "json"
+        fields:
+          - name: "en"
+            label: "English"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heroBadge"
+                label: "Hero badge"
+                required: false
+                widget: "string"
+              - name: "heroTitle"
+                label: "Hero title"
+                required: false
+                widget: "string"
+              - name: "heroSubhead"
+                label: "Hero subhead"
+                required: false
+                widget: "text"
+              - name: "heroStatRating"
+                label: "Hero stat rating"
+                required: false
+                widget: "string"
+              - name: "heroStatInsured"
+                label: "Hero stat insured"
+                required: false
+                widget: "string"
+              - name: "heroStatGuarantee"
+                label: "Hero stat guarantee"
+                required: false
+                widget: "string"
+          - name: "fr"
+            label: "French"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heroBadge"
+                label: "Hero badge"
+                required: false
+                widget: "string"
+              - name: "heroTitle"
+                label: "Hero title"
+                required: false
+                widget: "string"
+              - name: "heroSubhead"
+                label: "Hero subhead"
+                required: false
+                widget: "text"
+              - name: "heroStatRating"
+                label: "Hero stat rating"
+                required: false
+                widget: "string"
+              - name: "heroStatInsured"
+                label: "Hero stat insured"
+                required: false
+                widget: "string"
+              - name: "heroStatGuarantee"
+                label: "Hero stat guarantee"
+                required: false
+                widget: "string"
+      - name: "text-03-why-us"
+        label: "3. Why us"
+        file: "src/content/text/03-why-us.json"
+        format: "json"
+        fields:
+          - name: "en"
+            label: "English"
+            required: false
+            widget: "object"
+            fields:
+              - name: "whyUsLabel"
+                label: "Why us label"
+                required: false
+                widget: "string"
+              - name: "whyUsTitle"
+                label: "Why us title"
+                required: false
+                widget: "string"
+              - name: "whyUsSubtext"
+                label: "Why us subtext"
+                required: false
+                widget: "text"
+              - name: "whyFamilyTitle"
+                label: "Why family title"
+                required: false
+                widget: "string"
+              - name: "whyFamilyDesc"
+                label: "Why family desc"
+                required: false
+                widget: "text"
+              - name: "whyReliableTitle"
+                label: "Why reliable title"
+                required: false
+                widget: "string"
+              - name: "whyReliableDesc"
+                label: "Why reliable desc"
+                required: false
+                widget: "text"
+              - name: "whyPricingTitle"
+                label: "Why pricing title"
+                required: false
+                widget: "string"
+              - name: "whyPricingDesc"
+                label: "Why pricing desc"
+                required: false
+                widget: "text"
+              - name: "whySatisfactionTitle"
+                label: "Why satisfaction title"
+                required: false
+                widget: "string"
+              - name: "whySatisfactionDesc"
+                label: "Why satisfaction desc"
+                required: false
+                widget: "text"
+              - name: "whyFlexibleTitle"
+                label: "Why flexible title"
+                required: false
+                widget: "string"
+              - name: "whyFlexibleDesc"
+                label: "Why flexible desc"
+                required: false
+                widget: "text"
+              - name: "whyProTitle"
+                label: "Why pro title"
+                required: false
+                widget: "string"
+              - name: "whyProDesc"
+                label: "Why pro desc"
+                required: false
+                widget: "text"
+          - name: "fr"
+            label: "French"
+            required: false
+            widget: "object"
+            fields:
+              - name: "whyUsLabel"
+                label: "Why us label"
+                required: false
+                widget: "string"
+              - name: "whyUsTitle"
+                label: "Why us title"
+                required: false
+                widget: "string"
+              - name: "whyUsSubtext"
+                label: "Why us subtext"
+                required: false
+                widget: "text"
+              - name: "whyFamilyTitle"
+                label: "Why family title"
+                required: false
+                widget: "string"
+              - name: "whyFamilyDesc"
+                label: "Why family desc"
+                required: false
+                widget: "text"
+              - name: "whyReliableTitle"
+                label: "Why reliable title"
+                required: false
+                widget: "string"
+              - name: "whyReliableDesc"
+                label: "Why reliable desc"
+                required: false
+                widget: "text"
+              - name: "whyPricingTitle"
+                label: "Why pricing title"
+                required: false
+                widget: "string"
+              - name: "whyPricingDesc"
+                label: "Why pricing desc"
+                required: false
+                widget: "text"
+              - name: "whySatisfactionTitle"
+                label: "Why satisfaction title"
+                required: false
+                widget: "string"
+              - name: "whySatisfactionDesc"
+                label: "Why satisfaction desc"
+                required: false
+                widget: "text"
+              - name: "whyFlexibleTitle"
+                label: "Why flexible title"
+                required: false
+                widget: "string"
+              - name: "whyFlexibleDesc"
+                label: "Why flexible desc"
+                required: false
+                widget: "text"
+              - name: "whyProTitle"
+                label: "Why pro title"
+                required: false
+                widget: "string"
+              - name: "whyProDesc"
+                label: "Why pro desc"
+                required: false
+                widget: "text"
+      - name: "text-04-services"
+        label: "4. Services"
+        file: "src/content/text/04-services.json"
+        format: "json"
+        fields:
+          - name: "en"
+            label: "English"
+            required: false
+            widget: "object"
+            fields:
+              - name: "servicesLabel"
+                label: "Services label"
+                required: false
+                widget: "string"
+              - name: "servicesTitle"
+                label: "Services title"
+                required: false
+                widget: "string"
+              - name: "servicesSubtext"
+                label: "Services subtext"
+                required: false
+                widget: "text"
+              - name: "serviceResidential"
+                label: "Service residential"
+                required: false
+                widget: "string"
+              - name: "serviceResidentialDesc"
+                label: "Service residential desc"
+                required: false
+                widget: "string"
+              - name: "serviceDeep"
+                label: "Service deep"
+                required: false
+                widget: "string"
+              - name: "serviceDeepDesc"
+                label: "Service deep desc"
+                required: false
+                widget: "string"
+              - name: "serviceMove"
+                label: "Service move"
+                required: false
+                widget: "string"
+              - name: "serviceMoveDesc"
+                label: "Service move desc"
+                required: false
+                widget: "string"
+              - name: "serviceOffice"
+                label: "Service office"
+                required: false
+                widget: "string"
+              - name: "serviceOfficeDesc"
+                label: "Service office desc"
+                required: false
+                widget: "string"
+              - name: "serviceAirbnb"
+                label: "Service airbnb"
+                required: false
+                widget: "string"
+              - name: "serviceAirbnbDesc"
+                label: "Service airbnb desc"
+                required: false
+                widget: "string"
+              - name: "servicePostConstruction"
+                label: "Service post construction"
+                required: false
+                widget: "string"
+              - name: "servicePostConstructionDesc"
+                label: "Service post construction desc"
+                required: false
+                widget: "string"
+              - name: "serviceBtn"
+                label: "Service btn"
+                required: false
+                widget: "string"
+          - name: "fr"
+            label: "French"
+            required: false
+            widget: "object"
+            fields:
+              - name: "servicesLabel"
+                label: "Services label"
+                required: false
+                widget: "string"
+              - name: "servicesTitle"
+                label: "Services title"
+                required: false
+                widget: "string"
+              - name: "servicesSubtext"
+                label: "Services subtext"
+                required: false
+                widget: "text"
+              - name: "serviceResidential"
+                label: "Service residential"
+                required: false
+                widget: "string"
+              - name: "serviceResidentialDesc"
+                label: "Service residential desc"
+                required: false
+                widget: "text"
+              - name: "serviceDeep"
+                label: "Service deep"
+                required: false
+                widget: "string"
+              - name: "serviceDeepDesc"
+                label: "Service deep desc"
+                required: false
+                widget: "text"
+              - name: "serviceMove"
+                label: "Service move"
+                required: false
+                widget: "string"
+              - name: "serviceMoveDesc"
+                label: "Service move desc"
+                required: false
+                widget: "text"
+              - name: "serviceOffice"
+                label: "Service office"
+                required: false
+                widget: "string"
+              - name: "serviceOfficeDesc"
+                label: "Service office desc"
+                required: false
+                widget: "string"
+              - name: "serviceAirbnb"
+                label: "Service airbnb"
+                required: false
+                widget: "string"
+              - name: "serviceAirbnbDesc"
+                label: "Service airbnb desc"
+                required: false
+                widget: "string"
+              - name: "servicePostConstruction"
+                label: "Service post construction"
+                required: false
+                widget: "string"
+              - name: "servicePostConstructionDesc"
+                label: "Service post construction desc"
+                required: false
+                widget: "text"
+              - name: "serviceBtn"
+                label: "Service btn"
+                required: false
+                widget: "string"
+      - name: "text-05-service-detail-pages"
+        label: "5. Service detail pages"
+        file: "src/content/text/05-service-detail-pages.json"
+        format: "json"
+        fields:
+          - name: "en"
+            label: "English"
+            required: false
+            widget: "object"
+            fields:
+              - name: "serviceDetailBack"
+                label: "Service detail back"
+                required: false
+                widget: "string"
+              - name: "serviceDetailIncludes"
+                label: "Service detail includes"
+                required: false
+                widget: "string"
+              - name: "serviceDetailPricing"
+                label: "Service detail pricing"
+                required: false
+                widget: "string"
+              - name: "serviceDetailProcess"
+                label: "Service detail process"
+                required: false
+                widget: "string"
+              - name: "serviceDetailFaq"
+                label: "Service detail faq"
+                required: false
+                widget: "string"
+              - name: "serviceDetailBookNow"
+                label: "Service detail book now"
+                required: false
+                widget: "string"
+              - name: "serviceDetailStartingFrom"
+                label: "Service detail starting from"
+                required: false
+                widget: "string"
+              - name: "serviceDetailCAD"
+                label: "Service detail cad"
+                required: false
+                widget: "string"
+              - name: "serviceDetailLearnMore"
+                label: "Service detail learn more"
+                required: false
+                widget: "string"
+              - name: "serviceDetailOverview"
+                label: "Service detail overview"
+                required: false
+                widget: "string"
+              - name: "serviceDetailFreeQuote"
+                label: "Service detail free quote"
+                required: false
+                widget: "string"
+              - name: "serviceDetailQuoteNote"
+                label: "Service detail quote note"
+                required: false
+                widget: "text"
+          - name: "fr"
+            label: "French"
+            required: false
+            widget: "object"
+            fields:
+              - name: "serviceDetailBack"
+                label: "Service detail back"
+                required: false
+                widget: "string"
+              - name: "serviceDetailIncludes"
+                label: "Service detail includes"
+                required: false
+                widget: "string"
+              - name: "serviceDetailPricing"
+                label: "Service detail pricing"
+                required: false
+                widget: "string"
+              - name: "serviceDetailProcess"
+                label: "Service detail process"
+                required: false
+                widget: "string"
+              - name: "serviceDetailFaq"
+                label: "Service detail faq"
+                required: false
+                widget: "string"
+              - name: "serviceDetailBookNow"
+                label: "Service detail book now"
+                required: false
+                widget: "string"
+              - name: "serviceDetailStartingFrom"
+                label: "Service detail starting from"
+                required: false
+                widget: "string"
+              - name: "serviceDetailCAD"
+                label: "Service detail cad"
+                required: false
+                widget: "string"
+              - name: "serviceDetailLearnMore"
+                label: "Service detail learn more"
+                required: false
+                widget: "string"
+              - name: "serviceDetailOverview"
+                label: "Service detail overview"
+                required: false
+                widget: "string"
+              - name: "serviceDetailFreeQuote"
+                label: "Service detail free quote"
+                required: false
+                widget: "string"
+              - name: "serviceDetailQuoteNote"
+                label: "Service detail quote note"
+                required: false
+                widget: "text"
+      - name: "text-06-services-hub-page"
+        label: "6. Services hub page"
+        file: "src/content/text/06-services-hub-page.json"
+        format: "json"
+        fields:
+          - name: "en"
+            label: "English"
+            required: false
+            widget: "object"
+            fields:
+              - name: "servicesHubTitle"
+                label: "Services hub title"
+                required: false
+                widget: "string"
+              - name: "servicesHubSubtext"
+                label: "Services hub subtext"
+                required: false
+                widget: "text"
+              - name: "servicesHubFilterAll"
+                label: "Services hub filter all"
+                required: false
+                widget: "string"
+              - name: "servicesHubFilterResidential"
+                label: "Services hub filter residential"
+                required: false
+                widget: "string"
+              - name: "servicesHubFilterCommercial"
+                label: "Services hub filter commercial"
+                required: false
+                widget: "string"
+              - name: "servicesHubFilterSpecialty"
+                label: "Services hub filter specialty"
+                required: false
+                widget: "string"
+              - name: "servicesHubStartingAt"
+                label: "Services hub starting at"
+                required: false
+                widget: "string"
+              - name: "servicesHubViewDetails"
+                label: "Services hub view details"
+                required: false
+                widget: "string"
+              - name: "servicesHubCtaBanner"
+                label: "Services hub cta banner"
+                required: false
+                widget: "image"
+              - name: "servicesHubCtaBtn"
+                label: "Services hub cta btn"
+                required: false
+                widget: "string"
+          - name: "fr"
+            label: "French"
+            required: false
+            widget: "object"
+            fields:
+              - name: "servicesHubTitle"
+                label: "Services hub title"
+                required: false
+                widget: "string"
+              - name: "servicesHubSubtext"
+                label: "Services hub subtext"
+                required: false
+                widget: "text"
+              - name: "servicesHubFilterAll"
+                label: "Services hub filter all"
+                required: false
+                widget: "string"
+              - name: "servicesHubFilterResidential"
+                label: "Services hub filter residential"
+                required: false
+                widget: "string"
+              - name: "servicesHubFilterCommercial"
+                label: "Services hub filter commercial"
+                required: false
+                widget: "string"
+              - name: "servicesHubFilterSpecialty"
+                label: "Services hub filter specialty"
+                required: false
+                widget: "string"
+              - name: "servicesHubStartingAt"
+                label: "Services hub starting at"
+                required: false
+                widget: "string"
+              - name: "servicesHubViewDetails"
+                label: "Services hub view details"
+                required: false
+                widget: "string"
+              - name: "servicesHubCtaBanner"
+                label: "Services hub cta banner"
+                required: false
+                widget: "image"
+              - name: "servicesHubCtaBtn"
+                label: "Services hub cta btn"
+                required: false
+                widget: "string"
+      - name: "text-07-reviews"
+        label: "7. Reviews"
+        file: "src/content/text/07-reviews.json"
+        format: "json"
+        fields:
+          - name: "en"
+            label: "English"
+            required: false
+            widget: "object"
+            fields:
+              - name: "reviewsLabel"
+                label: "Reviews label"
+                required: false
+                widget: "string"
+              - name: "reviewsTitle"
+                label: "Reviews title"
+                required: false
+                widget: "string"
+              - name: "reviewsSubtext"
+                label: "Reviews subtext"
+                required: false
+                widget: "text"
+              - name: "reviewsBtn"
+                label: "Reviews btn"
+                required: false
+                widget: "string"
+              - name: "reviewsPageTitle"
+                label: "Reviews page title"
+                required: false
+                widget: "string"
+              - name: "reviewsPageSubtext"
+                label: "Reviews page subtext"
+                required: false
+                widget: "text"
+              - name: "reviewsFilterAll"
+                label: "Reviews filter all"
+                required: false
+                widget: "string"
+              - name: "reviewsFilterResidential"
+                label: "Reviews filter residential"
+                required: false
+                widget: "string"
+              - name: "reviewsFilterDeep"
+                label: "Reviews filter deep"
+                required: false
+                widget: "string"
+              - name: "reviewsFilterMove"
+                label: "Reviews filter move"
+                required: false
+                widget: "string"
+              - name: "reviewsFilterOffice"
+                label: "Reviews filter office"
+                required: false
+                widget: "string"
+              - name: "reviewsFilterAirbnb"
+                label: "Reviews filter airbnb"
+                required: false
+                widget: "string"
+              - name: "reviewsFilterConstruction"
+                label: "Reviews filter construction"
+                required: false
+                widget: "string"
+              - name: "reviewsVerifiedBadge"
+                label: "Reviews verified badge"
+                required: false
+                widget: "string"
+              - name: "reviewsAverageRating"
+                label: "Reviews average rating"
+                required: false
+                widget: "string"
+              - name: "reviewsTotalReviews"
+                label: "Reviews total reviews"
+                required: false
+                widget: "string"
+              - name: "reviewModalTitle"
+                label: "Review modal title"
+                required: false
+                widget: "string"
+              - name: "reviewModalName"
+                label: "Review modal name"
+                required: false
+                widget: "string"
+              - name: "reviewModalLocation"
+                label: "Review modal location"
+                required: false
+                widget: "string"
+              - name: "reviewModalService"
+                label: "Review modal service"
+                required: false
+                widget: "string"
+              - name: "reviewModalRating"
+                label: "Review modal rating"
+                required: false
+                widget: "string"
+              - name: "reviewModalText"
+                label: "Review modal text"
+                required: false
+                widget: "string"
+              - name: "reviewModalSubmit"
+                label: "Review modal submit"
+                required: false
+                widget: "string"
+              - name: "reviewModalClose"
+                label: "Review modal close"
+                required: false
+                widget: "string"
+              - name: "reviewModalSuccess"
+                label: "Review modal success"
+                required: false
+                widget: "string"
+              - name: "reviewPrev"
+                label: "Review prev"
+                required: false
+                widget: "string"
+              - name: "reviewNext"
+                label: "Review next"
+                required: false
+                widget: "string"
+          - name: "fr"
+            label: "French"
+            required: false
+            widget: "object"
+            fields:
+              - name: "reviewsLabel"
+                label: "Reviews label"
+                required: false
+                widget: "string"
+              - name: "reviewsTitle"
+                label: "Reviews title"
+                required: false
+                widget: "string"
+              - name: "reviewsSubtext"
+                label: "Reviews subtext"
+                required: false
+                widget: "text"
+              - name: "reviewsBtn"
+                label: "Reviews btn"
+                required: false
+                widget: "string"
+              - name: "reviewsPageTitle"
+                label: "Reviews page title"
+                required: false
+                widget: "string"
+              - name: "reviewsPageSubtext"
+                label: "Reviews page subtext"
+                required: false
+                widget: "text"
+              - name: "reviewsFilterAll"
+                label: "Reviews filter all"
+                required: false
+                widget: "string"
+              - name: "reviewsFilterResidential"
+                label: "Reviews filter residential"
+                required: false
+                widget: "string"
+              - name: "reviewsFilterDeep"
+                label: "Reviews filter deep"
+                required: false
+                widget: "string"
+              - name: "reviewsFilterMove"
+                label: "Reviews filter move"
+                required: false
+                widget: "string"
+              - name: "reviewsFilterOffice"
+                label: "Reviews filter office"
+                required: false
+                widget: "string"
+              - name: "reviewsFilterAirbnb"
+                label: "Reviews filter airbnb"
+                required: false
+                widget: "string"
+              - name: "reviewsFilterConstruction"
+                label: "Reviews filter construction"
+                required: false
+                widget: "string"
+              - name: "reviewsVerifiedBadge"
+                label: "Reviews verified badge"
+                required: false
+                widget: "string"
+              - name: "reviewsAverageRating"
+                label: "Reviews average rating"
+                required: false
+                widget: "string"
+              - name: "reviewsTotalReviews"
+                label: "Reviews total reviews"
+                required: false
+                widget: "string"
+              - name: "reviewModalTitle"
+                label: "Review modal title"
+                required: false
+                widget: "string"
+              - name: "reviewModalName"
+                label: "Review modal name"
+                required: false
+                widget: "string"
+              - name: "reviewModalLocation"
+                label: "Review modal location"
+                required: false
+                widget: "string"
+              - name: "reviewModalService"
+                label: "Review modal service"
+                required: false
+                widget: "string"
+              - name: "reviewModalRating"
+                label: "Review modal rating"
+                required: false
+                widget: "string"
+              - name: "reviewModalText"
+                label: "Review modal text"
+                required: false
+                widget: "string"
+              - name: "reviewModalSubmit"
+                label: "Review modal submit"
+                required: false
+                widget: "string"
+              - name: "reviewModalClose"
+                label: "Review modal close"
+                required: false
+                widget: "string"
+              - name: "reviewModalSuccess"
+                label: "Review modal success"
+                required: false
+                widget: "string"
+              - name: "reviewPrev"
+                label: "Review prev"
+                required: false
+                widget: "string"
+              - name: "reviewNext"
+                label: "Review next"
+                required: false
+                widget: "string"
+      - name: "text-08-about-page"
+        label: "8. About page"
+        file: "src/content/text/08-about-page.json"
+        format: "json"
+        fields:
+          - name: "en"
+            label: "English"
+            required: false
+            widget: "object"
+            fields:
+              - name: "aboutLabel"
+                label: "About label"
+                required: false
+                widget: "string"
+              - name: "aboutTitle"
+                label: "About title"
+                required: false
+                widget: "string"
+              - name: "aboutSubtext"
+                label: "About subtext"
+                required: false
+                widget: "text"
+              - name: "aboutStoryTitle"
+                label: "About story title"
+                required: false
+                widget: "string"
+              - name: "aboutStoryP1"
+                label: "About story p1"
+                required: false
+                widget: "text"
+              - name: "aboutStoryP2"
+                label: "About story p2"
+                required: false
+                widget: "text"
+              - name: "aboutStoryP3"
+                label: "About story p3"
+                required: false
+                widget: "text"
+              - name: "aboutValuesTitle"
+                label: "About values title"
+                required: false
+                widget: "string"
+              - name: "aboutValueSafetyTitle"
+                label: "About value safety title"
+                required: false
+                widget: "string"
+              - name: "aboutValueSafetyDesc"
+                label: "About value safety desc"
+                required: false
+                widget: "text"
+              - name: "aboutValueEcoTitle"
+                label: "About value eco title"
+                required: false
+                widget: "string"
+              - name: "aboutValueEcoDesc"
+                label: "About value eco desc"
+                required: false
+                widget: "text"
+              - name: "aboutValueTeamTitle"
+                label: "About value team title"
+                required: false
+                widget: "string"
+              - name: "aboutValueTeamDesc"
+                label: "About value team desc"
+                required: false
+                widget: "text"
+              - name: "aboutValueGuaranteeTitle"
+                label: "About value guarantee title"
+                required: false
+                widget: "string"
+              - name: "aboutValueGuaranteeDesc"
+                label: "About value guarantee desc"
+                required: false
+                widget: "text"
+              - name: "aboutOwnerTitle"
+                label: "About owner title"
+                required: false
+                widget: "string"
+              - name: "aboutOwnerText"
+                label: "About owner text"
+                required: false
+                widget: "text"
+              - name: "aboutCtaText"
+                label: "About cta text"
+                required: false
+                widget: "text"
+          - name: "fr"
+            label: "French"
+            required: false
+            widget: "object"
+            fields:
+              - name: "aboutLabel"
+                label: "About label"
+                required: false
+                widget: "string"
+              - name: "aboutTitle"
+                label: "About title"
+                required: false
+                widget: "string"
+              - name: "aboutSubtext"
+                label: "About subtext"
+                required: false
+                widget: "text"
+              - name: "aboutStoryTitle"
+                label: "About story title"
+                required: false
+                widget: "string"
+              - name: "aboutStoryP1"
+                label: "About story p1"
+                required: false
+                widget: "text"
+              - name: "aboutStoryP2"
+                label: "About story p2"
+                required: false
+                widget: "text"
+              - name: "aboutStoryP3"
+                label: "About story p3"
+                required: false
+                widget: "text"
+              - name: "aboutValuesTitle"
+                label: "About values title"
+                required: false
+                widget: "string"
+              - name: "aboutValueSafetyTitle"
+                label: "About value safety title"
+                required: false
+                widget: "string"
+              - name: "aboutValueSafetyDesc"
+                label: "About value safety desc"
+                required: false
+                widget: "text"
+              - name: "aboutValueEcoTitle"
+                label: "About value eco title"
+                required: false
+                widget: "string"
+              - name: "aboutValueEcoDesc"
+                label: "About value eco desc"
+                required: false
+                widget: "text"
+              - name: "aboutValueTeamTitle"
+                label: "About value team title"
+                required: false
+                widget: "string"
+              - name: "aboutValueTeamDesc"
+                label: "About value team desc"
+                required: false
+                widget: "text"
+              - name: "aboutValueGuaranteeTitle"
+                label: "About value guarantee title"
+                required: false
+                widget: "string"
+              - name: "aboutValueGuaranteeDesc"
+                label: "About value guarantee desc"
+                required: false
+                widget: "text"
+              - name: "aboutOwnerTitle"
+                label: "About owner title"
+                required: false
+                widget: "string"
+              - name: "aboutOwnerText"
+                label: "About owner text"
+                required: false
+                widget: "text"
+              - name: "aboutCtaText"
+                label: "About cta text"
+                required: false
+                widget: "text"
+      - name: "text-09-service-areas"
+        label: "9. Service areas"
+        file: "src/content/text/09-service-areas.json"
+        format: "json"
+        fields:
+          - name: "en"
+            label: "English"
+            required: false
+            widget: "object"
+            fields:
+              - name: "areasLabel"
+                label: "Areas label"
+                required: false
+                widget: "string"
+              - name: "areasTitle"
+                label: "Areas title"
+                required: false
+                widget: "string"
+              - name: "areasSubtext"
+                label: "Areas subtext"
+                required: false
+                widget: "text"
+              - name: "areaBrampton"
+                label: "Area brampton"
+                required: false
+                widget: "string"
+              - name: "areaBramptonDesc"
+                label: "Area brampton desc"
+                required: false
+                widget: "string"
+              - name: "areaMississauga"
+                label: "Area mississauga"
+                required: false
+                widget: "string"
+              - name: "areaMississaugaDesc"
+                label: "Area mississauga desc"
+                required: false
+                widget: "string"
+              - name: "areaToronto"
+                label: "Area toronto"
+                required: false
+                widget: "string"
+              - name: "areaTorontoDesc"
+                label: "Area toronto desc"
+                required: false
+                widget: "string"
+              - name: "areaVaughan"
+                label: "Area vaughan"
+                required: false
+                widget: "string"
+              - name: "areaVaughanDesc"
+                label: "Area vaughan desc"
+                required: false
+                widget: "string"
+              - name: "areaCaledon"
+                label: "Area caledon"
+                required: false
+                widget: "string"
+              - name: "areaCaledonDesc"
+                label: "Area caledon desc"
+                required: false
+                widget: "string"
+              - name: "areaMilton"
+                label: "Area milton"
+                required: false
+                widget: "string"
+              - name: "areaMiltonDesc"
+                label: "Area milton desc"
+                required: false
+                widget: "string"
+              - name: "areaGeorgetown"
+                label: "Area georgetown"
+                required: false
+                widget: "string"
+              - name: "areaGeorgetownDesc"
+                label: "Area georgetown desc"
+                required: false
+                widget: "string"
+          - name: "fr"
+            label: "French"
+            required: false
+            widget: "object"
+            fields:
+              - name: "areasLabel"
+                label: "Areas label"
+                required: false
+                widget: "string"
+              - name: "areasTitle"
+                label: "Areas title"
+                required: false
+                widget: "string"
+              - name: "areasSubtext"
+                label: "Areas subtext"
+                required: false
+                widget: "text"
+              - name: "areaBrampton"
+                label: "Area brampton"
+                required: false
+                widget: "string"
+              - name: "areaBramptonDesc"
+                label: "Area brampton desc"
+                required: false
+                widget: "string"
+              - name: "areaMississauga"
+                label: "Area mississauga"
+                required: false
+                widget: "string"
+              - name: "areaMississaugaDesc"
+                label: "Area mississauga desc"
+                required: false
+                widget: "string"
+              - name: "areaToronto"
+                label: "Area toronto"
+                required: false
+                widget: "string"
+              - name: "areaTorontoDesc"
+                label: "Area toronto desc"
+                required: false
+                widget: "string"
+              - name: "areaVaughan"
+                label: "Area vaughan"
+                required: false
+                widget: "string"
+              - name: "areaVaughanDesc"
+                label: "Area vaughan desc"
+                required: false
+                widget: "string"
+              - name: "areaCaledon"
+                label: "Area caledon"
+                required: false
+                widget: "string"
+              - name: "areaCaledonDesc"
+                label: "Area caledon desc"
+                required: false
+                widget: "string"
+              - name: "areaMilton"
+                label: "Area milton"
+                required: false
+                widget: "string"
+              - name: "areaMiltonDesc"
+                label: "Area milton desc"
+                required: false
+                widget: "string"
+              - name: "areaGeorgetown"
+                label: "Area georgetown"
+                required: false
+                widget: "string"
+              - name: "areaGeorgetownDesc"
+                label: "Area georgetown desc"
+                required: false
+                widget: "string"
+      - name: "text-10-area-city-pages"
+        label: "10. Area city pages"
+        file: "src/content/text/10-area-city-pages.json"
+        format: "json"
+        fields:
+          - name: "en"
+            label: "English"
+            required: false
+            widget: "object"
+            fields:
+              - name: "areaCityBack"
+                label: "Area city back"
+                required: false
+                widget: "string"
+              - name: "areaCityNeighborhoods"
+                label: "Area city neighborhoods"
+                required: false
+                widget: "string"
+              - name: "areaCityCoverageMap"
+                label: "Area city coverage map"
+                required: false
+                widget: "string"
+              - name: "areaCityBookingCta"
+                label: "Area city booking cta"
+                required: false
+                widget: "string"
+              - name: "areaCityBookNow"
+                label: "Area city book now"
+                required: false
+                widget: "string"
+              - name: "areaCityTrustedBy"
+                label: "Area city trusted by"
+                required: false
+                widget: "string"
+              - name: "areaCityDescBrampton"
+                label: "Area city desc brampton"
+                required: false
+                widget: "text"
+              - name: "areaCityDescMississauga"
+                label: "Area city desc mississauga"
+                required: false
+                widget: "text"
+              - name: "areaCityDescToronto"
+                label: "Area city desc toronto"
+                required: false
+                widget: "text"
+              - name: "areaCityDescVaughan"
+                label: "Area city desc vaughan"
+                required: false
+                widget: "text"
+              - name: "areaCityDescCaledon"
+                label: "Area city desc caledon"
+                required: false
+                widget: "text"
+              - name: "areaCityDescMilton"
+                label: "Area city desc milton"
+                required: false
+                widget: "text"
+              - name: "areaCityDescGeorgetown"
+                label: "Area city desc georgetown"
+                required: false
+                widget: "text"
+          - name: "fr"
+            label: "French"
+            required: false
+            widget: "object"
+            fields:
+              - name: "areaCityBack"
+                label: "Area city back"
+                required: false
+                widget: "string"
+              - name: "areaCityNeighborhoods"
+                label: "Area city neighborhoods"
+                required: false
+                widget: "string"
+              - name: "areaCityCoverageMap"
+                label: "Area city coverage map"
+                required: false
+                widget: "string"
+              - name: "areaCityBookingCta"
+                label: "Area city booking cta"
+                required: false
+                widget: "string"
+              - name: "areaCityBookNow"
+                label: "Area city book now"
+                required: false
+                widget: "string"
+              - name: "areaCityTrustedBy"
+                label: "Area city trusted by"
+                required: false
+                widget: "string"
+              - name: "areaCityDescBrampton"
+                label: "Area city desc brampton"
+                required: false
+                widget: "text"
+              - name: "areaCityDescMississauga"
+                label: "Area city desc mississauga"
+                required: false
+                widget: "text"
+              - name: "areaCityDescToronto"
+                label: "Area city desc toronto"
+                required: false
+                widget: "text"
+              - name: "areaCityDescVaughan"
+                label: "Area city desc vaughan"
+                required: false
+                widget: "text"
+              - name: "areaCityDescCaledon"
+                label: "Area city desc caledon"
+                required: false
+                widget: "text"
+              - name: "areaCityDescMilton"
+                label: "Area city desc milton"
+                required: false
+                widget: "text"
+              - name: "areaCityDescGeorgetown"
+                label: "Area city desc georgetown"
+                required: false
+                widget: "text"
+      - name: "text-11-quote-engine"
+        label: "11. Quote engine"
+        file: "src/content/text/11-quote-engine.json"
+        format: "json"
+        fields:
+          - name: "en"
+            label: "English"
+            required: false
+            widget: "object"
+            fields:
+              - name: "quoteLabel"
+                label: "Quote label"
+                required: false
+                widget: "string"
+              - name: "quoteTitle"
+                label: "Quote title"
+                required: false
+                widget: "string"
+              - name: "quoteSubtext"
+                label: "Quote subtext"
+                required: false
+                widget: "text"
+              - name: "quoteGuarantee1"
+                label: "Quote guarantee1"
+                required: false
+                widget: "string"
+              - name: "quoteGuarantee2"
+                label: "Quote guarantee2"
+                required: false
+                widget: "string"
+              - name: "quoteGuarantee3"
+                label: "Quote guarantee3"
+                required: false
+                widget: "string"
+              - name: "quoteGuarantee4"
+                label: "Quote guarantee4"
+                required: false
+                widget: "string"
+              - name: "quoteStep1"
+                label: "Quote step1"
+                required: false
+                widget: "string"
+              - name: "quoteFullName"
+                label: "Quote full name"
+                required: false
+                widget: "string"
+              - name: "quotePhone"
+                label: "Quote phone"
+                required: false
+                widget: "string"
+              - name: "quoteEmail"
+                label: "Quote email"
+                required: false
+                widget: "string"
+              - name: "quoteAddress"
+                label: "Quote address"
+                required: false
+                widget: "string"
+              - name: "quoteStep2"
+                label: "Quote step2"
+                required: false
+                widget: "string"
+              - name: "quoteServiceLabel"
+                label: "Quote service label"
+                required: false
+                widget: "string"
+              - name: "quoteBedrooms"
+                label: "Quote bedrooms"
+                required: false
+                widget: "string"
+              - name: "quoteBathrooms"
+                label: "Quote bathrooms"
+                required: false
+                widget: "string"
+              - name: "quoteSqft"
+                label: "Quote sqft"
+                required: false
+                widget: "string"
+              - name: "quoteFrequency"
+                label: "Quote frequency"
+                required: false
+                widget: "string"
+              - name: "quoteOneTime"
+                label: "Quote one time"
+                required: false
+                widget: "string"
+              - name: "quoteWeekly"
+                label: "Quote weekly"
+                required: false
+                widget: "string"
+              - name: "quoteBiWeekly"
+                label: "Quote bi weekly"
+                required: false
+                widget: "string"
+              - name: "quoteMonthly"
+                label: "Quote monthly"
+                required: false
+                widget: "string"
+              - name: "quoteDate"
+                label: "Quote date"
+                required: false
+                widget: "string"
+              - name: "quoteNotes"
+                label: "Quote notes"
+                required: false
+                widget: "string"
+              - name: "quoteNotesPlaceholder"
+                label: "Quote notes placeholder"
+                required: false
+                widget: "string"
+              - name: "quoteSubtotal"
+                label: "Quote subtotal"
+                required: false
+                widget: "string"
+              - name: "quoteDiscount"
+                label: "Quote discount"
+                required: false
+                widget: "string"
+              - name: "quoteTax"
+                label: "Quote tax"
+                required: false
+                widget: "string"
+              - name: "quoteTotal"
+                label: "Quote total"
+                required: false
+                widget: "string"
+              - name: "quoteOptionA"
+                label: "Quote option a"
+                required: false
+                widget: "string"
+              - name: "quoteOptionB"
+                label: "Quote option b"
+                required: false
+                widget: "string"
+              - name: "quoteOptionADesc"
+                label: "Quote option adesc"
+                required: false
+                widget: "string"
+              - name: "quoteOptionBDesc"
+                label: "Quote option bdesc"
+                required: false
+                widget: "text"
+              - name: "quoteSelectService"
+                label: "Quote select service"
+                required: false
+                widget: "string"
+              - name: "quoteSelectBedrooms"
+                label: "Quote select bedrooms"
+                required: false
+                widget: "string"
+              - name: "quoteSelectBathrooms"
+                label: "Quote select bathrooms"
+                required: false
+                widget: "string"
+              - name: "quoteSelectFrequency"
+                label: "Quote select frequency"
+                required: false
+                widget: "string"
+              - name: "quoteNameRequired"
+                label: "Quote name required"
+                required: false
+                widget: "string"
+              - name: "quotePhoneRequired"
+                label: "Quote phone required"
+                required: false
+                widget: "string"
+              - name: "quoteEmailRequired"
+                label: "Quote email required"
+                required: false
+                widget: "string"
+              - name: "quoteServiceRequired"
+                label: "Quote service required"
+                required: false
+                widget: "string"
+              - name: "quoteSuccess"
+                label: "Quote success"
+                required: false
+                widget: "string"
+              - name: "quoteReferenceId"
+                label: "Quote reference id"
+                required: false
+                widget: "string"
+              - name: "quoteClose"
+                label: "Quote close"
+                required: false
+                widget: "string"
+              - name: "quoteMsgGreeting"
+                label: "Quote msg greeting"
+                required: false
+                widget: "string"
+              - name: "quoteEmailSubject"
+                label: "Quote email subject"
+                required: false
+                widget: "string"
+              - name: "quoteChannelTitle"
+                label: "Quote channel title"
+                required: false
+                widget: "string"
+              - name: "quoteChannelHint"
+                label: "Quote channel hint"
+                required: false
+                widget: "text"
+              - name: "quoteChannelWhatsApp"
+                label: "Quote channel whats app"
+                required: false
+                widget: "string"
+              - name: "quoteChannelSMS"
+                label: "Quote channel sms"
+                required: false
+                widget: "string"
+              - name: "quoteChannelEmail"
+                label: "Quote channel email"
+                required: false
+                widget: "string"
+              - name: "quoteChannelWhatsAppSub"
+                label: "Quote channel whats app sub"
+                required: false
+                widget: "string"
+              - name: "quoteChannelSMSSub"
+                label: "Quote channel smssub"
+                required: false
+                widget: "string"
+              - name: "quoteChannelEmailSub"
+                label: "Quote channel email sub"
+                required: false
+                widget: "string"
+          - name: "fr"
+            label: "French"
+            required: false
+            widget: "object"
+            fields:
+              - name: "quoteLabel"
+                label: "Quote label"
+                required: false
+                widget: "string"
+              - name: "quoteTitle"
+                label: "Quote title"
+                required: false
+                widget: "string"
+              - name: "quoteSubtext"
+                label: "Quote subtext"
+                required: false
+                widget: "text"
+              - name: "quoteGuarantee1"
+                label: "Quote guarantee1"
+                required: false
+                widget: "string"
+              - name: "quoteGuarantee2"
+                label: "Quote guarantee2"
+                required: false
+                widget: "string"
+              - name: "quoteGuarantee3"
+                label: "Quote guarantee3"
+                required: false
+                widget: "string"
+              - name: "quoteGuarantee4"
+                label: "Quote guarantee4"
+                required: false
+                widget: "string"
+              - name: "quoteStep1"
+                label: "Quote step1"
+                required: false
+                widget: "string"
+              - name: "quoteFullName"
+                label: "Quote full name"
+                required: false
+                widget: "string"
+              - name: "quotePhone"
+                label: "Quote phone"
+                required: false
+                widget: "string"
+              - name: "quoteEmail"
+                label: "Quote email"
+                required: false
+                widget: "string"
+              - name: "quoteAddress"
+                label: "Quote address"
+                required: false
+                widget: "string"
+              - name: "quoteStep2"
+                label: "Quote step2"
+                required: false
+                widget: "string"
+              - name: "quoteServiceLabel"
+                label: "Quote service label"
+                required: false
+                widget: "string"
+              - name: "quoteBedrooms"
+                label: "Quote bedrooms"
+                required: false
+                widget: "string"
+              - name: "quoteBathrooms"
+                label: "Quote bathrooms"
+                required: false
+                widget: "string"
+              - name: "quoteSqft"
+                label: "Quote sqft"
+                required: false
+                widget: "string"
+              - name: "quoteFrequency"
+                label: "Quote frequency"
+                required: false
+                widget: "string"
+              - name: "quoteOneTime"
+                label: "Quote one time"
+                required: false
+                widget: "string"
+              - name: "quoteWeekly"
+                label: "Quote weekly"
+                required: false
+                widget: "string"
+              - name: "quoteBiWeekly"
+                label: "Quote bi weekly"
+                required: false
+                widget: "string"
+              - name: "quoteMonthly"
+                label: "Quote monthly"
+                required: false
+                widget: "string"
+              - name: "quoteDate"
+                label: "Quote date"
+                required: false
+                widget: "string"
+              - name: "quoteNotes"
+                label: "Quote notes"
+                required: false
+                widget: "string"
+              - name: "quoteNotesPlaceholder"
+                label: "Quote notes placeholder"
+                required: false
+                widget: "string"
+              - name: "quoteSubtotal"
+                label: "Quote subtotal"
+                required: false
+                widget: "string"
+              - name: "quoteDiscount"
+                label: "Quote discount"
+                required: false
+                widget: "string"
+              - name: "quoteTax"
+                label: "Quote tax"
+                required: false
+                widget: "string"
+              - name: "quoteTotal"
+                label: "Quote total"
+                required: false
+                widget: "string"
+              - name: "quoteOptionA"
+                label: "Quote option a"
+                required: false
+                widget: "string"
+              - name: "quoteOptionB"
+                label: "Quote option b"
+                required: false
+                widget: "string"
+              - name: "quoteOptionADesc"
+                label: "Quote option adesc"
+                required: false
+                widget: "text"
+              - name: "quoteOptionBDesc"
+                label: "Quote option bdesc"
+                required: false
+                widget: "text"
+              - name: "quoteSelectService"
+                label: "Quote select service"
+                required: false
+                widget: "string"
+              - name: "quoteSelectBedrooms"
+                label: "Quote select bedrooms"
+                required: false
+                widget: "string"
+              - name: "quoteSelectBathrooms"
+                label: "Quote select bathrooms"
+                required: false
+                widget: "string"
+              - name: "quoteSelectFrequency"
+                label: "Quote select frequency"
+                required: false
+                widget: "string"
+              - name: "quoteNameRequired"
+                label: "Quote name required"
+                required: false
+                widget: "string"
+              - name: "quotePhoneRequired"
+                label: "Quote phone required"
+                required: false
+                widget: "string"
+              - name: "quoteEmailRequired"
+                label: "Quote email required"
+                required: false
+                widget: "string"
+              - name: "quoteServiceRequired"
+                label: "Quote service required"
+                required: false
+                widget: "string"
+              - name: "quoteSuccess"
+                label: "Quote success"
+                required: false
+                widget: "string"
+              - name: "quoteReferenceId"
+                label: "Quote reference id"
+                required: false
+                widget: "string"
+              - name: "quoteClose"
+                label: "Quote close"
+                required: false
+                widget: "string"
+              - name: "quoteMsgGreeting"
+                label: "Quote msg greeting"
+                required: false
+                widget: "text"
+              - name: "quoteEmailSubject"
+                label: "Quote email subject"
+                required: false
+                widget: "string"
+              - name: "quoteChannelTitle"
+                label: "Quote channel title"
+                required: false
+                widget: "string"
+              - name: "quoteChannelHint"
+                label: "Quote channel hint"
+                required: false
+                widget: "text"
+              - name: "quoteChannelWhatsApp"
+                label: "Quote channel whats app"
+                required: false
+                widget: "string"
+              - name: "quoteChannelSMS"
+                label: "Quote channel sms"
+                required: false
+                widget: "string"
+              - name: "quoteChannelEmail"
+                label: "Quote channel email"
+                required: false
+                widget: "string"
+              - name: "quoteChannelWhatsAppSub"
+                label: "Quote channel whats app sub"
+                required: false
+                widget: "string"
+              - name: "quoteChannelSMSSub"
+                label: "Quote channel smssub"
+                required: false
+                widget: "string"
+              - name: "quoteChannelEmailSub"
+                label: "Quote channel email sub"
+                required: false
+                widget: "string"
+      - name: "text-12-booking"
+        label: "12. Booking"
+        file: "src/content/text/12-booking.json"
+        format: "json"
+        fields:
+          - name: "en"
+            label: "English"
+            required: false
+            widget: "object"
+            fields:
+              - name: "bookingLabel"
+                label: "Booking label"
+                required: false
+                widget: "string"
+              - name: "bookingTitle"
+                label: "Booking title"
+                required: false
+                widget: "string"
+              - name: "bookingSubtext"
+                label: "Booking subtext"
+                required: false
+                widget: "text"
+              - name: "bookingHowTitle"
+                label: "Booking how title"
+                required: false
+                widget: "string"
+              - name: "bookingStep1Title"
+                label: "Booking step1 title"
+                required: false
+                widget: "string"
+              - name: "bookingStep1Desc"
+                label: "Booking step1 desc"
+                required: false
+                widget: "string"
+              - name: "bookingStep2Title"
+                label: "Booking step2 title"
+                required: false
+                widget: "string"
+              - name: "bookingStep2Desc"
+                label: "Booking step2 desc"
+                required: false
+                widget: "string"
+              - name: "bookingStep3Title"
+                label: "Booking step3 title"
+                required: false
+                widget: "string"
+              - name: "bookingStep3Desc"
+                label: "Booking step3 desc"
+                required: false
+                widget: "string"
+              - name: "bookingNoteTitle"
+                label: "Booking note title"
+                required: false
+                widget: "string"
+              - name: "bookingNoteDesc"
+                label: "Booking note desc"
+                required: false
+                widget: "string"
+              - name: "bookingEmailLabel"
+                label: "Booking email label"
+                required: false
+                widget: "string"
+              - name: "bookingEmailValue"
+                label: "Booking email value"
+                required: false
+                widget: "string"
+              - name: "bookingLoading"
+                label: "Booking loading"
+                required: false
+                widget: "string"
+          - name: "fr"
+            label: "French"
+            required: false
+            widget: "object"
+            fields:
+              - name: "bookingLabel"
+                label: "Booking label"
+                required: false
+                widget: "string"
+              - name: "bookingTitle"
+                label: "Booking title"
+                required: false
+                widget: "string"
+              - name: "bookingSubtext"
+                label: "Booking subtext"
+                required: false
+                widget: "text"
+              - name: "bookingHowTitle"
+                label: "Booking how title"
+                required: false
+                widget: "string"
+              - name: "bookingStep1Title"
+                label: "Booking step1 title"
+                required: false
+                widget: "string"
+              - name: "bookingStep1Desc"
+                label: "Booking step1 desc"
+                required: false
+                widget: "string"
+              - name: "bookingStep2Title"
+                label: "Booking step2 title"
+                required: false
+                widget: "string"
+              - name: "bookingStep2Desc"
+                label: "Booking step2 desc"
+                required: false
+                widget: "string"
+              - name: "bookingStep3Title"
+                label: "Booking step3 title"
+                required: false
+                widget: "string"
+              - name: "bookingStep3Desc"
+                label: "Booking step3 desc"
+                required: false
+                widget: "string"
+              - name: "bookingNoteTitle"
+                label: "Booking note title"
+                required: false
+                widget: "string"
+              - name: "bookingNoteDesc"
+                label: "Booking note desc"
+                required: false
+                widget: "text"
+              - name: "bookingEmailLabel"
+                label: "Booking email label"
+                required: false
+                widget: "string"
+              - name: "bookingEmailValue"
+                label: "Booking email value"
+                required: false
+                widget: "string"
+              - name: "bookingLoading"
+                label: "Booking loading"
+                required: false
+                widget: "string"
+      - name: "text-13-contact-page"
+        label: "13. Contact page"
+        file: "src/content/text/13-contact-page.json"
+        format: "json"
+        fields:
+          - name: "en"
+            label: "English"
+            required: false
+            widget: "object"
+            fields:
+              - name: "contactPageTitle"
+                label: "Contact page title"
+                required: false
+                widget: "string"
+              - name: "contactPageSubtext"
+                label: "Contact page subtext"
+                required: false
+                widget: "text"
+              - name: "contactFormTitle"
+                label: "Contact form title"
+                required: false
+                widget: "string"
+              - name: "contactFormName"
+                label: "Contact form name"
+                required: false
+                widget: "string"
+              - name: "contactFormEmail"
+                label: "Contact form email"
+                required: false
+                widget: "string"
+              - name: "contactFormPhone"
+                label: "Contact form phone"
+                required: false
+                widget: "string"
+              - name: "contactFormSubject"
+                label: "Contact form subject"
+                required: false
+                widget: "string"
+              - name: "contactFormMessage"
+                label: "Contact form message"
+                required: false
+                widget: "string"
+              - name: "contactFormSubmit"
+                label: "Contact form submit"
+                required: false
+                widget: "string"
+              - name: "contactFormSuccessTitle"
+                label: "Contact form success title"
+                required: false
+                widget: "string"
+              - name: "contactFormSuccessText"
+                label: "Contact form success text"
+                required: false
+                widget: "string"
+              - name: "contactFormError"
+                label: "Contact form error"
+                required: false
+                widget: "string"
+              - name: "contactInfoTitle"
+                label: "Contact info title"
+                required: false
+                widget: "string"
+              - name: "contactPhoneLabel"
+                label: "Contact phone label"
+                required: false
+                widget: "string"
+              - name: "contactEmailLabel"
+                label: "Contact email label"
+                required: false
+                widget: "string"
+              - name: "contactAddressLabel"
+                label: "Contact address label"
+                required: false
+                widget: "string"
+              - name: "contactHoursLabel"
+                label: "Contact hours label"
+                required: false
+                widget: "string"
+              - name: "contactHoursValue"
+                label: "Contact hours value"
+                required: false
+                widget: "string"
+              - name: "contactMapTitle"
+                label: "Contact map title"
+                required: false
+                widget: "string"
+          - name: "fr"
+            label: "French"
+            required: false
+            widget: "object"
+            fields:
+              - name: "contactPageTitle"
+                label: "Contact page title"
+                required: false
+                widget: "string"
+              - name: "contactPageSubtext"
+                label: "Contact page subtext"
+                required: false
+                widget: "text"
+              - name: "contactFormTitle"
+                label: "Contact form title"
+                required: false
+                widget: "string"
+              - name: "contactFormName"
+                label: "Contact form name"
+                required: false
+                widget: "string"
+              - name: "contactFormEmail"
+                label: "Contact form email"
+                required: false
+                widget: "string"
+              - name: "contactFormPhone"
+                label: "Contact form phone"
+                required: false
+                widget: "string"
+              - name: "contactFormSubject"
+                label: "Contact form subject"
+                required: false
+                widget: "string"
+              - name: "contactFormMessage"
+                label: "Contact form message"
+                required: false
+                widget: "string"
+              - name: "contactFormSubmit"
+                label: "Contact form submit"
+                required: false
+                widget: "string"
+              - name: "contactFormSuccessTitle"
+                label: "Contact form success title"
+                required: false
+                widget: "string"
+              - name: "contactFormSuccessText"
+                label: "Contact form success text"
+                required: false
+                widget: "string"
+              - name: "contactFormError"
+                label: "Contact form error"
+                required: false
+                widget: "string"
+              - name: "contactInfoTitle"
+                label: "Contact info title"
+                required: false
+                widget: "string"
+              - name: "contactPhoneLabel"
+                label: "Contact phone label"
+                required: false
+                widget: "string"
+              - name: "contactEmailLabel"
+                label: "Contact email label"
+                required: false
+                widget: "string"
+              - name: "contactAddressLabel"
+                label: "Contact address label"
+                required: false
+                widget: "string"
+              - name: "contactHoursLabel"
+                label: "Contact hours label"
+                required: false
+                widget: "string"
+              - name: "contactHoursValue"
+                label: "Contact hours value"
+                required: false
+                widget: "string"
+              - name: "contactMapTitle"
+                label: "Contact map title"
+                required: false
+                widget: "string"
+      - name: "text-14-checkout-modal"
+        label: "14. Checkout modal"
+        file: "src/content/text/14-checkout-modal.json"
+        format: "json"
+        fields:
+          - name: "en"
+            label: "English"
+            required: false
+            widget: "object"
+            fields:
+              - name: "checkoutTitle"
+                label: "Checkout title"
+                required: false
+                widget: "string"
+              - name: "checkoutSubtext"
+                label: "Checkout subtext"
+                required: false
+                widget: "string"
+              - name: "checkoutDeposit"
+                label: "Checkout deposit"
+                required: false
+                widget: "string"
+              - name: "checkoutFullAmount"
+                label: "Checkout full amount"
+                required: false
+                widget: "string"
+              - name: "checkoutStripeTab"
+                label: "Checkout stripe tab"
+                required: false
+                widget: "string"
+              - name: "checkoutInteracTab"
+                label: "Checkout interac tab"
+                required: false
+                widget: "string"
+              - name: "checkoutStripeDesc"
+                label: "Checkout stripe desc"
+                required: false
+                widget: "string"
+              - name: "checkoutInteracDesc"
+                label: "Checkout interac desc"
+                required: false
+                widget: "string"
+              - name: "checkoutInteracEmail"
+                label: "Checkout interac email"
+                required: false
+                widget: "string"
+              - name: "checkoutInteracMemo"
+                label: "Checkout interac memo"
+                required: false
+                widget: "string"
+              - name: "checkoutInteracNote"
+                label: "Checkout interac note"
+                required: false
+                widget: "text"
+              - name: "checkoutPayNow"
+                label: "Checkout pay now"
+                required: false
+                widget: "string"
+              - name: "checkoutProcessing"
+                label: "Checkout processing"
+                required: false
+                widget: "string"
+              - name: "checkoutAmount"
+                label: "Checkout amount"
+                required: false
+                widget: "string"
+              - name: "checkoutBookingRef"
+                label: "Checkout booking ref"
+                required: false
+                widget: "string"
+              - name: "checkoutCancel"
+                label: "Checkout cancel"
+                required: false
+                widget: "string"
+          - name: "fr"
+            label: "French"
+            required: false
+            widget: "object"
+            fields:
+              - name: "checkoutTitle"
+                label: "Checkout title"
+                required: false
+                widget: "string"
+              - name: "checkoutSubtext"
+                label: "Checkout subtext"
+                required: false
+                widget: "string"
+              - name: "checkoutDeposit"
+                label: "Checkout deposit"
+                required: false
+                widget: "string"
+              - name: "checkoutFullAmount"
+                label: "Checkout full amount"
+                required: false
+                widget: "string"
+              - name: "checkoutStripeTab"
+                label: "Checkout stripe tab"
+                required: false
+                widget: "string"
+              - name: "checkoutInteracTab"
+                label: "Checkout interac tab"
+                required: false
+                widget: "string"
+              - name: "checkoutStripeDesc"
+                label: "Checkout stripe desc"
+                required: false
+                widget: "string"
+              - name: "checkoutInteracDesc"
+                label: "Checkout interac desc"
+                required: false
+                widget: "string"
+              - name: "checkoutInteracEmail"
+                label: "Checkout interac email"
+                required: false
+                widget: "string"
+              - name: "checkoutInteracMemo"
+                label: "Checkout interac memo"
+                required: false
+                widget: "string"
+              - name: "checkoutInteracNote"
+                label: "Checkout interac note"
+                required: false
+                widget: "text"
+              - name: "checkoutPayNow"
+                label: "Checkout pay now"
+                required: false
+                widget: "string"
+              - name: "checkoutProcessing"
+                label: "Checkout processing"
+                required: false
+                widget: "string"
+              - name: "checkoutAmount"
+                label: "Checkout amount"
+                required: false
+                widget: "string"
+              - name: "checkoutBookingRef"
+                label: "Checkout booking ref"
+                required: false
+                widget: "string"
+              - name: "checkoutCancel"
+                label: "Checkout cancel"
+                required: false
+                widget: "string"
+      - name: "text-15-home-page-sections"
+        label: "15. Home page sections"
+        file: "src/content/text/15-home-page-sections.json"
+        format: "json"
+        fields:
+          - name: "en"
+            label: "English"
+            required: false
+            widget: "object"
+            fields:
+              - name: "homeServicesPreviewTitle"
+                label: "Home services preview title"
+                required: false
+                widget: "string"
+              - name: "homeServicesPreviewLink"
+                label: "Home services preview link"
+                required: false
+                widget: "string"
+              - name: "homeReviewsPreviewTitle"
+                label: "Home reviews preview title"
+                required: false
+                widget: "string"
+              - name: "homeReviewsPreviewLink"
+                label: "Home reviews preview link"
+                required: false
+                widget: "string"
+              - name: "homeAreasPreviewTitle"
+                label: "Home areas preview title"
+                required: false
+                widget: "string"
+              - name: "homeAreasPreviewLink"
+                label: "Home areas preview link"
+                required: false
+                widget: "string"
+              - name: "homeCtaTitle"
+                label: "Home cta title"
+                required: false
+                widget: "string"
+              - name: "homeCtaSubtext"
+                label: "Home cta subtext"
+                required: false
+                widget: "string"
+          - name: "fr"
+            label: "French"
+            required: false
+            widget: "object"
+            fields:
+              - name: "homeServicesPreviewTitle"
+                label: "Home services preview title"
+                required: false
+                widget: "string"
+              - name: "homeServicesPreviewLink"
+                label: "Home services preview link"
+                required: false
+                widget: "string"
+              - name: "homeReviewsPreviewTitle"
+                label: "Home reviews preview title"
+                required: false
+                widget: "string"
+              - name: "homeReviewsPreviewLink"
+                label: "Home reviews preview link"
+                required: false
+                widget: "string"
+              - name: "homeAreasPreviewTitle"
+                label: "Home areas preview title"
+                required: false
+                widget: "string"
+              - name: "homeAreasPreviewLink"
+                label: "Home areas preview link"
+                required: false
+                widget: "string"
+              - name: "homeCtaTitle"
+                label: "Home cta title"
+                required: false
+                widget: "string"
+              - name: "homeCtaSubtext"
+                label: "Home cta subtext"
+                required: false
+                widget: "text"
+      - name: "text-16-our-work-gallery"
+        label: "16. Our work gallery"
+        file: "src/content/text/16-our-work-gallery.json"
+        format: "json"
+        fields:
+          - name: "en"
+            label: "English"
+            required: false
+            widget: "object"
+            fields:
+              - name: "ourWorkLabel"
+                label: "Our work label"
+                required: false
+                widget: "string"
+              - name: "ourWorkTitle"
+                label: "Our work title"
+                required: false
+                widget: "string"
+              - name: "ourWorkSubtext"
+                label: "Our work subtext"
+                required: false
+                widget: "text"
+              - name: "ourWorkViewMore"
+                label: "Our work view more"
+                required: false
+                widget: "string"
+              - name: "ourWorkBefore"
+                label: "Our work before"
+                required: false
+                widget: "string"
+              - name: "ourWorkAfter"
+                label: "Our work after"
+                required: false
+                widget: "string"
+              - name: "ourWorkCategoryResidential"
+                label: "Our work category residential"
+                required: false
+                widget: "string"
+              - name: "ourWorkCategoryDeep"
+                label: "Our work category deep"
+                required: false
+                widget: "string"
+              - name: "ourWorkCategoryMove"
+                label: "Our work category move"
+                required: false
+                widget: "string"
+              - name: "ourWorkCategoryOffice"
+                label: "Our work category office"
+                required: false
+                widget: "string"
+              - name: "ourWorkCategoryAirbnb"
+                label: "Our work category airbnb"
+                required: false
+                widget: "string"
+              - name: "ourWorkCategoryConstruction"
+                label: "Our work category construction"
+                required: false
+                widget: "string"
+          - name: "fr"
+            label: "French"
+            required: false
+            widget: "object"
+            fields:
+              - name: "ourWorkLabel"
+                label: "Our work label"
+                required: false
+                widget: "string"
+              - name: "ourWorkTitle"
+                label: "Our work title"
+                required: false
+                widget: "string"
+              - name: "ourWorkSubtext"
+                label: "Our work subtext"
+                required: false
+                widget: "text"
+              - name: "ourWorkViewMore"
+                label: "Our work view more"
+                required: false
+                widget: "string"
+              - name: "ourWorkBefore"
+                label: "Our work before"
+                required: false
+                widget: "string"
+              - name: "ourWorkAfter"
+                label: "Our work after"
+                required: false
+                widget: "string"
+              - name: "ourWorkCategoryResidential"
+                label: "Our work category residential"
+                required: false
+                widget: "string"
+              - name: "ourWorkCategoryDeep"
+                label: "Our work category deep"
+                required: false
+                widget: "string"
+              - name: "ourWorkCategoryMove"
+                label: "Our work category move"
+                required: false
+                widget: "string"
+              - name: "ourWorkCategoryOffice"
+                label: "Our work category office"
+                required: false
+                widget: "string"
+              - name: "ourWorkCategoryAirbnb"
+                label: "Our work category airbnb"
+                required: false
+                widget: "string"
+              - name: "ourWorkCategoryConstruction"
+                label: "Our work category construction"
+                required: false
+                widget: "string"
+      - name: "text-17-home-page-section-our-work"
+        label: "17. Home page section our work"
+        file: "src/content/text/17-home-page-section-our-work.json"
+        format: "json"
+        fields:
+          - name: "en"
+            label: "English"
+            required: false
+            widget: "object"
+            fields:
+              - name: "homeOurWorkTitle"
+                label: "Home our work title"
+                required: false
+                widget: "string"
+              - name: "homeOurWorkSubtext"
+                label: "Home our work subtext"
+                required: false
+                widget: "text"
+          - name: "fr"
+            label: "French"
+            required: false
+            widget: "object"
+            fields:
+              - name: "homeOurWorkTitle"
+                label: "Home our work title"
+                required: false
+                widget: "string"
+              - name: "homeOurWorkSubtext"
+                label: "Home our work subtext"
+                required: false
+                widget: "text"
+      - name: "text-18-footer"
+        label: "18. Footer"
+        file: "src/content/text/18-footer.json"
+        format: "json"
+        fields:
+          - name: "en"
+            label: "English"
+            required: false
+            widget: "object"
+            fields:
+              - name: "footerCtaTitle"
+                label: "Footer cta title"
+                required: false
+                widget: "string"
+              - name: "footerCtaSubtext"
+                label: "Footer cta subtext"
+                required: false
+                widget: "text"
+              - name: "footerCall"
+                label: "Footer call"
+                required: false
+                widget: "string"
+              - name: "footerEmail"
+                label: "Footer email"
+                required: false
+                widget: "string"
+              - name: "footerQuickLinks"
+                label: "Footer quick links"
+                required: false
+                widget: "string"
+              - name: "footerOurServices"
+                label: "Footer our services"
+                required: false
+                widget: "string"
+              - name: "footerContactUs"
+                label: "Footer contact us"
+                required: false
+                widget: "string"
+              - name: "footerBrandDesc"
+                label: "Footer brand desc"
+                required: false
+                widget: "text"
+              - name: "footerFollowUs"
+                label: "Footer follow us"
+                required: false
+                widget: "string"
+              - name: "footerLegal"
+                label: "Footer legal"
+                required: false
+                widget: "string"
+              - name: "footerInsured"
+                label: "Footer insured"
+                required: false
+                widget: "string"
+          - name: "fr"
+            label: "French"
+            required: false
+            widget: "object"
+            fields:
+              - name: "footerCtaTitle"
+                label: "Footer cta title"
+                required: false
+                widget: "string"
+              - name: "footerCtaSubtext"
+                label: "Footer cta subtext"
+                required: false
+                widget: "text"
+              - name: "footerCall"
+                label: "Footer call"
+                required: false
+                widget: "string"
+              - name: "footerEmail"
+                label: "Footer email"
+                required: false
+                widget: "string"
+              - name: "footerQuickLinks"
+                label: "Footer quick links"
+                required: false
+                widget: "string"
+              - name: "footerOurServices"
+                label: "Footer our services"
+                required: false
+                widget: "string"
+              - name: "footerContactUs"
+                label: "Footer contact us"
+                required: false
+                widget: "string"
+              - name: "footerBrandDesc"
+                label: "Footer brand desc"
+                required: false
+                widget: "text"
+              - name: "footerFollowUs"
+                label: "Footer follow us"
+                required: false
+                widget: "string"
+              - name: "footerLegal"
+                label: "Footer legal"
+                required: false
+                widget: "string"
+              - name: "footerInsured"
+                label: "Footer insured"
+                required: false
+                widget: "string"
+      - name: "text-19-whatsapp-sms"
+        label: "19. WhatsApp / SMS"
+        file: "src/content/text/19-whatsapp-sms.json"
+        format: "json"
+        fields:
+          - name: "en"
+            label: "English"
+            required: false
+            widget: "object"
+            fields:
+              - name: "whatsappChat"
+                label: "Whatsapp chat"
+                required: false
+                widget: "string"
+              - name: "topbarWhatsApp"
+                label: "Topbar whats app"
+                required: false
+                widget: "string"
+              - name: "smsBtn"
+                label: "Sms btn"
+                required: false
+                widget: "string"
+              - name: "smsBody"
+                label: "Sms body"
+                required: false
+                widget: "string"
+              - name: "contactQuickTitle"
+                label: "Contact quick title"
+                required: false
+                widget: "string"
+          - name: "fr"
+            label: "French"
+            required: false
+            widget: "object"
+            fields:
+              - name: "whatsappChat"
+                label: "Whatsapp chat"
+                required: false
+                widget: "string"
+              - name: "topbarWhatsApp"
+                label: "Topbar whats app"
+                required: false
+                widget: "string"
+              - name: "smsBtn"
+                label: "Sms btn"
+                required: false
+                widget: "string"
+              - name: "smsBody"
+                label: "Sms body"
+                required: false
+                widget: "text"
+              - name: "contactQuickTitle"
+                label: "Contact quick title"
+                required: false
+                widget: "string"
+      - name: "text-20-common"
+        label: "20. Common"
+        file: "src/content/text/20-common.json"
+        format: "json"
+        fields:
+          - name: "en"
+            label: "English"
+            required: false
+            widget: "object"
+            fields:
+              - name: "langEnglish"
+                label: "Lang english"
+                required: false
+                widget: "string"
+              - name: "langFrench"
+                label: "Lang french"
+                required: false
+                widget: "string"
+              - name: "switchLang"
+                label: "Switch lang"
+                required: false
+                widget: "string"
+              - name: "loading"
+                label: "Loading"
+                required: false
+                widget: "string"
+              - name: "pageNotFound"
+                label: "Page not found"
+                required: false
+                widget: "string"
+              - name: "pageNotFoundDesc"
+                label: "Page not found desc"
+                required: false
+                widget: "string"
+              - name: "backToHome"
+                label: "Back to home"
+                required: false
+                widget: "string"
+          - name: "fr"
+            label: "French"
+            required: false
+            widget: "object"
+            fields:
+              - name: "langEnglish"
+                label: "Lang english"
+                required: false
+                widget: "string"
+              - name: "langFrench"
+                label: "Lang french"
+                required: false
+                widget: "string"
+              - name: "switchLang"
+                label: "Switch lang"
+                required: false
+                widget: "string"
+              - name: "loading"
+                label: "Loading"
+                required: false
+                widget: "string"
+              - name: "pageNotFound"
+                label: "Page not found"
+                required: false
+                widget: "string"
+              - name: "pageNotFoundDesc"
+                label: "Page not found desc"
+                required: false
+                widget: "string"
+              - name: "backToHome"
+                label: "Back to home"
+                required: false
+                widget: "string"
+  - name: "data"
+    label: "2. Services, reviews, cities, prices, contact"
+    files:
+      - name: "data-services"
+        label: "Services (details of each service)"
+        file: "src/content/data/services.json"
+        format: "json"
+        fields:
+          - name: "items"
+            label: "Items"
+            required: false
+            widget: "list"
+            summary: "{{fields.id}}"
+            fields:
+              - name: "id"
+                label: "Id"
+                required: false
+                widget: "string"
+              - name: "titleKey"
+                label: "Title key"
+                required: false
+                widget: "string"
+              - name: "descKey"
+                label: "Desc key"
+                required: false
+                widget: "string"
+              - name: "icon"
+                label: "Icon"
+                required: false
+                widget: "string"
+              - name: "imageSeq"
+                label: "Image seq"
+                required: false
+                widget: "string"
+              - name: "category"
+                label: "Category"
+                required: false
+                widget: "string"
+              - name: "startingPrice"
+                label: "Starting price"
+                required: false
+                widget: "number"
+              - name: "features"
+                label: "Features"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "string"
+              - name: "heroTitleEn"
+                label: "Hero title en"
+                required: false
+                widget: "string"
+              - name: "heroTitleFr"
+                label: "Hero title fr"
+                required: false
+                widget: "string"
+              - name: "heroSubEn"
+                label: "Hero sub en"
+                required: false
+                widget: "text"
+              - name: "heroSubFr"
+                label: "Hero sub fr"
+                required: false
+                widget: "text"
+              - name: "overviewEn"
+                label: "Overview en"
+                required: false
+                widget: "text"
+              - name: "overviewFr"
+                label: "Overview fr"
+                required: false
+                widget: "text"
+              - name: "includesEn"
+                label: "Includes en"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "string"
+              - name: "includesFr"
+                label: "Includes fr"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "text"
+              - name: "pricingNoteEn"
+                label: "Pricing note en"
+                required: false
+                widget: "text"
+              - name: "pricingNoteFr"
+                label: "Pricing note fr"
+                required: false
+                widget: "text"
+              - name: "processEn"
+                label: "Process en"
+                required: false
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - name: "step"
+                    label: "Step"
+                    required: false
+                    widget: "string"
+                  - name: "title"
+                    label: "Title"
+                    required: false
+                    widget: "string"
+                  - name: "desc"
+                    label: "Desc"
+                    required: false
+                    widget: "text"
+              - name: "processFr"
+                label: "Process fr"
+                required: false
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - name: "step"
+                    label: "Step"
+                    required: false
+                    widget: "string"
+                  - name: "title"
+                    label: "Title"
+                    required: false
+                    widget: "string"
+                  - name: "desc"
+                    label: "Desc"
+                    required: false
+                    widget: "string"
+              - name: "faqEn"
+                label: "Faq en"
+                required: false
+                widget: "list"
+                summary: "{{fields.q}}"
+                fields:
+                  - name: "q"
+                    label: "Q"
+                    required: false
+                    widget: "string"
+                  - name: "a"
+                    label: "A"
+                    required: false
+                    widget: "text"
+              - name: "faqFr"
+                label: "Faq fr"
+                required: false
+                widget: "list"
+                summary: "{{fields.q}}"
+                fields:
+                  - name: "q"
+                    label: "Q"
+                    required: false
+                    widget: "string"
+                  - name: "a"
+                    label: "A"
+                    required: false
+                    widget: "text"
+      - name: "data-servicePictures"
+        label: "Service pictures"
+        file: "src/content/data/servicePictures.json"
+        format: "json"
+        fields:
+          - name: "homeCardPictures"
+            label: "Home card pictures"
+            required: false
+            widget: "object"
+            fields:
+              - name: "residential"
+                label: "Residential"
+                required: false
+                widget: "image"
+              - name: "deep-clean"
+                label: "Deep clean"
+                required: false
+                widget: "image"
+              - name: "move"
+                label: "Move"
+                required: false
+                widget: "image"
+              - name: "office"
+                label: "Office"
+                required: false
+                widget: "image"
+              - name: "airbnb"
+                label: "Airbnb"
+                required: false
+                widget: "image"
+              - name: "post-construction"
+                label: "Post construction"
+                required: false
+                widget: "image"
+          - name: "servicesPageCardPictures"
+            label: "Services page card pictures"
+            required: false
+            widget: "object"
+            fields:
+              - name: "residential"
+                label: "Residential"
+                required: false
+                widget: "image"
+              - name: "deep-clean"
+                label: "Deep clean"
+                required: false
+                widget: "image"
+              - name: "move"
+                label: "Move"
+                required: false
+                widget: "image"
+              - name: "office"
+                label: "Office"
+                required: false
+                widget: "image"
+              - name: "airbnb"
+                label: "Airbnb"
+                required: false
+                widget: "image"
+              - name: "post-construction"
+                label: "Post construction"
+                required: false
+                widget: "image"
+          - name: "pageBanners"
+            label: "Page banners"
+            required: false
+            widget: "object"
+            fields:
+              - name: "residential"
+                label: "Residential"
+                required: false
+                widget: "image"
+              - name: "deep-clean"
+                label: "Deep clean"
+                required: false
+                widget: "image"
+              - name: "move"
+                label: "Move"
+                required: false
+                widget: "image"
+              - name: "office"
+                label: "Office"
+                required: false
+                widget: "image"
+              - name: "airbnb"
+                label: "Airbnb"
+                required: false
+                widget: "image"
+              - name: "post-construction"
+                label: "Post construction"
+                required: false
+                widget: "image"
+      - name: "data-reviews"
+        label: "Customer reviews"
+        file: "src/content/data/reviews.json"
+        format: "json"
+        fields:
+          - name: "items"
+            label: "Items"
+            required: false
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - name: "id"
+                label: "Id"
+                required: false
+                widget: "number"
+              - name: "name"
+                label: "Name"
+                required: false
+                widget: "string"
+              - name: "location"
+                label: "Location"
+                required: false
+                widget: "string"
+              - name: "rating"
+                label: "Rating"
+                required: false
+                widget: "number"
+              - name: "serviceType"
+                label: "Service type"
+                required: false
+                widget: "string"
+              - name: "textEn"
+                label: "Text en"
+                required: false
+                widget: "text"
+              - name: "textFr"
+                label: "Text fr"
+                required: false
+                widget: "text"
+              - name: "initials"
+                label: "Initials"
+                required: false
+                widget: "string"
+      - name: "data-workGallery"
+        label: "Our work (before / after gallery)"
+        file: "src/content/data/workGallery.json"
+        format: "json"
+        fields:
+          - name: "items"
+            label: "Items"
+            required: false
+            widget: "list"
+            summary: "{{fields.categoryKey}}"
+            fields:
+              - name: "id"
+                label: "Id"
+                required: false
+                widget: "number"
+              - name: "imageUrl"
+                label: "Image url"
+                required: false
+                widget: "image"
+              - name: "categoryKey"
+                label: "Category key"
+                required: false
+                widget: "string"
+              - name: "titleEn"
+                label: "Title en"
+                required: false
+                widget: "string"
+              - name: "titleFr"
+                label: "Title fr"
+                required: false
+                widget: "string"
+              - name: "descEn"
+                label: "Desc en"
+                required: false
+                widget: "text"
+              - name: "descFr"
+                label: "Desc fr"
+                required: false
+                widget: "text"
+      - name: "data-whyUsPillars"
+        label: "Why choose us"
+        file: "src/content/data/whyUsPillars.json"
+        format: "json"
+        fields:
+          - name: "items"
+            label: "Items"
+            required: false
+            widget: "list"
+            summary: "{{fields.icon}}"
+            fields:
+              - name: "icon"
+                label: "Icon"
+                required: false
+                widget: "string"
+              - name: "titleKey"
+                label: "Title key"
+                required: false
+                widget: "string"
+              - name: "descKey"
+                label: "Desc key"
+                required: false
+                widget: "string"
+      - name: "data-serviceAreas"
+        label: "Service areas (cities list)"
+        file: "src/content/data/serviceAreas.json"
+        format: "json"
+        fields:
+          - name: "items"
+            label: "Items"
+            required: false
+            widget: "list"
+            summary: "{{fields.cityKey}}"
+            fields:
+              - name: "cityKey"
+                label: "City key"
+                required: false
+                widget: "string"
+              - name: "descKey"
+                label: "Desc key"
+                required: false
+                widget: "string"
+              - name: "icon"
+                label: "Icon"
+                required: false
+                widget: "string"
+              - name: "cityId"
+                label: "City id"
+                required: false
+                widget: "string"
+      - name: "data-cityDetails"
+        label: "City pages"
+        file: "src/content/data/cityDetails.json"
+        format: "json"
+        fields:
+          - name: "brampton"
+            label: "Brampton"
+            required: false
+            widget: "object"
+            fields:
+              - name: "titleEn"
+                label: "Title en"
+                required: false
+                widget: "string"
+              - name: "titleFr"
+                label: "Title fr"
+                required: false
+                widget: "string"
+              - name: "descKey"
+                label: "Desc key"
+                required: false
+                widget: "string"
+              - name: "neighborhoodsEn"
+                label: "Neighborhoods en"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "string"
+              - name: "neighborhoodsFr"
+                label: "Neighborhoods fr"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "string"
+              - name: "mapEmbedUrl"
+                label: "Map embed url"
+                required: false
+                widget: "text"
+          - name: "mississauga"
+            label: "Mississauga"
+            required: false
+            widget: "object"
+            fields:
+              - name: "titleEn"
+                label: "Title en"
+                required: false
+                widget: "string"
+              - name: "titleFr"
+                label: "Title fr"
+                required: false
+                widget: "string"
+              - name: "descKey"
+                label: "Desc key"
+                required: false
+                widget: "string"
+              - name: "neighborhoodsEn"
+                label: "Neighborhoods en"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "string"
+              - name: "neighborhoodsFr"
+                label: "Neighborhoods fr"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "string"
+              - name: "mapEmbedUrl"
+                label: "Map embed url"
+                required: false
+                widget: "text"
+          - name: "toronto"
+            label: "Toronto"
+            required: false
+            widget: "object"
+            fields:
+              - name: "titleEn"
+                label: "Title en"
+                required: false
+                widget: "string"
+              - name: "titleFr"
+                label: "Title fr"
+                required: false
+                widget: "string"
+              - name: "descKey"
+                label: "Desc key"
+                required: false
+                widget: "string"
+              - name: "neighborhoodsEn"
+                label: "Neighborhoods en"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "string"
+              - name: "neighborhoodsFr"
+                label: "Neighborhoods fr"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "string"
+              - name: "mapEmbedUrl"
+                label: "Map embed url"
+                required: false
+                widget: "text"
+          - name: "vaughan"
+            label: "Vaughan"
+            required: false
+            widget: "object"
+            fields:
+              - name: "titleEn"
+                label: "Title en"
+                required: false
+                widget: "string"
+              - name: "titleFr"
+                label: "Title fr"
+                required: false
+                widget: "string"
+              - name: "descKey"
+                label: "Desc key"
+                required: false
+                widget: "string"
+              - name: "neighborhoodsEn"
+                label: "Neighborhoods en"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "string"
+              - name: "neighborhoodsFr"
+                label: "Neighborhoods fr"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "string"
+              - name: "mapEmbedUrl"
+                label: "Map embed url"
+                required: false
+                widget: "text"
+          - name: "caledon"
+            label: "Caledon"
+            required: false
+            widget: "object"
+            fields:
+              - name: "titleEn"
+                label: "Title en"
+                required: false
+                widget: "string"
+              - name: "titleFr"
+                label: "Title fr"
+                required: false
+                widget: "string"
+              - name: "descKey"
+                label: "Desc key"
+                required: false
+                widget: "string"
+              - name: "neighborhoodsEn"
+                label: "Neighborhoods en"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "string"
+              - name: "neighborhoodsFr"
+                label: "Neighborhoods fr"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "string"
+              - name: "mapEmbedUrl"
+                label: "Map embed url"
+                required: false
+                widget: "text"
+          - name: "milton"
+            label: "Milton"
+            required: false
+            widget: "object"
+            fields:
+              - name: "titleEn"
+                label: "Title en"
+                required: false
+                widget: "string"
+              - name: "titleFr"
+                label: "Title fr"
+                required: false
+                widget: "string"
+              - name: "descKey"
+                label: "Desc key"
+                required: false
+                widget: "string"
+              - name: "neighborhoodsEn"
+                label: "Neighborhoods en"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "string"
+              - name: "neighborhoodsFr"
+                label: "Neighborhoods fr"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "string"
+              - name: "mapEmbedUrl"
+                label: "Map embed url"
+                required: false
+                widget: "text"
+          - name: "georgetown"
+            label: "Georgetown"
+            required: false
+            widget: "object"
+            fields:
+              - name: "titleEn"
+                label: "Title en"
+                required: false
+                widget: "string"
+              - name: "titleFr"
+                label: "Title fr"
+                required: false
+                widget: "string"
+              - name: "descKey"
+                label: "Desc key"
+                required: false
+                widget: "string"
+              - name: "neighborhoodsEn"
+                label: "Neighborhoods en"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "string"
+              - name: "neighborhoodsFr"
+                label: "Neighborhoods fr"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "string"
+              - name: "mapEmbedUrl"
+                label: "Map embed url"
+                required: false
+                widget: "text"
+      - name: "data-contactInfo"
+        label: "Contact details"
+        file: "src/content/data/contactInfo.json"
+        format: "json"
+        fields:
+          - name: "phone"
+            label: "Phone"
+            required: false
+            widget: "string"
+          - name: "phoneRaw"
+            label: "Phone raw"
+            required: false
+            widget: "string"
+          - name: "email"
+            label: "Email"
+            required: false
+            widget: "string"
+          - name: "website"
+            label: "Website"
+            required: false
+            widget: "string"
+          - name: "address"
+            label: "Address"
+            required: false
+            widget: "string"
+          - name: "whatsappUrl"
+            label: "Whatsapp url"
+            required: false
+            widget: "string"
+      - name: "data-socialLinks"
+        label: "Social media links"
+        file: "src/content/data/socialLinks.json"
+        format: "json"
+        fields:
+          - name: "items"
+            label: "Items"
+            required: false
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - name: "name"
+                label: "Name"
+                required: false
+                widget: "string"
+              - name: "icon"
+                label: "Icon"
+                required: false
+                widget: "string"
+              - name: "url"
+                label: "Web address"
+                required: false
+                widget: "string"
+      - name: "data-navLinks"
+        label: "Menu links"
+        file: "src/content/data/navLinks.json"
+        format: "json"
+        fields:
+          - name: "items"
+            label: "Items"
+            required: false
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - name: "label"
+                label: "Label"
+                required: false
+                widget: "string"
+              - name: "href"
+                label: "Href"
+                required: false
+                widget: "string"
+      - name: "data-pricingConfig"
+        label: "Quote calculator: base prices"
+        file: "src/content/data/pricingConfig.json"
+        format: "json"
+        fields:
+          - name: "items"
+            label: "Items"
+            required: false
+            widget: "list"
+            summary: "{{fields.serviceId}}"
+            fields:
+              - name: "serviceId"
+                label: "Service id"
+                required: false
+                widget: "string"
+              - name: "base"
+                label: "Base"
+                required: false
+                widget: "number"
+      - name: "data-bedroomAdders"
+        label: "Quote calculator: extra bedrooms"
+        file: "src/content/data/bedroomAdders.json"
+        format: "json"
+        fields:
+          - name: "items"
+            label: "Items"
+            required: false
+            widget: "list"
+            summary: "{{fields.value}}"
+            fields:
+              - name: "value"
+                label: "Value"
+                required: false
+                widget: "string"
+              - name: "labelKey"
+                label: "Label key"
+                required: false
+                widget: "string"
+              - name: "adder"
+                label: "Adder"
+                required: false
+                widget: "number"
+      - name: "data-bathroomAdders"
+        label: "Quote calculator: extra bathrooms"
+        file: "src/content/data/bathroomAdders.json"
+        format: "json"
+        fields:
+          - name: "items"
+            label: "Items"
+            required: false
+            widget: "list"
+            summary: "{{fields.value}}"
+            fields:
+              - name: "value"
+                label: "Value"
+                required: false
+                widget: "string"
+              - name: "labelKey"
+                label: "Label key"
+                required: false
+                widget: "string"
+              - name: "adder"
+                label: "Adder"
+                required: false
+                widget: "number"
+      - name: "data-frequencyOptions"
+        label: "Quote calculator: frequency choices"
+        file: "src/content/data/frequencyOptions.json"
+        format: "json"
+        fields:
+          - name: "items"
+            label: "Items"
+            required: false
+            widget: "list"
+            summary: "{{fields.value}}"
+            fields:
+              - name: "value"
+                label: "Value"
+                required: false
+                widget: "string"
+              - name: "labelKey"
+                label: "Label key"
+                required: false
+                widget: "string"
+              - name: "discount"
+                label: "Discount"
+                required: false
+                widget: "number"
+      - name: "data-frequencyDiscounts"
+        label: "Quote calculator: frequency discounts"
+        file: "src/content/data/frequencyDiscounts.json"
+        format: "json"
+        fields:
+          - name: "items"
+            label: "Items"
+            required: false
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - name: "label"
+                label: "Label"
+                required: false
+                widget: "string"
+              - name: "discount"
+                label: "Discount"
+                required: false
+                widget: "number"
+      - name: "data-serviceOptions"
+        label: "Quote calculator: service choices"
+        file: "src/content/data/serviceOptions.json"
+        format: "json"
+        fields:
+          - name: "items"
+            label: "Items"
+            required: false
+            widget: "list"
+            summary: "{{fields.value}}"
+            fields:
+              - name: "value"
+                label: "Value"
+                required: false
+                widget: "string"
+              - name: "labelKey"
+                label: "Label key"
+                required: false
+                widget: "string"
+  - name: "pages"
+    label: "3. Pictures, maps and forms"
+    files:
+      - name: "page-home-hero"
+        label: "Home: top banner picture"
+        file: "src/content/pages/home-hero.json"
+        format: "json"
+        fields:
+          - name: "backgroundImage"
+            label: "Background image"
+            required: false
+            widget: "object"
+            fields:
+              - name: "image"
+                label: "Share picture (1200 × 630)"
+                required: false
+                widget: "image"
+              - name: "imageAlt"
+                label: "What the picture shows (for screen readers)"
+                required: false
+                widget: "string"
+      - name: "page-home"
+        label: "Home: reviews preview and flyer"
+        file: "src/content/pages/home.json"
+        format: "json"
+        fields:
+          - name: "reviewsPreview"
+            label: "Reviews preview"
+            required: false
+            widget: "object"
+            fields:
+              - name: "label"
+                label: "Label"
+                required: false
+                widget: "string"
+          - name: "flyerPromotionalSection"
+            label: "Flyer promotional section"
+            required: false
+            widget: "object"
+            fields:
+              - name: "image"
+                label: "Share picture (1200 × 630)"
+                required: false
+                widget: "image"
+              - name: "imageAlt"
+                label: "What the picture shows (for screen readers)"
+                required: false
+                widget: "string"
+      - name: "page-about"
+        label: "About page: pictures"
+        file: "src/content/pages/about.json"
+        format: "json"
+        fields:
+          - name: "hero"
+            label: "Hero"
+            required: false
+            widget: "object"
+            fields:
+              - name: "image"
+                label: "Share picture (1200 × 630)"
+                required: false
+                widget: "image"
+              - name: "imageAlt"
+                label: "What the picture shows (for screen readers)"
+                required: false
+                widget: "string"
+          - name: "cta"
+            label: "Cta"
+            required: false
+            widget: "object"
+            fields:
+              - name: "phoneLink"
+                label: "Phone link"
+                required: false
+                widget: "string"
+      - name: "page-reviews"
+        label: "Reviews page"
+        file: "src/content/pages/reviews.json"
+        format: "json"
+        fields:
+          - name: "statsBar"
+            label: "Stats bar"
+            required: false
+            widget: "object"
+            fields:
+              - name: "bold"
+                label: "Bold"
+                required: false
+                widget: "string"
+              - name: "label"
+                label: "Label"
+                required: false
+                widget: "string"
+          - name: "author"
+            label: "Author"
+            required: false
+            widget: "object"
+            fields:
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "string"
+      - name: "page-services"
+        label: "Services page"
+        file: "src/content/pages/services.json"
+        format: "json"
+        fields:
+          - name: "emptyState"
+            label: "Empty state"
+            required: false
+            widget: "object"
+            fields:
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "string"
+      - name: "page-areas"
+        label: "Service areas page: map"
+        file: "src/content/pages/areas.json"
+        format: "json"
+        fields:
+          - name: "map"
+            label: "Map"
+            required: false
+            widget: "object"
+            fields:
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "embedUrl"
+                label: "Embed url"
+                required: false
+                widget: "text"
+      - name: "page-home-areas"
+        label: "Home: map"
+        file: "src/content/pages/home-areas.json"
+        format: "json"
+        fields:
+          - name: "googleMapEmbed"
+            label: "Google map embed"
+            required: false
+            widget: "object"
+            fields:
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "embedUrl"
+                label: "Embed url"
+                required: false
+                widget: "text"
+      - name: "page-contact"
+        label: "Contact page: form and map"
+        file: "src/content/pages/contact.json"
+        format: "json"
+        fields:
+          - name: "form"
+            label: "Form"
+            required: false
+            widget: "object"
+            fields:
+              - name: "placeholder"
+                label: "Placeholder"
+                required: false
+                widget: "string"
+              - name: "placeholder2"
+                label: "Placeholder2"
+                required: false
+                widget: "string"
+              - name: "placeholder3"
+                label: "Placeholder3"
+                required: false
+                widget: "string"
+              - name: "placeholder4"
+                label: "Placeholder4"
+                required: false
+                widget: "string"
+              - name: "placeholder5"
+                label: "Placeholder5"
+                required: false
+                widget: "string"
+          - name: "map"
+            label: "Map"
+            required: false
+            widget: "object"
+            fields:
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "embedUrl"
+                label: "Embed url"
+                required: false
+                widget: "text"
+      - name: "page-home-navbar"
+        label: "Menu: logo"
+        file: "src/content/pages/home-navbar.json"
+        format: "json"
+        fields:
+          - name: "logo"
+            label: "Logo"
+            required: false
+            widget: "object"
+            fields:
+              - name: "label"
+                label: "Label"
+                required: false
+                widget: "string"
+              - name: "label2"
+                label: "Label2"
+                required: false
+                widget: "string"
+              - name: "label3"
+                label: "Label3"
+                required: false
+                widget: "string"
+          - name: "mobileMenuToggle"
+            label: "Mobile menu toggle"
+            required: false
+            widget: "object"
+            fields:
+              - name: "ariaLabel"
+                label: "Aria label"
+                required: false
+                widget: "string"
+      - name: "page-home-footer"
+        label: "Footer"
+        file: "src/content/pages/home-footer.json"
+        format: "json"
+        fields:
+          - name: "brand"
+            label: "Brand"
+            required: false
+            widget: "object"
+            fields:
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "string"
+              - name: "label"
+                label: "Label"
+                required: false
+                widget: "string"
+              - name: "text2"
+                label: "Text2"
+                required: false
+                widget: "string"
+          - name: "contact"
+            label: "Contact"
+            required: false
+            widget: "object"
+            fields:
+              - name: "link"
+                label: "Link"
+                required: false
+                widget: "string"
+      - name: "page-home-quoteengine"
+        label: "Quote form"
+        file: "src/content/pages/home-quoteengine.json"
+        format: "json"
+        fields:
+          - name: "step1ContactInfo"
+            label: "Step1 contact info"
+            required: false
+            widget: "object"
+            fields:
+              - name: "label"
+                label: "Label"
+                required: false
+                widget: "string"
+              - name: "placeholder"
+                label: "Placeholder"
+                required: false
+                widget: "string"
+              - name: "placeholder2"
+                label: "Placeholder2"
+                required: false
+                widget: "string"
+              - name: "placeholder3"
+                label: "Placeholder3"
+                required: false
+                widget: "string"
+              - name: "placeholder4"
+                label: "Placeholder4"
+                required: false
+                widget: "string"
+          - name: "step2JobDetails"
+            label: "Step2 job details"
+            required: false
+            widget: "object"
+            fields:
+              - name: "label"
+                label: "Label"
+                required: false
+                widget: "string"
+          - name: "squareFeet"
+            label: "Square feet"
+            required: false
+            widget: "object"
+            fields:
+              - name: "placeholder"
+                label: "Placeholder"
+                required: false
+                widget: "string"
+          - name: "step3ChooseYourChannel"
+            label: "Step3 choose your channel"
+            required: false
+            widget: "object"
+            fields:
+              - name: "label"
+                label: "Label"
+                required: false
+                widget: "string"
+          - name: "keys"
+            label: "Keys"
+            required: false
+            widget: "list"
+            field:
+              name: "item"
+              label: "Item"
+              required: false
+              widget: "string"
+      - name: "page-quote-bookingsection"
+        label: "Booking steps"
+        file: "src/content/pages/quote-bookingsection.json"
+        format: "json"
+        fields:
+          - name: "steps"
+            label: "Steps"
+            required: false
+            widget: "list"
+            summary: "{{fields.titleKey}}"
+            fields:
+              - name: "titleKey"
+                label: "Title key"
+                required: false
+                widget: "string"
+              - name: "descKey"
+                label: "Desc key"
+                required: false
+                widget: "string"
+      - name: "page-home-leavereviewmodal"
+        label: "Leave a review form"
+        file: "src/content/pages/home-leavereviewmodal.json"
+        format: "json"
+        fields:
+          - name: "name"
+            label: "Name"
+            required: false
+            widget: "object"
+            fields:
+              - name: "placeholder"
+                label: "Placeholder"
+                required: false
+                widget: "string"
+          - name: "location"
+            label: "Location"
+            required: false
+            widget: "object"
+            fields:
+              - name: "placeholder"
+                label: "Placeholder"
+                required: false
+                widget: "string"
+          - name: "reviewText"
+            label: "Review text"
+            required: false
+            widget: "object"
+            fields:
+              - name: "placeholder"
+                label: "Placeholder"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "string"
+          - name: "stars"
+            label: "Stars"
+            required: false
+            widget: "list"
+            field:
+              name: "item"
+              label: "Item"
+              required: false
+              widget: "number"
+      - name: "page-home-checkoutmodal"
+        label: "Payment window"
+        file: "src/content/pages/home-checkoutmodal.json"
+        format: "json"
+        fields:
+          - name: "amountReference"
+            label: "Amount reference"
+            required: false
+            widget: "object"
+            fields:
+              - name: "label"
+                label: "Label"
+                required: false
+                widget: "string"
+          - name: "interacETransfer"
+            label: "Interac etransfer"
+            required: false
+            widget: "object"
+            fields:
+              - name: "label"
+                label: "Label"
+                required: false
+                widget: "string"
+          - name: "stripe"
+            label: "Stripe"
+            required: false
+            widget: "object"
+            fields:
+              - name: "label"
+                label: "Label"
+                required: false
+                widget: "string"
+          - name: "cardFormPlaceholder"
+            label: "Card form placeholder"
+            required: false
+            widget: "object"
+            fields:
+              - name: "placeholder"
+                label: "Placeholder"
+                required: false
+                widget: "string"
+              - name: "placeholder2"
+                label: "Placeholder2"
+                required: false
+                widget: "string"
+              - name: "placeholder3"
+                label: "Placeholder3"
+                required: false
+                widget: "string"
+      - name: "page-notfound"
+        label: "Page not found"
+        file: "src/content/pages/notfound.json"
+        format: "json"
+        fields:
+          - name: "main"
+            label: "Main"
+            required: false
+            widget: "object"
+            fields:
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "string"
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "text2"
+                label: "Text2"
+                required: false
+                widget: "string"
+              - name: "text3"
+                label: "Text3"
+                required: false
+                widget: "string"
   - name: "settings"
-    label: "Google and sharing"
+    label: "4. Google and sharing"
     files:
       - name: "seo"
         label: "Page titles, descriptions and share picture"
@@ -61,7 +4066,7 @@ collections:
                 hint: "For example /about. Do not change."
                 widget: "string"
               - name: "title"
-                label: "Title (under 65 characters)"
+                label: "Title"
                 required: false
                 widget: "string"
               - name: "description"
