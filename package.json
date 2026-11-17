@@ -7,6 +7,8 @@
     "dev": "vite",
     "build": "vite build && node scripts/social-pages.mjs",
     "preview": "vite preview",
+    "cms:config": "node scripts/cms-config.mjs",
+    "cms:check": "node scripts/cms-config.mjs --check",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "type-check": "tsc --noEmit --project tsconfig.app.json"
   },

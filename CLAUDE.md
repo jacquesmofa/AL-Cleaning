@@ -43,3 +43,7 @@ Family-owned home cleaning in Brampton and the GTA (residential, deep, move-in/o
 - `src/content/seo.json`: title and description for all 20 addresses (7 pages, 6 services, 7 cities). `SeoSync.tsx` applies it in the browser; `scripts/social-pages.mjs` writes one HTML file per address plus `sitemap.xml`. New service or city: add its line to `seo.json`.
 - Icons (`public/favicon.ico`, `icon-*.png`, `apple-touch-icon.png`) and share picture (`public/media/share.jpg`) are an "AL" monogram in the site's blue: replace when the real logo arrives.
 - The unverified "5.0 / 500 reviews" rating was removed from the structured data in `index.html`. The same claim is still visible on the pages: see `PLACEHOLDERS.md` (ask the client).
+
+## Editors (17 Nov 2026)
+- Pages CMS (`.pages.yml`) and Sveltia (`public/admin/`, https://alcleaningpro.ca/admin/) edit `src/content/seo.json` only. BOTH GENERATED: `npm run cms:config` + `scripts/cms-registry.mjs`; `npm run cms:check`. Sveltia sign-in: "Sign In Using Access Token" only.
+- Not yet editable: page text (`src/i18n/local/*/translation.ts`, `src/mocks/home.ts`). Next step: move it to `src/content/` (LDII is the model), after the client answers the questions in PLACEHOLDERS.md.
