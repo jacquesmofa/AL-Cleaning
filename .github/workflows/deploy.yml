@@ -1,36 +1,67 @@
-name: Build and Deploy to Hostinger
+name: 🚀 Build and publish — AL Cleaning Pro
+
+# How it works (plain words):
+# - Every change pushed to main is built here. If the build fails, nothing changes on the website.
+# - The finished website (folder dist/) is saved to a branch of this repository called "live".
+# - Hostinger watches the "live" branch (hPanel > alcleaningpro.ca > Advanced > Git, with Auto deployment)
+#   and copies it to the website within a minute.
+# No passwords or secrets are needed anywhere.
+# "Run workflow" (Actions tab) publishes again by hand.
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-live
+  cancel-in-progress: false
+
 jobs:
-  build-and-deploy:
+  build-and-publish:
     runs-on: ubuntu-latest
-
+    timeout-minutes: 15
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: 🚚 Get the code
+        uses: actions/checkout@v5
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - name: 🏗️ Set up Node.js
+        uses: actions/setup-node@v5
         with:
           node-version: 22
+          cache: npm
 
-      - name: Install dependencies
-        run: npm install
+      - name: 📦 Install exact dependency versions
+        run: npm ci
 
-      - name: Build production site
+      - name: 🔨 Build the website
         run: npm run build
 
-      - name: Upload build to Hostinger via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - name: 🧹 Leave out files visitors never need
+        run: find dist -name '*.map' -delete
+
+      - name: 📤 Save the finished website to the "live" branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/
-          server-dir: ./
-          dangerous-clean-slate: false
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: live
+          force_orphan: true
+          enable_jekyll: true
+          commit_message: "Website build from ${{ github.sha }}"
+
+      - name: ✅ Check the website shows this version
+        env:
+          SITE_URL: ${{ vars.SITE_URL || 'https://alcleaningpro.ca' }}
+        run: |
+          ASSET=$(grep -o 'assets/index-[^"]*\.js' dist/index.html | head -1)
+          for i in 1 2 3 4 5 6 7 8 9 10 11 12; do
+            if curl -fsSL -H 'Cache-Control: no-cache' "$SITE_URL/?v=${GITHUB_SHA::7}-$i" | grep -q "$ASSET"; then
+              echo "✅ $SITE_URL shows this version ($ASSET)" | tee -a "$GITHUB_STEP_SUMMARY"; exit 0
+            fi
+            echo "Not visible yet, checking again in 10s ($i/12)"; sleep 10
+          done
+          echo "::warning::The \"live\" branch is updated, but $SITE_URL does not show it yet. Check hPanel > Advanced > Git > Auto deployment for this site."

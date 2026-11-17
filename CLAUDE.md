@@ -22,7 +22,8 @@ Family-owned home cleaning in Brampton and the GTA (residential, deep, move-in/o
 - Routes: `/`, `/about`, `/areas`, `/areas/:cityId`, `/contact`, `/quote`, `/reviews`, `/services`, `/services/:serviceId`.
 
 ## Deploy
-- `.github/workflows/deploy.yml`: push to `main` → build → FTP upload of `dist/` to `./` (secrets `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`).
+- No passwords, no FTP (17 Nov 2026). `.github/workflows/deploy.yml`: push to `main` → `npm ci && npm run build` → the built site (`dist/`) is saved to the `live` branch → Hostinger pulls that branch (hPanel > alcleaningpro.ca > Advanced > Git, branch `live`, Auto deployment webhook) → the workflow checks alcleaningpro.ca shows the new build.
+- Never edit the `live` branch by hand: it is rewritten on every publish. `public/.htaccess` (or `deployment/.htaccess`) carries the server rules.
 
 ## Where things live
 - Pages: `src/pages/<page>/` (one folder per page, sections in `components/`). Routes: `src/router/`.
