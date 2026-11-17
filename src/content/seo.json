@@ -1,0 +1,112 @@
+{
+  "site": {
+    "name": "AL Cleaning Pro",
+    "url": "https://alcleaningpro.ca",
+    "image": "/media/share.jpg",
+    "imageAlt": "AL Cleaning Pro: family-owned home cleaning in Brampton and the GTA",
+    "locale": "en_CA",
+    "localeAlternate": "fr_CA"
+  },
+  "pages": [
+    {
+      "path": "/",
+      "title": "AL Cleaning Pro | Home Cleaning in Brampton and the GTA",
+      "description": "Family-owned home cleaning in Brampton and across the GTA: residential, deep, move-in/out, office, Airbnb and post-construction. Call 416-817-4825."
+    },
+    {
+      "path": "/services",
+      "title": "Cleaning Services | AL Cleaning Pro",
+      "description": "Residential, deep, move-in/out, office, Airbnb turnover and post-construction cleaning in Brampton and the GTA. See what each service includes."
+    },
+    {
+      "path": "/services/residential",
+      "title": "Residential Cleaning | AL Cleaning Pro",
+      "description": "Regular home cleaning in Brampton and the GTA by a family-owned team: weekly, bi-weekly or monthly visits. Get a quote or call 416-817-4825."
+    },
+    {
+      "path": "/services/deep-clean",
+      "title": "Deep Cleaning | AL Cleaning Pro",
+      "description": "Top-to-bottom deep cleaning for kitchens, bathrooms and every room, in Brampton and across the GTA. Get a quote or call 416-817-4825."
+    },
+    {
+      "path": "/services/move",
+      "title": "Move-In and Move-Out Cleaning | AL Cleaning Pro",
+      "description": "Move-in and move-out cleaning in Brampton and the GTA so the home is ready for its next chapter. Get a quote or call 416-817-4825."
+    },
+    {
+      "path": "/services/office",
+      "title": "Office Cleaning | AL Cleaning Pro",
+      "description": "Office and commercial cleaning in Brampton and the GTA, scheduled around your working hours. Get a quote or call 416-817-4825."
+    },
+    {
+      "path": "/services/airbnb",
+      "title": "Airbnb Turnover Cleaning | AL Cleaning Pro",
+      "description": "Airbnb and short-term rental turnover cleaning in Brampton and the GTA, ready for the next guest. Get a quote or call 416-817-4825."
+    },
+    {
+      "path": "/services/post-construction",
+      "title": "Post-Construction Cleaning | AL Cleaning Pro",
+      "description": "Post-construction and renovation clean-up in Brampton and the GTA: dust, debris and a final polish. Get a quote or call 416-817-4825."
+    },
+    {
+      "path": "/about",
+      "title": "About Us | AL Cleaning Pro",
+      "description": "AL Cleaning Pro is a family-owned cleaning company based in Brampton, Ontario, serving homes and businesses across the Greater Toronto Area."
+    },
+    {
+      "path": "/reviews",
+      "title": "Customer Reviews | AL Cleaning Pro",
+      "description": "Read what customers say about AL Cleaning Pro, a family-owned cleaning company in Brampton and the GTA, and leave your own review."
+    },
+    {
+      "path": "/areas",
+      "title": "Service Areas | AL Cleaning Pro",
+      "description": "AL Cleaning Pro serves Brampton, Mississauga, Toronto, Vaughan, Caledon, Milton and Georgetown. Find cleaning services in your city."
+    },
+    {
+      "path": "/areas/brampton",
+      "title": "Cleaning Services in Brampton | AL Cleaning Pro",
+      "description": "Family-owned home and office cleaning in Brampton, Ontario: residential, deep, move-in/out, Airbnb and post-construction. Call 416-817-4825."
+    },
+    {
+      "path": "/areas/mississauga",
+      "title": "Cleaning Services in Mississauga | AL Cleaning Pro",
+      "description": "Family-owned home and office cleaning in Mississauga, Ontario: residential, deep, move-in/out, Airbnb and post-construction. Call 416-817-4825."
+    },
+    {
+      "path": "/areas/toronto",
+      "title": "Cleaning Services in Toronto | AL Cleaning Pro",
+      "description": "Family-owned home and office cleaning in Toronto, Ontario: residential, deep, move-in/out, Airbnb and post-construction. Call 416-817-4825."
+    },
+    {
+      "path": "/areas/vaughan",
+      "title": "Cleaning Services in Vaughan | AL Cleaning Pro",
+      "description": "Family-owned home and office cleaning in Vaughan, Ontario: residential, deep, move-in/out, Airbnb and post-construction. Call 416-817-4825."
+    },
+    {
+      "path": "/areas/caledon",
+      "title": "Cleaning Services in Caledon | AL Cleaning Pro",
+      "description": "Family-owned home and office cleaning in Caledon, Ontario: residential, deep, move-in/out, Airbnb and post-construction. Call 416-817-4825."
+    },
+    {
+      "path": "/areas/milton",
+      "title": "Cleaning Services in Milton | AL Cleaning Pro",
+      "description": "Family-owned home and office cleaning in Milton, Ontario: residential, deep, move-in/out, Airbnb and post-construction. Call 416-817-4825."
+    },
+    {
+      "path": "/areas/georgetown",
+      "title": "Cleaning Services in Georgetown | AL Cleaning Pro",
+      "description": "Family-owned home and office cleaning in Georgetown, Ontario: residential, deep, move-in/out, Airbnb and post-construction. Call 416-817-4825."
+    },
+    {
+      "path": "/quote",
+      "title": "Get a Free Quote | AL Cleaning Pro",
+      "description": "Get a free cleaning quote from AL Cleaning Pro in a few steps: choose your service, home size and schedule. Serving Brampton and the GTA."
+    },
+    {
+      "path": "/contact",
+      "title": "Contact | AL Cleaning Pro",
+      "description": "Contact AL Cleaning Pro in Brampton, Ontario: call or text 416-817-4825, message us on WhatsApp or send the contact form."
+    }
+  ]
+}

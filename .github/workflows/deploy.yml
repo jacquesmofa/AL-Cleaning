@@ -49,19 +49,31 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: live
-          force_orphan: true
           enable_jekyll: true
           commit_message: "Website build from ${{ github.sha }}"
 
       - name: ✅ Check the website shows this version
         env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SITE_URL: ${{ vars.SITE_URL || 'https://alcleaningpro.ca' }}
         run: |
           ASSET=$(grep -o 'assets/index-[^"]*\.js' dist/index.html | head -1)
-          for i in 1 2 3 4 5 6 7 8 9 10 11 12; do
-            if curl -fsSL -H 'Cache-Control: no-cache' "$SITE_URL/?v=${GITHUB_SHA::7}-$i" | grep -q "$ASSET"; then
-              echo "✅ $SITE_URL shows this version ($ASSET)" | tee -a "$GITHUB_STEP_SUMMARY"; exit 0
+          # Hostinger sometimes misses a publish ("Build failed" for a second in hPanel). If the
+          # website does not show this version after 2 minutes, nudge it with an empty commit
+          # on the "live" branch, up to 2 times.
+          for attempt in 1 2 3; do
+            for i in 1 2 3 4 5 6 7 8 9 10 11 12; do
+              if curl -fsSL -H 'Cache-Control: no-cache' "$SITE_URL/?v=${GITHUB_SHA::7}-$attempt-$i" | grep -q "$ASSET"; then
+                echo "✅ $SITE_URL shows this version ($ASSET)" | tee -a "$GITHUB_STEP_SUMMARY"; exit 0
+              fi
+              echo "Not visible yet, checking again in 10s ($i/12, try $attempt/3)"; sleep 10
+            done
+            if [ "$attempt" != 3 ]; then
+              echo "Asking Hostinger again (empty commit on the live branch)"
+              rm -rf /tmp/live && git clone -q --depth 1 --branch live "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" /tmp/live
+              git -C /tmp/live -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -q --allow-empty -m "Publish again: ${GITHUB_SHA::7} (try $((attempt+1)))"
+              git -C /tmp/live push -q origin live
             fi
-            echo "Not visible yet, checking again in 10s ($i/12)"; sleep 10
           done
-          echo "::warning::The \"live\" branch is updated, but $SITE_URL does not show it yet. Check hPanel > Advanced > Git > Auto deployment for this site."
+          echo "::error::The \"live\" branch is updated, but $SITE_URL does not show it. Open hPanel > the website > Advanced > Git and press Redeploy."
+          exit 1

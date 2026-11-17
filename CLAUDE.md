@@ -17,13 +17,13 @@ Family-owned home cleaning in Brampton and the GTA (residential, deep, move-in/o
 
 ## Stack and build
 - Originally a Readdy export: Vite + React + TypeScript + Tailwind + React Router, i18next installed.
-- Install and build: `npm ci && npm run build` → output in `dist/`.
+- Install and build: `npm ci && npm run build` (`vite build && node scripts/social-pages.mjs`) → output in `dist/`.
 - Dev preview: `npm run dev`.
 - Routes: `/`, `/about`, `/areas`, `/areas/:cityId`, `/contact`, `/quote`, `/reviews`, `/services`, `/services/:serviceId`.
 
 ## Deploy
 - No passwords, no FTP (17 Nov 2026). `.github/workflows/deploy.yml`: push to `main` → `npm ci && npm run build` → the built site (`dist/`) is saved to the `live` branch → Hostinger pulls that branch (hPanel > alcleaningpro.ca > Advanced > Git, branch `live`, Auto deployment webhook) → the workflow checks alcleaningpro.ca shows the new build.
-- Never edit the `live` branch by hand: it is rewritten on every publish. `public/.htaccess` (or `deployment/.htaccess`) carries the server rules.
+- Never edit the `live` branch by hand: it is rewritten on every publish. `public/.htaccess` carries the server rules (https, clean addresses, per-page files, SPA fallback, caching). If Hostinger misses a publish, the workflow nudges it up to twice (empty commit on `live`).
 
 ## Where things live
 - Pages: `src/pages/<page>/` (one folder per page, sections in `components/`). Routes: `src/router/`.
@@ -38,3 +38,8 @@ Family-owned home cleaning in Brampton and the GTA (residential, deep, move-in/o
 - Design overlap with other clients: Blue + green is the default 'cleaning company' look; Sparkle Empire (another cleaning client) uses blue + teal. These two must look clearly different.
 
 - 17 Nov 2026: Hostinger (hPanel > alcleaningpro.ca > Advanced > Git) is connected to the `live` branch with Auto-deployment on. First automatic publish verified the same day.
+
+## SEO and icons (17 Nov 2026)
+- `src/content/seo.json`: title and description for all 20 addresses (7 pages, 6 services, 7 cities). `SeoSync.tsx` applies it in the browser; `scripts/social-pages.mjs` writes one HTML file per address plus `sitemap.xml`. New service or city: add its line to `seo.json`.
+- Icons (`public/favicon.ico`, `icon-*.png`, `apple-touch-icon.png`) and share picture (`public/media/share.jpg`) are an "AL" monogram in the site's blue: replace when the real logo arrives.
+- The unverified "5.0 / 500 reviews" rating was removed from the structured data in `index.html`. The same claim is still visible on the pages: see `PLACEHOLDERS.md` (ask the client).
