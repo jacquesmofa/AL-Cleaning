@@ -36,3 +36,5 @@ Family-owned home cleaning in Brampton and the GTA (residential, deep, move-in/o
 - Stripe/checkout code exists: check whether it is actually connected before telling anyone that payments work.
 - Build output is `dist/` here (not `out/`).
 - Design overlap with other clients: Blue + green is the default 'cleaning company' look; Sparkle Empire (another cleaning client) uses blue + teal. These two must look clearly different.
+
+- 17 Nov 2026: Hostinger (hPanel > alcleaningpro.ca > Advanced > Git) is connected to the `live` branch with Auto-deployment on. First automatic publish verified the same day.
